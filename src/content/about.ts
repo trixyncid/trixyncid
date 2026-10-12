@@ -18,7 +18,7 @@ export const valueVisualMeta: Record<
     icon: Server,
   },
   collaboration: {
-    accent: "text-brand dark:text-brand-light",
+    accent: "text-brand-text",
     glow: "rgba(56, 102, 242, 0.16)",
     icon: Users,
   },

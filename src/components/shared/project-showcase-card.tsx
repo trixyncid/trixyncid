@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
+import { useId, useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { ProjectCategory } from "@/content/projects";
@@ -33,12 +33,13 @@ export function ProjectShowcaseCard({
   size = "default",
 }: ProjectShowcaseCardProps) {
   const cardRef = useRef<HTMLElement>(null);
+  const titleId = useId();
   const isLarge = size === "large";
 
   const categoryStyles: Record<ProjectCategory, string> = {
-    software: "border-sky-400/30 bg-sky-500/10 text-sky-700 dark:text-sky-300",
-    enterprise: "border-brand-light/30 bg-brand/10 text-brand dark:text-brand-light",
-    web: "border-violet-400/30 bg-violet-500/10 text-violet-700 dark:text-violet-300",
+    software: "border-sky-400/30 bg-white/90 text-sky-800 dark:bg-background/80 dark:text-sky-300",
+    enterprise: "border-brand-light/30 bg-white/90 text-brand-text dark:bg-background/80",
+    web: "border-violet-400/30 bg-white/90 text-violet-800 dark:bg-background/80 dark:text-violet-300",
   };
 
   const handleMouseMove = (event: React.MouseEvent<HTMLElement>) => {
@@ -74,7 +75,7 @@ export function ProjectShowcaseCard({
 
       <Image
         src={image}
-        alt={title}
+        alt=""
         fill
         loading="lazy"
         fetchPriority="low"
@@ -111,6 +112,7 @@ export function ProjectShowcaseCard({
           {client}
         </p>
         <h3
+          id={titleId}
           className={cn(
             "font-heading font-semibold leading-[1.15] tracking-tight text-white dark:text-foreground",
             isLarge ? "text-2xl md:text-[1.75rem] lg:text-3xl" : "text-xl md:text-2xl",
@@ -127,7 +129,7 @@ export function ProjectShowcaseCard({
           {description}
         </p>
         {href && (
-          <span className="inline-flex items-center gap-2 pt-1 text-sm font-semibold text-brand-light transition-colors group-hover/card:text-white dark:group-hover/card:text-foreground">
+          <span className="inline-flex items-center gap-2 pt-1 text-sm font-semibold text-white transition-colors group-hover/card:text-white/80 dark:text-foreground dark:group-hover/card:text-foreground/80">
             {linkLabel}
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover/card:-translate-y-0.5 group-hover/card:translate-x-0.5" />
           </span>
@@ -138,7 +140,7 @@ export function ProjectShowcaseCard({
 
   if (href) {
     return (
-      <Link href={href} className="block h-full">
+      <Link href={href} aria-labelledby={titleId} className="block h-full">
         {card}
       </Link>
     );

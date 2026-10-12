@@ -32,7 +32,7 @@ export function ThemeToggle({
           type="button"
           role="switch"
           aria-checked={isDark}
-          aria-label={isDark ? tNav("switchToLight") : tNav("switchToDark")}
+          aria-label={tNav("darkMode")}
           onClick={() => setTheme(isDark ? "light" : "dark")}
           suppressHydrationWarning
           className={cn(
@@ -49,7 +49,7 @@ export function ThemeToggle({
             )}
           >
             {isDark ? (
-              <Moon className={cn("text-brand-light", compact ? "h-3 w-3" : "h-3.5 w-3.5")} />
+              <Moon className={cn("text-brand-text", compact ? "h-3 w-3" : "h-3.5 w-3.5")} />
             ) : (
               <Sun className={cn("text-amber-500", compact ? "h-3 w-3" : "h-3.5 w-3.5")} />
             )}
@@ -66,7 +66,7 @@ export function ThemeToggle({
       aria-label={isDark ? tNav("switchToLight") : tNav("switchToDark")}
       suppressHydrationWarning
       className={cn(
-        "flex h-9 w-9 items-center justify-center rounded-full border border-border/60 bg-card/50 text-foreground transition-colors hover:bg-card hover:text-brand-light",
+        "flex h-9 w-9 items-center justify-center rounded-full border border-border/60 bg-card/50 text-foreground transition-colors hover:bg-card hover:text-brand-text",
         className,
       )}
     >

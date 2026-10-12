@@ -24,7 +24,7 @@ export function LocationSection() {
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 320, damping: 22 }}
-                className="mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand/20 bg-brand/10 text-brand"
+                className="mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand/20 bg-brand/10 text-brand-text"
               >
                 <MapPin className="h-5 w-5" strokeWidth={1.75} />
               </motion.div>
@@ -43,24 +43,20 @@ export function LocationSection() {
             <p className="max-w-xl text-base leading-[1.75] text-muted-foreground">{t("description")}</p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
-              {statKeys.map((key, index) => (
-                <motion.div
+              {statKeys.map((key) => (
+                <div
                   key={key}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.5 }}
-                  transition={{ duration: 0.4, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
                   className="rounded-2xl border border-border/60 bg-card/30 px-4 py-4 dark:bg-card/20"
                 >
                   <p className="font-heading text-xl font-semibold text-foreground md:text-2xl">
                     {t(`stats.${key}.value`, { count: projects.length })}
                   </p>
                   <p className="mt-1 text-sm text-muted-foreground">{t(`stats.${key}.label`)}</p>
-                </motion.div>
+                </div>
               ))}
             </div>
 
-            <p className="mt-8 text-sm text-muted-foreground/80">
+            <p className="mt-8 text-sm text-muted-foreground">
               {siteConfig.address.city}, {siteConfig.address.region}, {siteConfig.address.country}
             </p>
           </ScrollReveal>

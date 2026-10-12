@@ -108,9 +108,9 @@ export function ContactSection() {
                 <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
                   {t("channels.eyebrow")}
                 </p>
-                <p className="mt-2 font-heading text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+                <h2 className="mt-2 font-heading text-xl font-semibold tracking-tight text-foreground md:text-2xl">
                   {t("channels.title")}
-                </p>
+                </h2>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
                   {t("channels.description")}
                 </p>
@@ -128,7 +128,7 @@ export function ContactSection() {
                       >
                         <div className="flex items-start gap-3">
                           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-brand/15 bg-brand/10">
-                            <Icon className="h-4 w-4 text-brand" strokeWidth={1.75} />
+                            <Icon className="h-4 w-4 text-brand-text" strokeWidth={1.75} />
                           </div>
                           <div className="min-w-0 flex-1">
                             <p className="text-xs font-medium uppercase tracking-[0.12em] text-muted-foreground">
@@ -140,7 +140,7 @@ export function ContactSection() {
                                 onClick={() => track("contact_click", { channel, location: "contact_page" })}
                                 target={channel === "whatsapp" ? "_blank" : undefined}
                                 rel={channel === "whatsapp" ? "noopener noreferrer" : undefined}
-                                className="mt-1 block text-sm leading-snug font-medium break-words text-foreground transition-colors hover:text-brand"
+                                className="mt-1 block text-sm leading-snug font-medium break-words text-foreground transition-colors hover:text-brand-text"
                               >
                                 {value}
                               </a>
@@ -161,7 +161,7 @@ export function ContactSection() {
             <ScrollStaggerItem>
               <div className="flex items-start gap-4 rounded-2xl border border-border/60 bg-popover p-5 dark:border-brand/20">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-brand/20 bg-brand/10">
-                  <Clock className="h-4 w-4 text-brand" strokeWidth={1.75} />
+                  <Clock className="h-4 w-4 text-brand-text" strokeWidth={1.75} />
                 </div>
                 <div>
                   <p className="font-heading text-base font-semibold text-foreground">{t("response.title")}</p>
@@ -212,7 +212,12 @@ export function ContactSection() {
                       label={t("form.budgetRange")}
                       hint={t("form.budgetHint")}
                     >
-                      <FormSelect id="budgetRange" name="budgetRange" defaultValue="not-sure">
+                      <FormSelect
+                        id="budgetRange"
+                        name="budgetRange"
+                        defaultValue="not-sure"
+                        aria-describedby="budgetRange-hint"
+                      >
                         {contactBudgetRangeKeys.map((key) => (
                           <option key={key} value={key}>
                             {t(`form.budgetRanges.${key}`)}
@@ -223,7 +228,7 @@ export function ContactSection() {
                   </div>
 
                   <FormField id="message" label={t("form.message")}>
-                    <FormTextarea id="message" name="message" required rows={5} />
+                    <FormTextarea id="message" name="message" required rows={5} maxLength={1500} />
                   </FormField>
 
                   <button
@@ -236,30 +241,30 @@ export function ContactSection() {
                     {t("form.submit")}
                   </button>
 
-                  <AnimatePresence mode="wait">
-                    {whatsappUrl ? (
-                      <motion.p
-                        key="success"
-                        role="status"
-                        aria-live="polite"
-                        aria-atomic="true"
-                        initial={{ opacity: 0, y: 6 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -4 }}
-                        className="rounded-xl border border-green-500/20 bg-green-500/10 px-4 py-3 text-center text-sm text-green-600 dark:text-green-400"
-                      >
-                        {t("form.success")}{" "}
-                        <a
-                          href={whatsappUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="font-semibold underline underline-offset-2"
+                  {/* Always mounted so screen readers announce the message when it appears. */}
+                  <div role="status" aria-live="polite" aria-atomic="true">
+                    <AnimatePresence mode="wait">
+                      {whatsappUrl ? (
+                        <motion.p
+                          key="success"
+                          initial={{ opacity: 0, y: 6 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -4 }}
+                          className="rounded-xl border border-green-600/25 bg-green-500/10 px-4 py-3 text-center text-sm text-green-800 dark:text-green-400"
                         >
-                          {t("form.successRetry")}
-                        </a>
-                      </motion.p>
-                    ) : null}
-                  </AnimatePresence>
+                          {t("form.success")}{" "}
+                          <a
+                            href={whatsappUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-semibold underline underline-offset-2"
+                          >
+                            {t("form.successRetry")}
+                          </a>
+                        </motion.p>
+                      ) : null}
+                    </AnimatePresence>
+                  </div>
                 </form>
               </div>
             </div>
@@ -286,12 +291,12 @@ export function ContactSection() {
                 key={step}
                 className="rounded-2xl border border-border/60 bg-popover px-5 py-5 text-center"
               >
-                <span className="font-heading text-sm font-semibold tabular-nums text-brand">
+                <span className="font-heading text-sm font-semibold tabular-nums text-brand-text">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <p className="mt-2 font-heading text-base font-semibold text-foreground">
+                <h3 className="mt-2 font-heading text-base font-semibold text-foreground">
                   {t(`nextSteps.items.${step}.title`)}
-                </p>
+                </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {t(`nextSteps.items.${step}.description`)}
                 </p>

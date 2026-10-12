@@ -1,9 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { useReducedMotion } from "motion/react";
+import { useRef } from "react";
 import type { LucideIcon } from "lucide-react";
-import { useMobileLite } from "@/hooks/use-mobile-lite";
 import { cn } from "@/lib/utils";
 
 type StrengthPillarCardProps = {
@@ -23,64 +21,53 @@ export function StrengthPillarCard({
   glow,
   className,
 }: StrengthPillarCardProps) {
-  const reduced = useReducedMotion();
-  const mobileLite = useMobileLite();
-  const interactive = !reduced && !mobileLite;
-  const [spot, setSpot] = useState({ x: 50, y: 50 });
-  const [tilt, setTilt] = useState({ x: 0, y: 0 });
-  const [hovering, setHovering] = useState(false);
+  const cardRef = useRef<HTMLElement>(null);
 
-  const handleMouseMove = (event: React.MouseEvent<HTMLElement>) => {
-    if (!interactive) return;
-    const rect = event.currentTarget.getBoundingClientRect();
-    const x = ((event.clientX - rect.left) / rect.width) * 100;
-    const y = ((event.clientY - rect.top) / rect.height) * 100;
-    setSpot({ x, y });
-    setTilt({
-      x: (event.clientX - (rect.left + rect.width / 2)) / 32,
-      y: (event.clientY - (rect.top + rect.height / 2)) / 32,
-    });
+  // Writes CSS variables directly — no React re-render per mouse move.
+  const handlePointerMove = (event: React.PointerEvent<HTMLElement>) => {
+    const node = cardRef.current;
+    if (!node || event.pointerType !== "mouse") return;
+    const rect = node.getBoundingClientRect();
+    node.style.setProperty("--mx", `${((event.clientX - rect.left) / rect.width) * 100}%`);
+    node.style.setProperty("--my", `${((event.clientY - rect.top) / rect.height) * 100}%`);
+    node.style.setProperty("--tx", `${(event.clientX - (rect.left + rect.width / 2)) / 32}px`);
+    node.style.setProperty("--ty", `${(event.clientY - (rect.top + rect.height / 2)) / 32}px`);
+  };
+
+  const handlePointerLeave = () => {
+    const node = cardRef.current;
+    if (!node) return;
+    node.style.setProperty("--tx", "0px");
+    node.style.setProperty("--ty", "0px");
   };
 
   return (
     <article
-      onMouseMove={handleMouseMove}
-      onMouseEnter={() => interactive && setHovering(true)}
-      onMouseLeave={() => {
-        if (!interactive) return;
-        setHovering(false);
-        setSpot({ x: 50, y: 50 });
-        setTilt({ x: 0, y: 0 });
-      }}
-      style={
-        interactive && hovering
-          ? {
-              transform: `translate3d(${tilt.x}px, ${tilt.y}px, 0)`,
-              transition: "transform 0.12s ease-out",
-            }
-          : undefined
-      }
+      ref={cardRef}
+      onPointerMove={handlePointerMove}
+      onPointerLeave={handlePointerLeave}
+      style={{ "--glow": glow } as React.CSSProperties}
       className={cn(
         "group relative flex h-full min-h-[15rem] flex-col overflow-hidden rounded-2xl border border-border/50 bg-card/20",
+        // Hover tilt + spotlight only for real mice; reduced motion keeps it still.
+        "transition-transform duration-150 ease-out [@media(hover:hover)]:hover:[transform:translate3d(var(--tx,0px),var(--ty,0px),0)] motion-reduce:!transform-none",
         className,
       )}
     >
-      {interactive && (
-        <div
-          className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-          style={{
-            background: `radial-gradient(420px circle at ${spot.x}% ${spot.y}%, ${glow}, transparent 65%)`,
-          }}
-          aria-hidden
-        />
-      )}
+      <div
+        className="pointer-events-none absolute inset-0 hidden opacity-0 transition-opacity duration-500 group-hover:opacity-100 motion-reduce:hidden [@media(hover:hover)]:block"
+        style={{
+          background: "radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), var(--glow), transparent 65%)",
+        }}
+        aria-hidden
+      />
 
       <div className="relative flex flex-1 flex-col p-5 md:p-6">
         <div
           className={cn(
             "mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-border/60 bg-background/40 md:backdrop-blur-sm",
             accent,
-            interactive && "transition-transform duration-200 group-hover:scale-105 group-hover:rotate-3",
+            "transition-transform duration-200 motion-safe:group-hover:scale-105 motion-safe:group-hover:rotate-3",
           )}
         >
           <Icon className="h-5 w-5" strokeWidth={1.75} />

@@ -35,7 +35,9 @@ export function HeroHeadline({ line1, line2, className }: HeroHeadlineProps) {
         {reducedMotion || !enhanceReady ? (
           line2
         ) : (
-          <EncryptedHeadline
+          <>
+            <span className="sr-only">{line2}</span>
+            <EncryptedHeadline
             text={line2}
             revealDelayMs={45}
             flipDelayMs={40}
@@ -43,6 +45,7 @@ export function HeroHeadline({ line1, line2, className }: HeroHeadlineProps) {
             encryptedClassName="text-brand-light/35"
             revealedClassName="text-foreground/60"
           />
+          </>
         )}
       </span>
     </h1>

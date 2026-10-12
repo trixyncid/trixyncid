@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { projects } from "@/content/projects";
@@ -37,7 +35,7 @@ export function FeaturedProjectsSection() {
         </div>
         <Link
           href={`${prefix}/projects`}
-          className="shrink-0 text-sm font-medium text-brand-light transition-colors hover:text-foreground"
+          className="shrink-0 text-sm font-medium text-brand-text transition-colors hover:text-foreground"
         >
           {t("viewAll")} →
         </Link>

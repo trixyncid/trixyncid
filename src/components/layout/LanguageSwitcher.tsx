@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter, type Locale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 import { LocaleFlag, localeNames } from "./LocaleFlag";
@@ -33,11 +33,13 @@ function FlagOption({
     <button
       type="button"
       onClick={onSelect}
+      lang={loc}
       aria-label={localeNames[loc]}
+      title={localeNames[loc]}
       aria-current={active ? "true" : undefined}
       className={cn(
-        "rounded-md transition-all",
-        size === "sm" ? "p-1" : "p-1.5",
+        "flex items-center justify-center rounded-md transition-all",
+        size === "sm" ? "h-9 w-10" : "h-11 w-11",
         active
           ? "bg-brand/10 ring-1 ring-brand/40"
           : "opacity-75 hover:bg-muted/60 hover:opacity-100",
@@ -56,8 +58,11 @@ export function LanguageSwitcher({
   const locale = useLocale() as Locale;
   const pathname = usePathname();
   const router = useRouter();
+  const tNav = useTranslations("nav");
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const menuId = useId();
 
   function switchLocale(nextLocale: Locale) {
     if (nextLocale === locale) {
@@ -70,18 +75,29 @@ export function LanguageSwitcher({
   }
 
   useEffect(() => {
+    if (!open) return;
     function onPointerDown(event: MouseEvent) {
       if (!rootRef.current?.contains(event.target as Node)) {
         setOpen(false);
       }
     }
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setOpen(false);
+        triggerRef.current?.focus();
+      }
+    }
     document.addEventListener("mousedown", onPointerDown);
-    return () => document.removeEventListener("mousedown", onPointerDown);
-  }, []);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open]);
 
   if (variant === "buttons") {
     return (
-      <div className={cn("flex items-center gap-1", className)}>
+      <div role="group" aria-label={tNav("selectLanguage")} className={cn("flex items-center gap-1", className)}>
         {routing.locales.map((loc) => (
           <FlagOption
             key={loc}
@@ -95,18 +111,25 @@ export function LanguageSwitcher({
   }
 
   return (
-    <div ref={rootRef} className={cn("relative", className)}>
+    <div
+      ref={rootRef}
+      className={cn("relative", className)}
+      onBlur={(event) => {
+        if (!rootRef.current?.contains(event.relatedTarget as Node | null)) setOpen(false);
+      }}
+    >
       <button
+        ref={triggerRef}
         type="button"
         onClick={() => setOpen((value) => !value)}
-        aria-haspopup="listbox"
         aria-expanded={open}
-        aria-label={`Language: ${localeNames[locale]}`}
+        aria-controls={menuId}
+        aria-label={`${tNav("language")}: ${localeNames[locale]}`}
         className={cn(
           "flex items-center justify-center gap-1 text-foreground transition-colors",
           compact
             ? cn(
-                "h-8 px-1.5 text-muted-foreground hover:text-foreground",
+                "h-9 px-2 text-muted-foreground hover:text-foreground",
                 open && "text-foreground",
               )
             : "h-11 w-full gap-1.5 rounded-lg border border-border/60 bg-card/40 px-3 hover:border-border hover:bg-card/70 md:w-auto",
@@ -130,12 +153,12 @@ export function LanguageSwitcher({
           )}
         >
           <ul
-            role="listbox"
-            aria-label="Select language"
+            id={menuId}
+            aria-label={tNav("selectLanguage")}
             className="flex items-center gap-0.5 rounded-lg border border-border/60 bg-popover p-1 shadow-md"
           >
             {routing.locales.map((loc) => (
-              <li key={loc} role="option" aria-selected={loc === locale}>
+              <li key={loc}>
                 <FlagOption
                   loc={loc}
                   active={loc === locale}

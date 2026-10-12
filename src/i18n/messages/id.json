@@ -50,7 +50,10 @@
     "switchToLight": "Beralih ke mode terang",
     "switchToDark": "Beralih ke mode gelap",
     "toggleTheme": "Ganti tema",
-    "mobileNavigation": "Navigasi seluler"
+    "mobileNavigation": "Navigasi seluler",
+    "mainNavigation": "Navigasi utama",
+    "darkMode": "Mode gelap",
+    "selectLanguage": "Pilih bahasa"
   },
   "whatsapp": {
     "label": "Chat dengan Trixync di WhatsApp",
@@ -295,6 +298,7 @@
     "categorySupport": "Pendampingan"
   },
   "projects": {
+    "eyebrow": "Portofolio",
     "title": "Proyek",
     "subtitle": "Sistem yang kami rancang, bangun, dan luncurkan — lengkap dengan masalah, pendekatan, dan hasil di balik masing-masing.",
     "viewCaseStudy": "Lihat studi kasus",

@@ -56,7 +56,7 @@ export function FaqAccordionItem({
         <span
           className={cn(
             "mt-0.5 shrink-0 font-heading text-sm font-semibold tabular-nums transition-colors duration-300",
-            isOpen ? "text-brand" : "text-brand/35",
+            isOpen ? "text-brand-text" : "text-muted-foreground",
           )}
         >
           {String(index + 1).padStart(2, "0")}
@@ -79,8 +79,8 @@ export function FaqAccordionItem({
           className={cn(
             "mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-colors duration-300",
             isOpen
-              ? "border-brand/30 bg-brand/10 text-brand"
-              : "border-border/60 bg-background/50 text-muted-foreground group-hover:border-brand/25 group-hover:text-brand",
+              ? "border-brand/30 bg-brand/10 text-brand-text"
+              : "border-border/60 bg-background/50 text-muted-foreground group-hover:border-brand/25 group-hover:text-brand-text",
           )}
         >
           <Plus className="h-4 w-4" strokeWidth={2.25} aria-hidden />

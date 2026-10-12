@@ -103,8 +103,8 @@ export function EncryptedText({
     <motion.span
       ref={ref}
       className={cn(className)}
-      aria-label={text}
-      role="text"
+      // Scrambled glyphs are decorative; callers render the real text for screen readers.
+      aria-hidden
       suppressHydrationWarning
     >
       {text.split("").map((char, index) => {

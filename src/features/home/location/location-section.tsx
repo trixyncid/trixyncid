@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import { MapPin } from "lucide-react";
 import { siteConfig } from "@/content/site";
@@ -14,11 +12,11 @@ export function LocationSection() {
 
   return (
     <SectionShell id="location" className="pb-8 md:pb-10">
-      <div className="grid gap-10 border-t border-border/50 pt-14 md:grid-cols-[1fr_1.2fr] md:gap-16 md:pt-16">
+      <div className="grid gap-10 pt-6 md:grid-cols-[1fr_1.2fr] md:gap-16 md:pt-8">
         <ScrollReveal>
           <div className="flex items-start gap-4">
             <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border/60 bg-background/60">
-              <MapPin className="h-4 w-4 text-brand-light" />
+              <MapPin className="h-4 w-4 text-brand-text" />
             </div>
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
@@ -43,7 +41,7 @@ export function LocationSection() {
               </div>
             ))}
           </div>
-          <p className="mt-8 text-sm text-muted-foreground/80">
+          <p className="mt-8 text-sm text-muted-foreground">
             {siteConfig.address.city}, {siteConfig.address.region}, {siteConfig.address.country}
           </p>
         </ScrollReveal>

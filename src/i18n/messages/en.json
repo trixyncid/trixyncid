@@ -50,7 +50,10 @@
     "switchToLight": "Switch to light mode",
     "switchToDark": "Switch to dark mode",
     "toggleTheme": "Toggle theme",
-    "mobileNavigation": "Mobile navigation"
+    "mobileNavigation": "Mobile navigation",
+    "mainNavigation": "Main navigation",
+    "darkMode": "Dark mode",
+    "selectLanguage": "Choose language"
   },
   "whatsapp": {
     "label": "Chat with Trixync on WhatsApp",
@@ -295,6 +298,7 @@
     "categorySupport": "Support"
   },
   "projects": {
+    "eyebrow": "Portfolio",
     "title": "Projects",
     "subtitle": "Systems we've designed, built, and launched — with the problem, approach, and result behind each one.",
     "viewCaseStudy": "View case study",

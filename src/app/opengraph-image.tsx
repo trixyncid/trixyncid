@@ -44,7 +44,6 @@ export default async function Image() {
           fontFamily: "sans-serif",
         }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={dotGridSrc}
           width={1200}
@@ -72,8 +71,7 @@ export default async function Image() {
             alignItems: "center",
           }}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={logoSrc} width={440} height={252} alt="Trixync" />
+            <img src={logoSrc} width={440} height={252} alt="Trixync" />
 
           <div
             style={{

@@ -52,9 +52,6 @@ export function ServiceCard({
     <motion.article
       ref={cardRef}
       layout="position"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.45, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
       onMouseMove={handleMouseMove}
       className={cn(
         "group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border/60 bg-card/40 p-6 shadow-sm transition-[border-color,box-shadow,transform] duration-500 md:p-7",
@@ -70,7 +67,7 @@ export function ServiceCard({
       <div
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         style={{
-          background: `radial-gradient(circle_240px_at_var(--mx,50%)_var(--my,50%), ${glow}, transparent 68%)`,
+          background: `radial-gradient(circle 240px at var(--mx, 50%) var(--my, 50%), ${glow}, transparent 68%)`,
         }}
         aria-hidden
       />
@@ -93,7 +90,7 @@ export function ServiceCard({
         </div>
 
         <div>
-          <span className="font-heading text-sm font-semibold tabular-nums text-brand/35">
+          <span className="font-heading text-sm font-semibold tabular-nums text-muted-foreground">
             {String(index + 1).padStart(2, "0")}
           </span>
           <h3 className="mt-1 font-heading text-xl font-semibold leading-snug tracking-tight text-foreground md:text-2xl">

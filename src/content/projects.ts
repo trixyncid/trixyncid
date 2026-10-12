@@ -14,7 +14,7 @@ export const projects: ProjectItem[] = [
   {
     id: "sejahtera-bersama-erp",
     category: "enterprise",
-    image: "/projects/ims.png",
+    image: "/projects/ims.jpg",
     tags: ["Django", "ERP", "POS", "Inventory"],
     featured: true,
   },
@@ -36,7 +36,7 @@ export const projects: ProjectItem[] = [
   {
     id: "kms-connect",
     category: "software",
-    image: "/projects/kms.png",
+    image: "/projects/kms.jpg",
     tags: ["Django", "Flutter", "Mobile Apps"],
     liveUrl: "https://kms-connect.com/download",
     featured: true,
@@ -44,7 +44,7 @@ export const projects: ProjectItem[] = [
   {
     id: "goholiday-dc",
     category: "software",
-    image: "/projects/goholiday.png",
+    image: "/projects/goholiday.jpg",
     tags: ["Next.js", "Marketplace", "Django"],
     liveUrl: "https://dc.goholiday.id",
     featured: true,
@@ -52,7 +52,7 @@ export const projects: ProjectItem[] = [
   {
     id: "pgi-tower",
     category: "web",
-    image: "/projects/pgi.png",
+    image: "/projects/pgi.jpg",
     tags: ["Next.js", "Tailwind CSS"],
     liveUrl: "https://www.pgitower.co.id/en",
     featured: true,
@@ -60,21 +60,21 @@ export const projects: ProjectItem[] = [
   {
     id: "itnb-portal",
     category: "enterprise",
-    image: "/projects/itnb.png",
+    image: "/projects/itnb.jpg",
     tags: ["Django", "Portal", "Education"],
     featured: false,
   },
   {
     id: "yanks-brits",
     category: "enterprise",
-    image: "/projects/ynb.png",
+    image: "/projects/ynb.jpg",
     tags: ["Django", "Scheduling", "Payroll"],
     featured: false,
   },
   {
     id: "chinergy-shenindo",
     category: "web",
-    image: "/projects/chinergy.png",
+    image: "/projects/chinergy.jpg",
     tags: ["Next.js", "Tailwind CSS", "i18n"],
     liveUrl: "https://www.chinergyshenindo.com/en",
     featured: false,
@@ -82,7 +82,7 @@ export const projects: ProjectItem[] = [
   {
     id: "citikopi",
     category: "web",
-    image: "/projects/citikopi.png",
+    image: "/projects/citikopi.jpg",
     tags: ["Next.js", "Tailwind CSS", "i18n"],
     liveUrl: "https://www.citikopi.id/en",
     featured: false,
@@ -90,7 +90,7 @@ export const projects: ProjectItem[] = [
   {
     id: "genba-solusindo",
     category: "web",
-    image: "/projects/gis.png",
+    image: "/projects/gis.jpg",
     tags: ["Next.js", "Tailwind CSS"],
     liveUrl: "https://www.genbasolusindo.co.id",
     featured: false,
@@ -98,7 +98,7 @@ export const projects: ProjectItem[] = [
   {
     id: "skyview-setiabudi",
     category: "web",
-    image: "/projects/skyview.png",
+    image: "/projects/skyview.jpg",
     tags: ["Next.js", "Tailwind CSS"],
     liveUrl: "https://www.skyview.co.id",
     featured: false,
@@ -106,7 +106,7 @@ export const projects: ProjectItem[] = [
   {
     id: "gerindra-sumut",
     category: "enterprise",
-    image: "/projects/gerindra.png",
+    image: "/projects/gerindra.jpg",
     tags: ["Django", "Docker", "OCR"],
     featured: false,
   },

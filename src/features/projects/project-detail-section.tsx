@@ -18,7 +18,7 @@ const categoryLabelKeys = {
 
 const categoryStyles = {
   software: "border-sky-400/30 bg-sky-500/10 text-sky-700 dark:text-sky-300",
-  enterprise: "border-brand-light/30 bg-brand/10 text-brand dark:text-brand-light",
+  enterprise: "border-brand-light/30 bg-brand/10 text-brand-text",
   web: "border-violet-400/30 bg-violet-500/10 text-violet-700 dark:text-violet-300",
 } as const;
 
@@ -138,7 +138,7 @@ export function ProjectDetailSection({ project }: ProjectDetailSectionProps) {
         {blocks.map((block, index) => (
           <ScrollReveal key={block.key} delay={index * 0.06}>
             <article className="flex h-full flex-col rounded-3xl border border-border/60 bg-card/40 p-6 dark:bg-card/25 md:p-7">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-light">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-text">
                 {block.label}
               </p>
               <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground/90 md:text-[0.9375rem]">
@@ -151,7 +151,7 @@ export function ProjectDetailSection({ project }: ProjectDetailSectionProps) {
 
       <ScrollReveal className="mt-8 md:mt-10">
         <div className="rounded-3xl border border-brand/15 bg-brand/[0.04] p-6 dark:border-brand/25 dark:bg-brand/[0.08] md:p-8">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-brand dark:text-brand-light">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-text">
             {t("caseStudy.outcome")}
           </p>
           <p className="mt-3 max-w-3xl text-base leading-relaxed text-foreground md:text-lg">

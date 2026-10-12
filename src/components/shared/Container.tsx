@@ -6,7 +6,8 @@ type ContainerProps = React.HTMLAttributes<HTMLDivElement> & {
 };
 
 const sizes = {
-  default: "max-w-6xl",
+  // Matches the header and hero so section edges line up down the page.
+  default: "max-w-7xl",
   narrow: "max-w-4xl",
   wide: "max-w-7xl",
 };

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname } from "@/i18n/routing";
@@ -41,6 +41,22 @@ export function SiteHeader() {
 
   useEffect(() => {
     return () => setBackgroundPaused(false);
+  }, []);
+
+  // Close the menu when the route changes without a link click (back/forward).
+  const [menuPathname, setMenuPathname] = useState(pathname);
+  if (menuPathname !== pathname) {
+    setMenuPathname(pathname);
+    if (mobileOpen) setMobileOpen(false);
+  }
+  useEffect(() => {
+    if (!mobileOpen) setBackgroundPaused(false);
+  }, [mobileOpen]);
+
+  const closeMenu = useCallback(() => {
+    setBackgroundPaused(false);
+    setMobileOpen(false);
+    menuButtonRef.current?.focus();
   }, []);
 
   const prefix = `/${locale}`;
@@ -90,7 +106,7 @@ export function SiteHeader() {
 
           <nav
             className="hidden items-center justify-center gap-0.5 lg:flex"
-            aria-label="Main navigation"
+            aria-label={t("mainNavigation")}
           >
             {desktopNavItems.map((item) => {
               const active = isActive(item.href);
@@ -101,7 +117,7 @@ export function SiteHeader() {
                   aria-current={active ? "page" : undefined}
                   className={cn(
                     "relative px-3.5 py-2 text-sm font-medium transition-colors duration-200",
-                    "focus-visible:outline-none focus-visible:text-foreground",
+                    "focus-visible:text-foreground",
                     "after:absolute after:inset-x-3.5 after:bottom-1 after:h-px after:origin-left after:scale-x-0 after:bg-brand after:transition-transform after:duration-300 after:ease-out",
                     "hover:text-foreground hover:after:scale-x-100 focus-visible:after:scale-x-100",
                     active
@@ -123,7 +139,11 @@ export function SiteHeader() {
             </div>
             <Link
               href={`${prefix}/contact`}
-              className="rounded-full bg-brand px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-brand-light"
+              aria-current={isActive("/contact") ? "page" : undefined}
+              className={cn(
+                "rounded-full bg-brand px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-brand-light",
+                isActive("/contact") && "ring-2 ring-brand-light/50 ring-offset-2 ring-offset-background",
+              )}
             >
               {t("cta")}
             </Link>
@@ -132,7 +152,7 @@ export function SiteHeader() {
           <button
             ref={menuButtonRef}
             type="button"
-            className="relative z-[70] col-start-3 -mr-2.5 flex h-10 w-10 items-center justify-center justify-self-end text-foreground transition-colors hover:text-brand lg:hidden"
+            className="relative z-[70] col-start-3 -mr-2.5 flex h-11 w-11 items-center justify-center justify-self-end text-foreground transition-colors hover:text-brand-text lg:hidden"
             aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
             aria-expanded={mobileOpen}
             aria-controls="mobile-navigation"
@@ -145,10 +165,8 @@ export function SiteHeader() {
 
       <MobileNav
         open={mobileOpen}
-        onClose={() => {
-          setMenuOpen(false);
-          menuButtonRef.current?.focus();
-        }}
+        onClose={closeMenu}
+        toggleRef={menuButtonRef}
         items={items}
         ctaLabel={t("cta")}
         ctaHref={`${prefix}/contact`}

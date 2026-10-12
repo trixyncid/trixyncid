@@ -71,7 +71,7 @@ export function FaqSection() {
                       : "border-border/60 bg-card/30 text-muted-foreground hover:border-brand/20 hover:text-foreground",
                   )}
                 >
-                  {Icon && <Icon className="h-3.5 w-3.5 shrink-0 text-brand" />}
+                  {Icon && <Icon className="h-3.5 w-3.5 shrink-0 text-brand-text" />}
                   {t(`categories.${category}`)}
                 </button>
               );

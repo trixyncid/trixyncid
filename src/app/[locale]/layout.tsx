@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Poppins, Kumbh_Sans } from "next/font/google";
@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
+import { MotionProvider } from "@/components/layout/MotionProvider";
 import { ThemeScript } from "@/components/layout/ThemeScript";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
@@ -40,6 +41,11 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+export const viewport: Viewport = {
+  // Lets env(safe-area-inset-*) report real values so the floating button clears the iOS home bar.
+  viewportFit: "cover",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: { default: siteConfig.name, template: "%s" },
@@ -66,6 +72,10 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  // Page metadata is only read on the server; don't ship it in every page's payload.
+  const clientMessages = Object.fromEntries(
+    Object.entries(messages).filter(([namespace]) => namespace !== "metadata"),
+  );
   const tCommon = await getTranslations("common");
   const tMeta = await getTranslations("metadata.home");
 
@@ -97,7 +107,8 @@ export default async function LocaleLayout({ children, params }: Props) {
             ]}
           />
           <ThemeProvider>
-            <NextIntlClientProvider messages={messages}>
+            <MotionProvider>
+            <NextIntlClientProvider messages={clientMessages}>
               <SiteHeader />
               <main id="main-content" tabIndex={-1} className="relative flex-1 pt-20 outline-none">
                 {children}
@@ -105,6 +116,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               <SiteFooter />
               <FloatingWhatsApp />
             </NextIntlClientProvider>
+            </MotionProvider>
           </ThemeProvider>
           </div>
         </div>

@@ -2,7 +2,7 @@ import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export const formControlClass =
-  "w-full rounded-xl border border-border/60 bg-background/80 px-4 py-3 text-sm text-foreground outline-none transition-[border-color,box-shadow] duration-200 focus:border-brand/40 focus:ring-2 focus:ring-brand/15";
+  "w-full rounded-xl border border-foreground/45 bg-background/80 px-4 py-3 text-sm text-foreground transition-[border-color,box-shadow] duration-200 hover:border-foreground/60 focus:border-ring focus:ring-2 focus:ring-ring/40 dark:border-foreground/40";
 
 type FieldProps = {
   id: string;
@@ -19,7 +19,11 @@ export function FormField({ id, label, children, className, hint }: FieldProps) 
         {label}
       </label>
       {children}
-      {hint ? <p className="mt-1.5 text-xs text-muted-foreground">{hint}</p> : null}
+      {hint ? (
+        <p id={`${id}-hint`} className="mt-1.5 text-xs text-muted-foreground">
+          {hint}
+        </p>
+      ) : null}
     </div>
   );
 }

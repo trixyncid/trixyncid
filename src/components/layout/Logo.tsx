@@ -1,38 +1,47 @@
-"use client";
-
 import Image from "next/image";
 import { brandAssets, logoSizes, type LogoSize, type LogoVariant } from "@/content/brand";
-import { useTheme } from "@/components/layout/ThemeProvider";
 import { cn } from "@/lib/utils";
 
 type LogoProps = {
   variant?: LogoVariant;
   size?: LogoSize;
   className?: string;
+  /** Load eagerly (above-the-fold header logo). */
   priority?: boolean;
 };
 
-/** Theme-aware logo — loads only the active theme asset. */
+/**
+ * Theme-aware logo. Both colour variants are rendered and CSS picks one via the
+ * `dark` class (set before paint by ThemeScript), so there's no wrong-colour
+ * flash while the theme store hydrates.
+ */
 export function Logo({
   variant = "full",
   size = "md",
   className,
   priority = false,
 }: LogoProps) {
-  const { resolvedTheme } = useTheme();
   const asset = brandAssets[variant];
   const sizeClass = logoSizes[size][variant];
-  const src = resolvedTheme === "dark" ? asset.dark : asset.light;
+  const loading = priority ? "eager" : "lazy";
 
   return (
     <span className={cn("relative inline-flex shrink-0 items-center", className)}>
       <Image
-        src={src}
+        src={asset.light}
         alt="Trixync"
         width={asset.width}
         height={asset.height}
-        priority={priority}
-        className={cn("w-auto", sizeClass)}
+        loading={loading}
+        className={cn("w-auto dark:hidden", sizeClass)}
+      />
+      <Image
+        src={asset.dark}
+        alt="Trixync"
+        width={asset.width}
+        height={asset.height}
+        loading={loading}
+        className={cn("hidden w-auto dark:block", sizeClass)}
       />
     </span>
   );

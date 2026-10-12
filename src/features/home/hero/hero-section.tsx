@@ -7,7 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { HeroHeadline } from "./hero-headline";
 import { HeroReveal } from "@/components/shared/scroll-reveal";
 import { useDeferredMount } from "@/hooks/use-deferred-mount";
-import { useMobileLite } from "@/hooks/use-mobile-lite";
+import { useRichVisuals } from "@/hooks/use-rich-visuals";
 import { type Locale } from "@/i18n/routing";
 
 const BackgroundBeams = dynamic(
@@ -33,24 +33,21 @@ export function HeroSection() {
   const locale = useLocale() as Locale;
   const prefix = `/${locale}`;
   const reducedMotion = useReducedMotion();
-  const mobileLite = useMobileLite();
-  // The 3D hero renders on mobile too (at a lower pixel ratio). Only the
-  // 49-path SVG beams stay desktop-only — they animate on the main thread and
-  // are what actually starved the hamburger / scroll reveals on phones.
+  // WebGL + animated beams only on capable desktops; phones, tablets and
+  // low-power machines get the static gradient backdrop.
+  const richVisuals = useRichVisuals();
   const effectsReady = useDeferredMount({
     timeout: 3000,
     disabled: reducedMotion === true,
   });
 
   return (
-    <section className="relative -mt-20 min-h-[85vh] overflow-visible pb-20 pt-[calc(var(--site-header-height)+3rem)] md:pb-28 md:pt-[calc(var(--site-header-height)+4rem)]">
+    <section className="relative -mt-20 min-h-[85svh] overflow-visible pb-20 pt-[calc(var(--site-header-height)+3rem)] md:pb-28 md:pt-[calc(var(--site-header-height)+4rem)]">
       <div className="pointer-events-none absolute inset-0 [mask-image:linear-gradient(to_bottom,black_0%,black_55%,transparent_92%)]">
         <HeroBackdrop />
-        {effectsReady && (
+        {effectsReady && richVisuals && (
           <>
-            {!mobileLite && (
-              <BackgroundBeams className="absolute inset-0 h-full w-full opacity-25 dark:opacity-40" />
-            )}
+            <BackgroundBeams className="absolute inset-0 h-full w-full opacity-25 dark:opacity-40" />
             <HeroScene />
           </>
         )}
@@ -69,17 +66,16 @@ export function HeroSection() {
             </p>
           </HeroReveal>
 
-          <HeroReveal delay={0.08}>
-            <HeroHeadline line1={t("headline")} line2={t("headlineHighlight")} />
-          </HeroReveal>
+          {/* The headline is the LCP element, so it paints immediately with no fade. */}
+          <HeroHeadline line1={t("headline")} line2={t("headlineHighlight")} />
 
-          <HeroReveal delay={0.16}>
+          <HeroReveal delay={0.08}>
             <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground md:text-[1.0625rem]">
               {t("subheadline")}
             </p>
           </HeroReveal>
 
-          <HeroReveal delay={0.24}>
+          <HeroReveal delay={0.16}>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
               <Link
                 href={`${prefix}/contact`}

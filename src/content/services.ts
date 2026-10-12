@@ -39,7 +39,7 @@ export const serviceVisualMeta: Record<
   { accent: string; glow: string; iconBg: string }
 > = {
   "business-systems": {
-    accent: "text-brand dark:text-brand-light",
+    accent: "text-brand-text",
     glow: "rgba(56, 102, 242, 0.12)",
     iconBg: "bg-brand/10 dark:bg-brand/15",
   },

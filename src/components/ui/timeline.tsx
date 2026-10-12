@@ -16,12 +16,14 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
 
+  // Track height changes (font swap, resize, translations) so the progress line fits.
   useEffect(() => {
-    if (ref.current) {
-      const rect = ref.current.getBoundingClientRect();
-      setHeight(rect.height);
-    }
-  }, [ref]);
+    const node = ref.current;
+    if (!node) return;
+    const observer = new ResizeObserver(([entry]) => setHeight(entry.contentRect.height));
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -46,13 +48,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <div className="absolute left-3 flex h-10 w-10 items-center justify-center rounded-full bg-background md:left-3">
                 <div className="h-4 w-4 rounded-full border border-border bg-muted p-2" />
               </div>
-              <h3 className="hidden text-xl font-bold text-muted-foreground md:block md:pl-20 md:text-4xl">
+              <h3 className="hidden text-xl font-bold text-muted-foreground md:block md:pl-20 md:text-2xl">
                 {item.title}
               </h3>
             </div>
 
             <div className="relative w-full pl-20 pr-4 md:pl-4">
-              <h3 className="mb-4 block text-left text-2xl font-bold text-muted-foreground md:hidden">
+              <h3 className="mb-4 block text-left text-xl font-bold text-muted-foreground md:hidden">
                 {item.title}
               </h3>
               {item.content}{" "}

@@ -17,6 +17,8 @@ type MobileNavItem = {
 type MobileNavProps = {
   open: boolean;
   onClose: () => void;
+  /** The header toggle button — kept in the focus loop so the menu can be closed by keyboard. */
+  toggleRef: React.RefObject<HTMLButtonElement | null>;
   items: MobileNavItem[];
   ctaLabel: string;
   ctaHref: string;
@@ -32,6 +34,7 @@ type MobileNavProps = {
 export function MobileNav({
   open,
   onClose,
+  toggleRef,
   items,
   ctaLabel,
   ctaHref,
@@ -41,27 +44,56 @@ export function MobileNav({
   const tNav = useTranslations("nav");
   const panelRef = useRef<HTMLElement>(null);
 
+  // Keep the latest onClose without re-running the open effect on every header render.
+  const onCloseRef = useRef(onClose);
+  useEffect(() => {
+    onCloseRef.current = onClose;
+  });
+
   useEffect(() => {
     if (!open) return;
 
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
-    const firstFocusable = panelRef.current?.querySelector<HTMLElement>(
-      'a, button, [tabindex]:not([tabindex="-1"])',
-    );
-    firstFocusable?.focus();
+    // Page content behind the overlay can't be reached by Tab or screen readers.
+    const background = [document.getElementById("main-content"), document.querySelector("body footer")];
+    background.forEach((node) => node?.setAttribute("inert", ""));
+
+    const focusableSelector = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    panelRef.current?.querySelector<HTMLElement>(focusableSelector)?.focus();
 
     function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") onClose();
+      if (event.key === "Escape") {
+        onCloseRef.current();
+        return;
+      }
+      if (event.key !== "Tab" || !panelRef.current) return;
+
+      const focusables = [
+        toggleRef.current,
+        ...panelRef.current.querySelectorAll<HTMLElement>(focusableSelector),
+      ].filter((node): node is HTMLElement => Boolean(node));
+      if (focusables.length === 0) return;
+
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     }
     window.addEventListener("keydown", onKeyDown);
 
     return () => {
       document.body.style.overflow = previousOverflow;
+      background.forEach((node) => node?.removeAttribute("inert"));
       window.removeEventListener("keydown", onKeyDown);
     };
-  }, [open, onClose]);
+  }, [open, toggleRef]);
 
   if (!open) return null;
 
@@ -69,7 +101,8 @@ export function MobileNav({
     <div className={cn("mobile-nav-root fixed inset-0 z-[60] lg:hidden", className)}>
       <button
         type="button"
-        aria-label={tNav("closeMenu")}
+        tabIndex={-1}
+        aria-hidden
         className="mobile-nav-backdrop absolute inset-0 bg-background/80"
         onClick={onClose}
       />
@@ -88,25 +121,36 @@ export function MobileNav({
         </h2>
         <div className="flex flex-1 flex-col px-6 pb-8 pt-2">
           <ul className="space-y-0.5">
-            {items.map((item) => (
+            {items.map((item) => {
+              const active = isActive(item.href);
+              return (
               <li key={item.link}>
                 <Link
                   href={item.link}
                   onClick={onClose}
-                  aria-current={isActive(item.href) ? "page" : undefined}
-                  className="group flex items-center gap-3 rounded-xl px-1 py-3.5 transition-colors hover:bg-muted/40"
+                  aria-current={active ? "page" : undefined}
+                  className={cn(
+                    "group flex items-center gap-3 rounded-xl px-3 py-3.5 transition-colors hover:bg-muted/40",
+                    active && "bg-brand/10",
+                  )}
                 >
                   {item.icon && (
-                    <span className="shrink-0 text-brand" aria-hidden>
+                    <span className="shrink-0 text-brand-text" aria-hidden>
                       {item.icon}
                     </span>
                   )}
-                  <span className="font-heading text-2xl font-semibold tracking-tight text-foreground">
+                  <span
+                    className={cn(
+                      "font-heading text-2xl font-semibold tracking-tight",
+                      active ? "text-brand-text" : "text-foreground",
+                    )}
+                  >
                     {item.name}
                   </span>
                 </Link>
               </li>
-            ))}
+              );
+            })}
           </ul>
 
           <div className="mt-auto space-y-5 border-t border-border/40 pt-8">

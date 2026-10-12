@@ -50,7 +50,10 @@
     "switchToLight": "切换到浅色模式",
     "switchToDark": "切换到深色模式",
     "toggleTheme": "切换主题",
-    "mobileNavigation": "移动端导航"
+    "mobileNavigation": "移动端导航",
+    "mainNavigation": "主导航",
+    "darkMode": "深色模式",
+    "selectLanguage": "选择语言"
   },
   "whatsapp": {
     "label": "通过 WhatsApp 联系 Trixync",
@@ -295,6 +298,7 @@
     "categorySupport": "运维支持"
   },
   "projects": {
+    "eyebrow": "作品集",
     "title": "项目",
     "subtitle": "我们设计、开发并上线的系统 — 每一个都附有问题、方法与成果。",
     "viewCaseStudy": "查看案例",

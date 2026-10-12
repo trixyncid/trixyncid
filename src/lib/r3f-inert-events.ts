@@ -7,7 +7,7 @@ export function inertCanvasEvents(store: RootStore) {
   return {
     ...events,
     enabled: false,
-    connect(_target: HTMLElement) {
+    connect() {
       // No-op: hero/spotlight canvases are visual-only.
     },
   };

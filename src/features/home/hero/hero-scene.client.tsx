@@ -5,7 +5,11 @@ import { useMemo, useRef } from "react";
 import * as THREE from "three";
 import { inertCanvasEvents } from "@/lib/r3f-inert-events";
 import { useRenderActive } from "@/hooks/use-render-active";
-import { useMobileLite } from "@/hooks/use-mobile-lite";
+import { FrameDriver } from "@/lib/r3f-frame-driver";
+import { downgradeVisuals } from "@/hooks/use-rich-visuals";
+
+// The network drifts slowly; 30 fps is visually identical and halves GPU work.
+const getHeroFps = () => 30;
 
 function createNetworkGeometry() {
   const nodeCount = 36;
@@ -77,7 +81,6 @@ function NetworkMesh() {
 
 export function HeroScene() {
   const { ref, active } = useRenderActive<HTMLDivElement>();
-  const mobileLite = useMobileLite();
 
   return (
     <div
@@ -91,15 +94,16 @@ export function HeroScene() {
       <Canvas
         className="h-full w-full"
         camera={{ position: [0, 0.5, 8], fov: 58 }}
-        dpr={mobileLite ? 1 : [1, 1.5]}
-        gl={{ antialias: false, alpha: true, powerPreference: "high-performance" }}
-        frameloop={active ? "always" : "never"}
+        dpr={[1, 1.5]}
+        gl={{ antialias: false, alpha: true, powerPreference: "low-power" }}
+        frameloop="demand"
         events={inertCanvasEvents}
         style={{ background: "transparent", width: "100%", height: "100%" }}
       >
         <ambientLight intensity={0.4} />
         <pointLight position={[8, 6, 8]} intensity={0.85} color="#3866F2" />
         <pointLight position={[-6, -4, 4]} intensity={0.35} color="#2138B8" />
+        <FrameDriver active={active} getFps={getHeroFps} onSlow={downgradeVisuals} />
         <NetworkMesh />
       </Canvas>
     </div>

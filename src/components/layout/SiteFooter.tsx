@@ -64,7 +64,7 @@ export async function SiteFooter() {
               <span className="h-9 w-px bg-border/70" aria-hidden />
               <span className="flex flex-col gap-1.5">
                 <Logo variant="text" size="sm" />
-                <span className="font-heading text-[0.625rem] font-semibold uppercase tracking-[0.32em] text-brand-light">
+                <span className="font-heading text-[0.625rem] font-semibold uppercase tracking-[0.32em] text-brand-text">
                   {t("tagline")}
                 </span>
               </span>
@@ -73,7 +73,7 @@ export async function SiteFooter() {
               {t("description")}
             </p>
             <p className="mt-5 inline-flex items-center gap-2 text-sm text-muted-foreground">
-              <MapPin className="h-4 w-4 shrink-0 text-brand-light" />
+              <MapPin className="h-4 w-4 shrink-0 text-brand-text" />
               {t("location")}
             </p>
           </div>
@@ -108,7 +108,7 @@ export async function SiteFooter() {
                     href={`mailto:${siteConfig.email}`}
                     className="inline-flex items-center gap-2.5 transition-colors hover:text-foreground"
                   >
-                    <Mail className="h-4 w-4 shrink-0 text-brand-light/80" />
+                    <Mail className="h-4 w-4 shrink-0 text-brand-text" />
                     {siteConfig.email}
                   </a>
                 </li>
@@ -119,7 +119,7 @@ export async function SiteFooter() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2.5 transition-colors hover:text-foreground"
                   >
-                    <MessageCircle className="h-4 w-4 shrink-0 text-brand-light/80" />
+                    <MessageCircle className="h-4 w-4 shrink-0 text-brand-text" />
                     WhatsApp
                   </a>
                 </li>
@@ -133,7 +133,7 @@ export async function SiteFooter() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-border/60 bg-card/40 text-muted-foreground transition-colors hover:border-brand-light/40 hover:text-foreground"
+                    className="flex h-11 w-11 items-center justify-center rounded-full border border-border/60 bg-card/40 text-muted-foreground transition-colors hover:border-brand-light/40 hover:text-foreground"
                   >
                     {icon}
                   </a>
@@ -146,7 +146,7 @@ export async function SiteFooter() {
 
       <div className="section-divider mx-auto max-w-4xl opacity-40" aria-hidden />
 
-      <Container className="relative flex flex-col gap-3 py-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+      <Container className="relative flex flex-col gap-3 pt-6 pb-24 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:pb-6 sm:pr-24 lg:pr-28">
         <p>
           © {year} {siteConfig.name}. {t("rights")}
         </p>

@@ -1,13 +1,3 @@
-export const strengthImages = {
-  aiSystems: "/strengths/ai-systems.jpg",
-  realWorld: "/strengths/real-world.jpg",
-  centralize: "/strengths/centralize.jpg",
-  production: "/strengths/production.jpg",
-  stakeholders: "/strengths/stakeholders.jpg",
-} as const;
-
-export type StrengthKey = keyof typeof strengthImages;
-
 export const strengthKeys = [
   "aiSystems",
   "realWorld",
@@ -34,19 +24,19 @@ export const strengthBentoLayout: Record<(typeof strengthKeys)[number], string> 
 
 export const strengthPillarMeta = {
   realWorld: {
-    accent: "text-emerald-400/90",
+    accent: "text-emerald-600 dark:text-emerald-400/90",
     glow: "rgba(52, 211, 153, 0.14)",
   },
   centralize: {
-    accent: "text-sky-400/90",
+    accent: "text-sky-600 dark:text-sky-400/90",
     glow: "rgba(56, 189, 248, 0.14)",
   },
   production: {
-    accent: "text-violet-400/90",
+    accent: "text-violet-600 dark:text-violet-400/90",
     glow: "rgba(167, 139, 250, 0.14)",
   },
   stakeholders: {
-    accent: "text-amber-400/90",
+    accent: "text-amber-600 dark:text-amber-400/90",
     glow: "rgba(251, 191, 36, 0.14)",
   },
 } as const;

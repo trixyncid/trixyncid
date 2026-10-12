@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { track } from "@vercel/analytics";
 import { siteConfig } from "@/content/site";
+import { usePathname } from "@/i18n/routing";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
 
@@ -16,7 +17,11 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 export function FloatingWhatsApp() {
   const t = useTranslations("whatsapp");
+  const pathname = usePathname();
   const href = buildWhatsAppUrl(siteConfig.whatsapp, t("prefilledMessage"));
+
+  // The contact page already offers WhatsApp in the form and channel list.
+  if (pathname === "/contact") return null;
 
   return (
     <a
@@ -34,7 +39,7 @@ export function FloatingWhatsApp() {
         "motion-safe:hover:scale-[1.03] motion-safe:active:scale-[0.98]",
         "bottom-[max(1.25rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))]",
         "h-12 w-12 sm:bottom-6 sm:right-6 sm:h-14 sm:w-14",
-        "sm:hover:w-auto sm:hover:gap-2.5 sm:hover:px-4",
+        "sm:hover:w-auto sm:hover:gap-2.5 sm:hover:px-4 sm:focus-visible:w-auto sm:focus-visible:gap-2.5 sm:focus-visible:px-4",
       )}
     >
       <span className="flex h-12 w-12 shrink-0 items-center justify-center sm:h-14 sm:w-14">
@@ -43,7 +48,7 @@ export function FloatingWhatsApp() {
       <span
         className={cn(
           "hidden max-w-0 whitespace-nowrap text-sm font-semibold opacity-0",
-          "transition-all duration-300 sm:group-hover:mr-1 sm:group-hover:inline sm:group-hover:max-w-[10rem] sm:group-hover:opacity-100",
+          "transition-all duration-300 sm:group-hover:mr-1 sm:group-hover:inline sm:group-hover:max-w-[10rem] sm:group-hover:opacity-100 sm:group-focus-visible:mr-1 sm:group-focus-visible:inline sm:group-focus-visible:max-w-[10rem] sm:group-focus-visible:opacity-100",
         )}
       >
         {t("shortLabel")}

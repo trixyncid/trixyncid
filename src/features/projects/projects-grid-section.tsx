@@ -36,9 +36,15 @@ export function ProjectsGridSection() {
 
   return (
     <SectionShell containerSize="wide">
-      <PageHeader title={t("title")} subtitle={t("subtitle")} />
+      <PageHeader
+        eyebrow={t("eyebrow")}
+        title={t("title")}
+        subtitle={t("subtitle")}
+        align="center"
+        className="mx-auto max-w-3xl"
+      />
       <ScrollReveal delay={0.05}>
-        <div className="mb-10 flex flex-wrap gap-2">
+        <div className="mb-10 flex flex-wrap justify-center gap-2">
           {filters.map((filter) => (
             <button
               key={filter.key}
