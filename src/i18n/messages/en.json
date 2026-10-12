@@ -1,28 +1,28 @@
 {
   "metadata": {
     "home": {
-      "title": "Trixync — Technology & Systems Studio in Medan",
-      "description": "Trixync builds production-grade software and IoT systems for businesses in Medan, North Sumatra, and across Indonesia."
+      "title": "Software House in Medan — Web, Mobile, ERP & IoT | Trixync",
+      "description": "Trixync is a software house in Medan building custom web apps, mobile apps, ERP and IoT systems for businesses across North Sumatra and Indonesia."
     },
     "about": {
-      "title": "About Us — Trixync",
-      "description": "Learn how Trixync partners with businesses as a digital engineering studio — from workflow discovery to production systems and long-term support in Medan, Indonesia."
+      "title": "About Trixync — Software House in Medan, Indonesia",
+      "description": "Meet Trixync, a Medan software team that maps how your business runs, then builds and supports custom web, mobile and ERP systems around it."
     },
     "services": {
-      "title": "Services — Trixync",
-      "description": "Custom business systems, IoT integration, platform centralization, and production infrastructure — built for real operations in Medan and beyond."
+      "title": "Custom Software, ERP & IoT Development Services | Trixync",
+      "description": "Custom business systems, ERP, mobile apps, IoT integration and platform centralization, designed around your workflow and built in Medan."
     },
     "projects": {
-      "title": "Projects — Trixync",
-      "description": "Case studies from Trixync: KMS Connect, Gerindra Sumut, Yanks & Brits, GoHoliday DC, PGI Tower, and more production systems."
+      "title": "Software Projects & Case Studies | Trixync",
+      "description": "Case studies from Trixync: ERP, logistics operations, online course platforms, recruitment apps and company websites built for Indonesian businesses."
     },
     "faq": {
-      "title": "FAQ — Trixync",
-      "description": "Frequently asked questions about working with Trixync — our process, timelines, IoT capabilities, and support after launch."
+      "title": "Software Development FAQ: Process, Cost & Support | Trixync",
+      "description": "Answers about working with Trixync: how projects run, timelines, pricing, IoT capability, and support after launch."
     },
     "contact": {
-      "title": "Contact — Trixync",
-      "description": "Get in touch with Trixync in Medan, North Sumatra. Tell us about your workflow challenges and we'll help architect the right system."
+      "title": "Contact Trixync — Software House in Medan",
+      "description": "Talk to Trixync in Medan, North Sumatra about your web app, mobile app, ERP or IoT project via WhatsApp, email or the contact form."
     }
   },
   "common": {
@@ -42,7 +42,7 @@
     "projects": "Projects",
     "faq": "FAQ",
     "contact": "Contact",
-    "cta": "Start a Project",
+    "cta": "Discuss your project",
     "language": "Language",
     "theme": "Theme",
     "openMenu": "Open menu",
@@ -59,43 +59,43 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Medan · Indonesia",
-      "headline": "Your operations,",
+      "eyebrow": "Software house · Medan, Indonesia",
+      "headline": "Your business, in one system.",
       "headlineHighlight": "Built in Sync.",
-      "subheadline": "Production software and IoT — mapped to how your team actually works.",
-      "ctaPrimary": "Talk to us",
+      "subheadline": "Custom web apps, mobile apps, ERP, and IoT systems for businesses that have outgrown spreadsheets and WhatsApp groups — designed around how your team works, and supported after launch.",
+      "ctaPrimary": "Discuss your project",
       "ctaSecondary": "See our work"
     },
     "strengths": {
       "title": "What we bring to the table",
-      "subtitle": "Software, IoT, and AI — backed by what we've actually shipped, not slide decks.",
+      "subtitle": "Software, AI, and IoT, backed by systems we've built and still support.",
       "items": {
         "aiSystems": {
           "eyebrow": "AI · Software · IoT",
           "title": "AI where it actually helps the workflow",
-          "description": "Document extraction, smart routing, forecasting, and assistants built into your operations — not bolted on as a chatbot demo. We ship models inside the systems your team already uses."
+          "description": "Document extraction, smart routing, and automation built into the tools your team already uses — not a chatbot demo bolted on the side."
         },
         "realWorld": {
-          "title": "Systems that touch the real world",
+          "title": "Software that connects to the real world",
           "description": "From offline-first IoT hardware to fingerprint attendance — we're comfortable where software meets physical devices."
         },
         "centralize": {
-          "title": "We centralize what's scattered",
+          "title": "Scattered data, brought into one place",
           "description": "Membership systems, HR rosters, supplier dashboards — we turn spreadsheets, WhatsApp groups, and paper into one system of record."
         },
         "production": {
-          "title": "We think in production, not prototypes",
-          "description": "Caching, async processing, RBAC, payment gateways — the infrastructure that determines whether a system survives real usage."
+          "title": "Built to run every day, not just to demo",
+          "description": "The right people see the right data, payments go through, pages stay fast at month-end, and problems get caught before your staff notice them."
         },
         "stakeholders": {
-          "title": "We work with the people who use it",
-          "description": "Every platform came from sitting with actual stakeholders — government staff, HR teams, tour operators — before writing a line of code."
+          "title": "Designed with the people who use it",
+          "description": "Every system started with time alongside the people who run the work — membership coordinators, HR teams, tour operators — before a line of code was written."
         }
       }
     },
     "approach": {
       "title": "How we solve problems",
-      "subtitle": "A deliberate process designed around your operations, not a generic dev cycle.",
+      "subtitle": "Four steps we follow on every project, whatever its size.",
       "steps": {
         "bottleneck": {
           "title": "Find the real bottleneck",
@@ -107,46 +107,55 @@
         },
         "build": {
           "title": "Build for the long run",
-          "description": "Production-grade infrastructure, not a demo that breaks under real load."
+          "description": "Built for real users, real data, and busy days from the start — not a demo that breaks under load."
         },
         "support": {
           "title": "Stay involved after launch",
-          "description": "Systems evolve as businesses grow. We're not a vendor who disappears after handoff."
+          "description": "Your business keeps changing, so the system does too. We stay on after handover."
         }
       }
     },
     "projects": {
-      "title": "Work in production",
-      "subtitle": "Systems running real operations — not slide-deck concepts.",
+      "title": "Systems in daily use",
+      "subtitle": "Software running real operations for businesses across Indonesia.",
       "eyebrow": "Selected work",
       "viewAll": "All projects"
     },
     "location": {
       "eyebrow": "Where we work",
       "title": "Rooted in Medan",
-      "description": "We sit with North Sumatra businesses on-site and partner with teams across Indonesia. Same studio whether we're in the room or on a call.",
+      "description": "We work on-site with businesses in Medan and North Sumatra, and remotely with teams across Indonesia. Same team whether we're in the room or on a call.",
       "stats": {
-        "homeBase": "Studio home base",
-        "nationwide": "Clients nationwide",
-        "remote": "On-site or remote"
+        "projects": {
+          "value": "{count}",
+          "label": "Projects shipped"
+        },
+        "homeBase": {
+          "value": "Medan",
+          "label": "Home base"
+        },
+        "reach": {
+          "value": "Nationwide",
+          "label": "On-site or remote"
+        }
       }
     },
     "cta": {
       "eyebrow": "Next step",
-      "title": "Have a workflow worth fixing?",
-      "description": "Tell us what's manual, duplicated, or held together with spreadsheets. We'll map the bottleneck and tell you honestly if a system is the answer.",
-      "button": "Start a project"
+      "title": "Have a process worth fixing?",
+      "description": "Walk us through the part of your operation that still runs on spreadsheets. We'll tell you honestly whether software is the answer.",
+      "button": "Discuss your project"
     }
   },
   "about": {
     "eyebrow": "About",
-    "title": "A systems studio, not a software house",
-    "subtitle": "We architect solutions across software and IoT — partnering with businesses to rebuild how they operate.",
+    "title": "A software house that starts with your workflow",
+    "subtitle": "We're a Medan team building web, mobile, ERP, and IoT systems. We spend time with the people who run your operation before we design anything, and we stay after launch.",
     "story": {
       "beats": {
         "insight": {
           "title": "The insight we started with",
-          "text": "Trixync was founded on a simple observation: most businesses don't need \"an app.\" They need their actual workflow rebuilt so technology disappears into the background."
+          "text": "Trixync started from a simple observation: most businesses don't need \"an app.\" They need the way their work flows rebuilt, so the software fades into the background and the work gets easier."
         },
         "problem": {
           "title": "The problem is rarely the screen",
@@ -161,30 +170,39 @@
     "values": {
       "eyebrow": "Principles",
       "title": "What drives our work",
-      "subtitle": "Three commitments that show up in every engagement — from discovery through years after launch.",
+      "subtitle": "Three commitments that show up in every project, from the first conversation to long after launch.",
       "items": {
         "production": {
-          "title": "Production-first mindset",
-          "description": "We invest in caching, access control, payment integration, and async processing — the unglamorous work that keeps systems alive."
+          "title": "Built for real use",
+          "description": "We do the unglamorous work — access control, payments, performance, and background processing — that keeps a system running on its busiest day."
         },
         "collaboration": {
-          "title": "Stakeholder collaboration",
+          "title": "Built with your team",
           "description": "We build with the people who'll use the system, not from specs handed down secondhand."
         },
         "partnership": {
-          "title": "Long-term partnership",
-          "description": "Launch is a milestone, not an exit. We stay involved as your business and systems evolve."
+          "title": "There after launch",
+          "description": "We fix, maintain, and extend what we build as your business grows. Handover isn't the end of the relationship."
         }
       }
     },
     "location": {
       "eyebrow": "Where we work",
       "title": "Rooted in Medan",
-      "description": "Headquartered in Medan, North Sumatra — working with clients across Indonesia and open to remote collaboration.",
+      "description": "Based in Medan, North Sumatra, and working with clients across Indonesia, on-site or remotely.",
       "stats": {
-        "homeBase": "Studio home base",
-        "nationwide": "Clients nationwide",
-        "remote": "On-site or remote"
+        "projects": {
+          "value": "{count}",
+          "label": "Projects shipped"
+        },
+        "homeBase": {
+          "value": "Medan",
+          "label": "Home base"
+        },
+        "reach": {
+          "value": "Nationwide",
+          "label": "On-site or remote"
+        }
       },
       "cta": {
         "eyebrow": "Work with us",
@@ -196,11 +214,7 @@
   "services": {
     "eyebrow": "Services",
     "title": "What we build",
-    "subtitle": "End-to-end systems engineering — from workflow discovery to production deployment and beyond.",
-    "categorySystems": "Business systems",
-    "categoryIot": "IoT & hardware",
-    "categoryPlatform": "Platform",
-    "categoryInfrastructure": "Infrastructure",
+    "subtitle": "Custom software for Indonesian businesses, from the first workflow session to launch and long-term support.",
     "categories": {
       "all": "All services"
     },
@@ -212,7 +226,7 @@
     "process": {
       "eyebrow": "Our process",
       "title": "How we work with you",
-      "subtitle": "Every engagement follows the same discipline — mapped to your operations, not a generic dev cycle.",
+      "subtitle": "The same discipline on every project, so you always know what happens next.",
       "steps": {
         "discover": {
           "title": "Discover the workflow",
@@ -220,54 +234,69 @@
         },
         "design": {
           "title": "Design for adoption",
-          "description": "Systems shaped around how your team works today, with room to scale tomorrow."
+          "description": "Screens and flows shaped around how your team works today, with room to grow."
         },
         "deliver": {
-          "title": "Ship to production",
-          "description": "RBAC, payments, caching, and monitoring from day one — not bolted on after launch."
+          "title": "Launch with confidence",
+          "description": "Access control, payments, performance, and monitoring in place from day one — not patched in after launch."
         },
         "support": {
           "title": "Stay after launch",
-          "description": "We evolve the system as the business grows. No disappearing after handoff."
+          "description": "We keep improving the system as your business grows."
         }
       }
     },
     "cta": {
       "eyebrow": "Next step",
       "title": "Not sure which service fits?",
-      "description": "Tell us what's manual, duplicated, or held together with spreadsheets. We'll map the bottleneck and recommend honestly.",
-      "button": "Start a conversation"
+      "description": "Tell us what's slowing your team down. We'll map the bottleneck and give you an honest recommendation.",
+      "button": "Discuss your project"
     },
     "items": {
-      "workflow-systems": {
-        "title": "Custom Business Systems",
-        "problem": "Manual processes, disconnected tools, and workarounds that don't scale.",
-        "build": "Tailored platforms that digitize your actual workflow — bookings, operations, reporting, and admin.",
-        "outcome": "One system your team actually uses, replacing scattered spreadsheets and ad-hoc tools."
+      "business-systems": {
+        "title": "Custom business systems & ERP",
+        "problem": "Orders, stock, staff, and reports spread across spreadsheets, paper, and WhatsApp groups — slow to run and hard to trust.",
+        "build": "Web-based systems shaped around your workflow: ERP, inventory and POS, HR and scheduling, memberships, bookings, approvals, and reporting.",
+        "outcome": "One system of record your team actually uses, with the right access for each role and live numbers for management."
+      },
+      "mobile-apps": {
+        "title": "Mobile apps",
+        "problem": "Customers, field staff, or members need to act on the go, but your process only works at a desk.",
+        "build": "Android and iOS apps connected to the same backend as your web system — listings, applications, check-ins, and notifications.",
+        "outcome": "The same data and workflow in everyone's pocket, without maintaining two disconnected systems."
+      },
+      "websites": {
+        "title": "Company websites & landing pages",
+        "problem": "Prospects can't find you online, or your website doesn't explain what you offer and how to reach you.",
+        "build": "Fast, multilingual websites — company profiles, product and service catalogs, property and launch pages — with clear inquiry and WhatsApp buttons.",
+        "outcome": "A credible online presence that turns visitors into inquiries, not a brochure nobody reads."
+      },
+      "ai-automation": {
+        "title": "AI & automation",
+        "problem": "Staff spend hours retyping documents, sorting requests, and chasing routine approvals.",
+        "build": "Document extraction (OCR), automated routing, notifications, and AI features built into the systems your team already uses.",
+        "outcome": "Less repetitive data entry, faster turnaround, and people free for the work that needs judgement."
       },
       "iot-integration": {
-        "title": "IoT & Hardware Integration",
-        "problem": "Software that can't reach the physical world — attendance devices, sensors, offline environments.",
-        "build": "Offline-first integrations with fingerprint scanners, IoT hardware, and edge devices.",
-        "outcome": "Reliable data flow between the field and your central system, even without constant connectivity."
+        "title": "IoT & hardware integration",
+        "problem": "Software that can't reach the physical world — attendance devices, sensors, and sites with unreliable internet.",
+        "build": "Offline-first integrations with fingerprint scanners, IoT hardware, and edge devices that sync when the connection returns.",
+        "outcome": "Reliable data flowing from the field into your central system, even without constant connectivity."
       },
-      "platform-centralization": {
-        "title": "Platform Centralization",
-        "problem": "Critical data spread across cities, departments, and communication channels.",
-        "build": "Unified membership, HR, scheduling, and supplier/reseller platforms with real-time tracking.",
-        "outcome": "A single source of truth that thousands of users across multiple locations can trust."
-      },
-      "production-infrastructure": {
-        "title": "Production Infrastructure",
-        "problem": "Systems that work in demos but fail under real traffic, roles, and payment flows.",
-        "build": "RBAC, payment gateways, caching layers, async task queues, and monitoring.",
-        "outcome": "Infrastructure that survives real usage — not a prototype dressed up for a presentation."
+      "system-support": {
+        "title": "System takeover & support",
+        "problem": "An existing system is slow, fragile, or abandoned by its original developer, and every change feels risky.",
+        "build": "Code and infrastructure review, bug fixes, performance work, access control, payments, monitoring, and ongoing feature development.",
+        "outcome": "A system that stays fast and secure under real use, with a team accountable for keeping it running."
       }
-    }
+    },
+    "categorySoftware": "Software",
+    "categoryIntelligent": "AI & IoT",
+    "categorySupport": "Support"
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Systems we've designed, built, and shipped — with the problem, approach, and solution behind each one.",
+    "subtitle": "Systems we've designed, built, and launched — with the problem, approach, and result behind each one.",
     "viewCaseStudy": "View case study",
     "filterAll": "All",
     "filterSoftware": "Software",
@@ -275,8 +304,8 @@
     "filterWeb": "Web",
     "caseStudy": {
       "back": "All projects",
-      "title": "Problem → approach → solution",
-      "subtitle": "How we mapped the bottleneck, designed around real workflows, and shipped something that runs in production.",
+      "title": "Problem → approach → result",
+      "subtitle": "How we found the bottleneck, designed around the real workflow, and launched something people use every day.",
       "problem": "The problem",
       "approach": "Our approach",
       "solution": "What we built",
@@ -323,11 +352,11 @@
       },
       "pgi-tower": {
         "title": "PGI Tower",
-        "description": "Landing page website for PGI Tower that presents the property profile, facilities, and contact conversion points with a modern responsive layout.",
+        "description": "Website for PGI Tower presenting the property profile, facilities, and clear ways to get in touch, in a modern responsive layout.",
         "client": "PT Property Group Imperium · Property",
         "problem": "The property needed a credible web presence — brochure PDFs and outdated pages weren't converting inquiries or presenting facilities clearly.",
         "approach": "We structured the site around how prospects evaluate property: location, facilities, unit types, and clear contact paths — mobile-first.",
-        "solution": "A fast Next.js marketing site with Tailwind CSS — responsive layouts, facility highlights, and conversion-focused contact sections.",
+        "solution": "A fast Next.js website with Tailwind CSS — responsive layouts, facility highlights, and clear inquiry buttons.",
         "outcome": "A modern property profile prospects can browse on any device — with clear paths to inquiry instead of scattered offline follow-up."
       },
       "sejahtera-bersama-erp": {
@@ -354,7 +383,7 @@
         "client": "CV Chinergy Shenindo · Industrial",
         "problem": "An established industrial supplier had no credible web presence to showcase its service lines, catalog depth, and nationwide reach to prospective plantation and industrial clients.",
         "approach": "We structured the site around how industrial buyers evaluate a supplier — services, spare parts catalog, partner network, and clear quotation paths — in both English and Indonesian.",
-        "solution": "A multilingual Next.js marketing site with Tailwind CSS presenting fabrication, repair, and spare parts offerings, partner regions, and conversion-focused contact and quotation sections.",
+        "solution": "A multilingual Next.js website with Tailwind CSS presenting fabrication, repair, and spare parts offerings, partner regions, and clear inquiry and quotation buttons.",
         "outcome": "A trusted online profile that presents Chinergy's full industrial capability and drives quotation requests instead of offline-only outreach."
       },
       "citikopi": {
@@ -372,12 +401,12 @@
         "client": "PT Genba Inti Solusindo · HVAC",
         "problem": "An AC and HVAC contractor needed a professional web presence to present its product lineup, installation and maintenance services, and capture inquiries across Sumatra.",
         "approach": "We organized the site around what buyers look for — AC types, services, and trust signals — with clear contact and inquiry paths.",
-        "solution": "A responsive Next.js landing page with Tailwind CSS presenting the AC product lineup, HVAC services, company profile, and conversion-focused contact sections.",
+        "solution": "A responsive Next.js website with Tailwind CSS presenting the AC product lineup, HVAC services, company profile, and clear inquiry buttons.",
         "outcome": "A credible contractor profile that showcases the product range and turns visitors into service inquiries."
       },
       "skyview-setiabudi": {
         "title": "Skyview Setiabudi Apartment",
-        "description": "Property landing page for a modern apartment in central Medan — facilities, unit types, pricing, and booking conversion.",
+        "description": "Website for a modern apartment in central Medan — facilities, unit types, pricing, and a direct path to booking.",
         "client": "Skyview Setiabudi · Property",
         "problem": "A modern apartment development needed a compelling web presence to present its facilities, unit types, and pricing, and to funnel prospects toward official booking.",
         "approach": "We structured the site the way buyers evaluate a residence — location, facilities, unit types with pricing, and gallery — with clear, trusted booking paths.",
@@ -405,8 +434,8 @@
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Straight answers about how we work — process, timelines, IoT, and what happens after launch.",
+    "title": "Frequently asked questions",
+    "subtitle": "Straight answers about how we work — process, timelines, cost, and what happens after launch.",
     "eyebrow": "FAQ",
     "categories": {
       "all": "All",
@@ -418,16 +447,16 @@
     "cta": {
       "eyebrow": "Still have questions?",
       "title": "Ask us directly",
-      "description": "If your situation doesn't fit a FAQ answer, tell us what's going on. We'll respond within one business day."
+      "description": "If your situation doesn't fit an answer here, tell us what's going on. We usually reply within hours."
     },
     "items": {
       "what-is-trixync": {
         "question": "What is Trixync?",
-        "answer": "Trixync is a technology and systems studio based in Medan, North Sumatra. We architect custom software and IoT solutions that rebuild how businesses operate — not just add another app to the stack."
+        "answer": "Trixync is a software house based in Medan, North Sumatra. We build custom web apps, mobile apps, ERP, and IoT systems around how your business actually runs — not another app added to the pile."
       },
       "engagement-process": {
         "question": "How does your engagement process work?",
-        "answer": "We start by understanding your actual workflow and bottlenecks — sitting with your team, not just reviewing a brief. From there we design, build in production-grade increments, and stay involved after launch."
+        "answer": "We start by understanding your workflow and bottlenecks — sitting with your team, not just reading a brief. Then we design, build in stages you can review, and stay involved after launch."
       },
       "timeline": {
         "question": "How long does a typical project take?",
@@ -435,7 +464,7 @@
       },
       "pricing": {
         "question": "How do you price projects?",
-        "answer": "We scope projects based on the problem being solved, not hours logged. After discovery, we provide a clear proposal with milestones — no surprise invoices."
+        "answer": "We price by the problem being solved, not hours logged. Landing pages and company websites start from Rp5 million; custom business systems and ERP are quoted after a discovery session based on modules and complexity. You get a clear proposal with scope, milestones, and cost, and any change is agreed before work starts — no surprise invoices."
       },
       "iot-capability": {
         "question": "Can you integrate with hardware and IoT devices?",
@@ -443,39 +472,59 @@
       },
       "post-launch": {
         "question": "Do you provide support after launch?",
-        "answer": "Absolutely. Launch is a milestone, not an exit. We offer ongoing maintenance, feature evolution, and infrastructure monitoring as your business grows."
+        "answer": "Yes. Bug fixes are free for 3 months after launch; after that, our maintenance plan covers fixes, updates, monitoring, and hosting, and we build new features as your business grows."
       },
       "industries": {
         "question": "What industries do you work with?",
-        "answer": "We've worked with government agencies, HR teams, tour operators, membership organizations, and distribution networks. Our focus is operational complexity, not a specific vertical."
+        "answer": "Recruitment, hospitality, travel, logistics, distribution and retail, education, property, food and beverage, industrial suppliers, and membership organizations. What they share is operational complexity, not an industry."
       },
       "remote-work": {
         "question": "Do you work with remote clients?",
-        "answer": "Yes. While we're based in Medan, we collaborate with teams across Indonesia and internationally via structured remote workflows."
+        "answer": "Yes. Most collaboration runs over video calls, WhatsApp, and shared project boards, so being outside Medan isn't a barrier."
       },
       "medan-based": {
         "question": "Are you only available in Medan?",
-        "answer": "We're headquartered in Medan, North Sumatra, but serve clients nationwide. For local businesses in Sumatra, we offer on-site discovery sessions."
+        "answer": "No. We're headquartered in Medan and work with clients across Indonesia. Businesses in and around Medan can also book on-site discovery sessions."
       },
       "maintenance": {
         "question": "Can you take over an existing system?",
         "answer": "In many cases, yes. We'll assess the codebase, infrastructure, and operational fit before recommending whether to extend, refactor, or rebuild."
+      },
+      "payment-terms": {
+        "question": "What are your payment terms?",
+        "answer": "60% down payment to start the project, and the remaining 40% at final handover once you've reviewed and approved the finished product."
+      },
+      "code-ownership": {
+        "question": "Who owns the source code?",
+        "answer": "You do. Once the project is paid in full, the source code and everything we built for you belongs to your business."
+      },
+      "nda": {
+        "question": "Will you sign an NDA?",
+        "answer": "Yes. We're happy to sign a non-disclosure agreement before you share business details, and we treat your data and processes as confidential either way."
+      },
+      "warranty": {
+        "question": "Is there a warranty after launch?",
+        "answer": "Yes. Bug fixes are free for the first 3 months after launch. After that, they're covered by our monthly maintenance plan."
+      },
+      "hosting": {
+        "question": "Who handles hosting and servers?",
+        "answer": "We do. Hosting, domains, deployment, updates, and backups are all handled by us — you just receive the finished product, ready to use."
       }
     }
   },
   "contact": {
     "eyebrow": "Contact",
-    "title": "Let's talk about your workflow",
-    "subtitle": "Tell us what's manual, scattered, or breaking under load. We'll respond within one business day.",
+    "title": "Let's talk about your project",
+    "subtitle": "Tell us what's manual, scattered, or slowing your team down. We usually reply within hours.",
     "whatsappCta": "Chat on WhatsApp",
     "channels": {
       "eyebrow": "Reach us",
       "title": "Direct channels",
-      "description": "Prefer a quick message? Use the form or reach us directly — whichever fits your workflow."
+      "description": "Prefer to skip the form? Message or email us directly."
     },
     "response": {
-      "title": "One business day",
-      "description": "We read every message personally and reply with next steps — not an auto-responder."
+      "title": "Replies within hours",
+      "description": "We read every message personally and reply with next steps — usually within hours, always within one business day."
     },
     "nextSteps": {
       "eyebrow": "What happens next",
@@ -487,7 +536,7 @@
         },
         "respond": {
           "title": "We reply with clarity",
-          "description": "A direct response within one business day — questions, fit, or a call suggestion."
+          "description": "A direct reply, usually within hours — questions, fit, or a call suggestion."
         },
         "discover": {
           "title": "Discovery if it's a fit",
@@ -503,17 +552,18 @@
     },
     "form": {
       "eyebrow": "Project inquiry",
-      "title": "Send us a message",
-      "description": "Fill in the details below — we'll open WhatsApp with your message ready to send.",
+      "title": "Tell us about your project",
+      "description": "Takes about a minute. We'll open WhatsApp with your details filled in — just tap send. Prefer email? Write to hello@trixync.id.",
       "name": "Full name",
-      "email": "Email address",
+      "email": "Email (optional)",
       "company": "Company (optional)",
       "projectType": "Project type",
       "projectTypes": {
-        "systems": "Custom business system",
-        "iot": "IoT / hardware integration",
-        "platform": "Platform centralization",
-        "infrastructure": "Infrastructure / existing system",
+        "systems": "Business system / ERP",
+        "mobile": "Mobile app",
+        "website": "Company website",
+        "ai-iot": "AI or IoT integration",
+        "support": "Existing system / maintenance",
         "other": "Not sure yet"
       },
       "budgetRange": "Estimated budget",
@@ -529,6 +579,7 @@
       "message": "Tell us about your challenge",
       "submit": "Send via WhatsApp",
       "success": "WhatsApp opened — review the message and tap send to deliver it.",
+      "successRetry": "Didn't open? Tap here.",
       "whatsappMessage": {
         "intro": "Hi Trixync! New project inquiry from your website:"
       }
@@ -536,7 +587,7 @@
   },
   "footer": {
     "tagline": "Built in Sync",
-    "description": "We map how your business runs — then build production systems across software and IoT.",
+    "description": "A software house in Medan. We map how your business runs, then build the web, mobile, ERP, and IoT systems to match.",
     "ctaEyebrow": "Let's build",
     "ctaTitle": "Tell us what your team still does by hand.",
     "ctaDescription": "The repetitive, the duplicated, the spreadsheet-and-WhatsApp workarounds — walk us through them. We'll pinpoint the real bottleneck and tell you straight whether a system is worth building.",

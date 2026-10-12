@@ -1,28 +1,28 @@
 {
   "metadata": {
     "home": {
-      "title": "Trixync — Studio Teknologi & Sistem di Medan",
-      "description": "Trixync membangun perangkat lunak dan sistem IoT siap produksi untuk bisnis di Medan, Sumatera Utara, dan Indonesia."
+      "title": "Software House Medan — Jasa Aplikasi, Website & ERP | Trixync",
+      "description": "Software house di Medan untuk jasa pembuatan aplikasi web, aplikasi mobile, sistem ERP, dan IoT bagi bisnis di Sumatera Utara dan seluruh Indonesia."
     },
     "about": {
-      "title": "Tentang Kami — Trixync",
-      "description": "Kenali cara Trixync mendampingi bisnis sebagai studio rekayasa digital di Medan, Indonesia — dari memetakan alur kerja hingga sistem siap produksi dan dukungan jangka panjang."
+      "title": "Tentang Trixync — Software House di Medan",
+      "description": "Trixync adalah tim software di Medan yang memetakan cara bisnis Anda berjalan, lalu membangun dan mendampingi sistem web, mobile, dan ERP khusus."
     },
     "services": {
-      "title": "Layanan — Trixync",
-      "description": "Sistem bisnis khusus, integrasi IoT, penyatuan platform, dan infrastruktur produksi — dibangun untuk operasi nyata di Medan dan sekitarnya."
+      "title": "Jasa Pembuatan Software, ERP & IoT di Medan | Trixync",
+      "description": "Sistem bisnis khusus, ERP, aplikasi mobile, integrasi IoT, dan penyatuan platform — dirancang sesuai alur kerja Anda dan dibangun di Medan."
     },
     "projects": {
-      "title": "Proyek — Trixync",
-      "description": "Studi kasus Trixync: KMS Connect, Gerindra Sumut, Yanks & Brits, GoHoliday DC, PGI Tower, dan sistem produksi lainnya."
+      "title": "Portofolio & Studi Kasus Software | Trixync",
+      "description": "Studi kasus Trixync: ERP, sistem operasional logistik, platform kursus online, aplikasi rekrutmen, dan website perusahaan untuk bisnis Indonesia."
     },
     "faq": {
-      "title": "FAQ — Trixync",
-      "description": "Pertanyaan umum seputar bekerja sama dengan Trixync — proses, jadwal, kemampuan IoT, dan dukungan setelah peluncuran."
+      "title": "FAQ Pembuatan Software: Proses, Biaya & Dukungan | Trixync",
+      "description": "Jawaban seputar bekerja sama dengan Trixync: alur proyek, jadwal, biaya, kemampuan IoT, dan dukungan setelah peluncuran."
     },
     "contact": {
-      "title": "Kontak — Trixync",
-      "description": "Hubungi Trixync di Medan, Sumatera Utara. Ceritakan tantangan alur kerja Anda dan kami bantu rancang sistem yang tepat."
+      "title": "Hubungi Trixync — Software House di Medan",
+      "description": "Diskusikan proyek aplikasi web, aplikasi mobile, ERP, atau IoT Anda dengan Trixync di Medan via WhatsApp, email, atau formulir kontak."
     }
   },
   "common": {
@@ -42,7 +42,7 @@
     "projects": "Proyek",
     "faq": "FAQ",
     "contact": "Kontak",
-    "cta": "Mulai Proyek",
+    "cta": "Diskusikan proyek",
     "language": "Bahasa",
     "theme": "Tema",
     "openMenu": "Buka menu",
@@ -59,43 +59,43 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Medan · Indonesia",
-      "headline": "Operasi bisnis Anda,",
+      "eyebrow": "Software house · Medan, Indonesia",
+      "headline": "Bisnis Anda, dalam satu sistem.",
       "headlineHighlight": "Built in Sync.",
-      "subheadline": "Perangkat lunak dan IoT siap produksi — dirancang mengikuti cara kerja tim Anda yang sebenarnya.",
-      "ctaPrimary": "Hubungi kami",
+      "subheadline": "Aplikasi web, aplikasi mobile, ERP, dan sistem IoT khusus untuk bisnis yang sudah kewalahan dengan spreadsheet dan grup WhatsApp — dirancang mengikuti cara kerja tim Anda, dan didampingi setelah peluncuran.",
+      "ctaPrimary": "Diskusikan proyek",
       "ctaSecondary": "Lihat hasil kerja kami"
     },
     "strengths": {
       "title": "Yang kami tawarkan",
-      "subtitle": "Perangkat lunak, IoT, dan AI — dibuktikan lewat sistem yang benar-benar kami kirimkan, bukan sekadar presentasi.",
+      "subtitle": "Software, AI, dan IoT — dibuktikan lewat sistem yang kami bangun dan masih kami dampingi.",
       "items": {
         "aiSystems": {
           "eyebrow": "AI · Software · IoT",
           "title": "AI di titik yang benar-benar membantu alur kerja",
-          "description": "Ekstraksi dokumen, pengarahan otomatis, prakiraan, dan asisten yang menyatu dengan operasi Anda — bukan sekadar demo chatbot. Kami tanam model langsung di dalam sistem yang sudah tim Anda pakai."
+          "description": "Ekstraksi dokumen, distribusi tugas otomatis, dan otomatisasi yang tertanam di sistem yang sudah dipakai tim Anda — bukan demo chatbot yang ditempel di samping."
         },
         "realWorld": {
-          "title": "Sistem yang menyentuh dunia nyata",
+          "title": "Software yang terhubung ke dunia nyata",
           "description": "Dari perangkat IoT yang tetap jalan tanpa internet hingga absensi sidik jari — kami terbiasa di titik temu perangkat lunak dan perangkat fisik."
         },
         "centralize": {
-          "title": "Kami satukan yang tercerai-berai",
+          "title": "Data yang tercecer, disatukan di satu tempat",
           "description": "Sistem keanggotaan, jadwal SDM, dasbor pemasok — kami ubah spreadsheet, grup WhatsApp, dan berkas kertas menjadi satu sumber data."
         },
         "production": {
-          "title": "Kami berpikir untuk produksi, bukan sekadar purwarupa",
-          "description": "Caching, pemrosesan asinkron, kontrol akses, dan gerbang pembayaran — fondasi yang menentukan sebuah sistem sanggup bertahan saat dipakai sungguhan."
+          "title": "Dibangun untuk dipakai setiap hari, bukan sekadar demo",
+          "description": "Orang yang tepat melihat data yang tepat, pembayaran berjalan lancar, halaman tetap cepat di akhir bulan, dan masalah terdeteksi sebelum staf Anda menyadarinya."
         },
         "stakeholders": {
-          "title": "Kami bekerja bersama para penggunanya",
-          "description": "Setiap platform lahir dari duduk bersama pihak yang benar-benar terlibat — staf pemerintah, tim SDM, operator wisata — sebelum satu baris kode ditulis."
+          "title": "Dirancang bersama penggunanya",
+          "description": "Setiap sistem berawal dari waktu bersama orang-orang yang menjalankan pekerjaannya — koordinator keanggotaan, tim SDM, operator tur — sebelum satu baris kode pun ditulis."
         }
       }
     },
     "approach": {
       "title": "Cara kami menyelesaikan masalah",
-      "subtitle": "Proses yang disusun mengikuti operasi Anda, bukan siklus pengembangan yang seragam.",
+      "subtitle": "Empat langkah yang kami jalankan di setiap proyek, besar maupun kecil.",
       "steps": {
         "bottleneck": {
           "title": "Temukan hambatan yang sebenarnya",
@@ -107,46 +107,55 @@
         },
         "build": {
           "title": "Bangun untuk jangka panjang",
-          "description": "Infrastruktur siap produksi, bukan demo yang tumbang saat menghadapi beban nyata."
+          "description": "Dibangun untuk pengguna nyata, data nyata, dan hari-hari sibuk sejak awal — bukan demo yang tumbang saat dipakai."
         },
         "support": {
           "title": "Tetap mendampingi setelah peluncuran",
-          "description": "Sistem ikut berkembang seiring bisnis tumbuh. Kami bukan vendor yang menghilang setelah serah terima."
+          "description": "Bisnis Anda terus berubah, begitu juga sistemnya. Kami tetap mendampingi setelah serah terima."
         }
       }
     },
     "projects": {
-      "title": "Karya yang sudah berjalan",
-      "subtitle": "Sistem yang menjalankan operasi nyata — bukan konsep di atas presentasi.",
+      "title": "Sistem yang dipakai setiap hari",
+      "subtitle": "Software yang menjalankan operasi nyata untuk bisnis di seluruh Indonesia.",
       "eyebrow": "Karya pilihan",
       "viewAll": "Semua proyek"
     },
     "location": {
       "eyebrow": "Tempat kami bekerja",
       "title": "Berakar di Medan",
-      "description": "Kami datang langsung menemui bisnis di Sumatera Utara dan bermitra dengan tim di seluruh Indonesia. Studio yang sama, baik bertatap muka maupun lewat panggilan.",
+      "description": "Kami bekerja langsung di lokasi bersama bisnis di Medan dan Sumatera Utara, dan secara remote dengan tim di seluruh Indonesia. Tim yang sama, baik bertemu langsung maupun lewat panggilan.",
       "stats": {
-        "homeBase": "Markas studio",
-        "nationwide": "Klien se-Indonesia",
-        "remote": "Di tempat atau jarak jauh"
+        "projects": {
+          "value": "{count}",
+          "label": "Proyek diluncurkan"
+        },
+        "homeBase": {
+          "value": "Medan",
+          "label": "Basis kami"
+        },
+        "reach": {
+          "value": "Seluruh Indonesia",
+          "label": "Langsung atau remote"
+        }
       }
     },
     "cta": {
       "eyebrow": "Langkah berikutnya",
-      "title": "Punya alur kerja yang perlu dibenahi?",
-      "description": "Ceritakan apa yang masih manual, berulang, atau ditambal dengan spreadsheet. Kami akan memetakan hambatannya dan berterus terang apakah sebuah sistem memang jawabannya.",
-      "button": "Mulai proyek"
+      "title": "Punya proses yang perlu dibenahi?",
+      "description": "Ceritakan bagian operasional Anda yang masih bergantung pada spreadsheet. Kami akan jujur memberi tahu apakah software adalah jawabannya.",
+      "button": "Diskusikan proyek"
     }
   },
   "about": {
     "eyebrow": "Tentang",
-    "title": "Studio sistem, bukan sekadar pembuat aplikasi",
-    "subtitle": "Kami merancang solusi lintas perangkat lunak dan IoT — bermitra dengan bisnis untuk membenahi cara mereka beroperasi.",
+    "title": "Software house yang berawal dari alur kerja Anda",
+    "subtitle": "Kami tim di Medan yang membangun sistem web, mobile, ERP, dan IoT. Kami meluangkan waktu bersama orang-orang yang menjalankan operasional Anda sebelum merancang apa pun, dan tetap mendampingi setelah peluncuran.",
     "story": {
       "beats": {
         "insight": {
           "title": "Keyakinan yang mengawali kami",
-          "text": "Trixync berangkat dari satu pengamatan sederhana: kebanyakan bisnis tidak butuh \"sebuah aplikasi.\" Mereka butuh alur kerjanya dibenahi sampai teknologi terasa menghilang di latar."
+          "text": "Trixync berawal dari pengamatan sederhana: kebanyakan bisnis tidak butuh \"sebuah aplikasi.\" Mereka butuh alur kerjanya ditata ulang, sehingga software tak lagi terasa dan pekerjaan menjadi lebih mudah."
         },
         "problem": {
           "title": "Masalahnya jarang ada di layar",
@@ -161,30 +170,39 @@
     "values": {
       "eyebrow": "Prinsip",
       "title": "Yang menggerakkan kerja kami",
-      "subtitle": "Tiga komitmen yang hadir di setiap kerja sama — sejak penjajakan hingga bertahun-tahun setelah peluncuran.",
+      "subtitle": "Tiga komitmen yang hadir di setiap proyek, dari percakapan pertama hingga lama setelah peluncuran.",
       "items": {
         "production": {
-          "title": "Berorientasi produksi sejak awal",
-          "description": "Kami menaruh perhatian pada caching, kontrol akses, integrasi pembayaran, dan pemrosesan asinkron — pekerjaan tak mencolok yang membuat sistem tetap hidup."
+          "title": "Dibangun untuk dipakai sungguhan",
+          "description": "Kami mengerjakan bagian yang tak terlihat — hak akses, pembayaran, performa, dan proses latar belakang — yang menjaga sistem tetap berjalan di hari tersibuknya."
         },
         "collaboration": {
-          "title": "Kolaborasi dengan pemangku kepentingan",
+          "title": "Dibangun bersama tim Anda",
           "description": "Kami membangun bersama orang yang akan memakai sistemnya, bukan dari spesifikasi yang diteruskan sepihak."
         },
         "partnership": {
-          "title": "Kemitraan jangka panjang",
-          "description": "Peluncuran adalah tonggak, bukan akhir. Kami tetap mendampingi seiring bisnis dan sistem Anda berkembang."
+          "title": "Tetap ada setelah peluncuran",
+          "description": "Kami memperbaiki, merawat, dan mengembangkan apa yang kami bangun seiring bisnis Anda tumbuh. Serah terima bukan akhir kerja sama."
         }
       }
     },
     "location": {
       "eyebrow": "Tempat kami bekerja",
       "title": "Berakar di Medan",
-      "description": "Berpusat di Medan, Sumatera Utara — melayani klien di seluruh Indonesia dan terbuka untuk kolaborasi jarak jauh.",
+      "description": "Berbasis di Medan, Sumatera Utara, dan bekerja dengan klien di seluruh Indonesia, langsung di lokasi maupun secara remote.",
       "stats": {
-        "homeBase": "Markas studio",
-        "nationwide": "Klien se-Indonesia",
-        "remote": "Di tempat atau jarak jauh"
+        "projects": {
+          "value": "{count}",
+          "label": "Proyek diluncurkan"
+        },
+        "homeBase": {
+          "value": "Medan",
+          "label": "Basis kami"
+        },
+        "reach": {
+          "value": "Seluruh Indonesia",
+          "label": "Langsung atau remote"
+        }
       },
       "cta": {
         "eyebrow": "Bekerja sama dengan kami",
@@ -195,12 +213,8 @@
   },
   "services": {
     "eyebrow": "Layanan",
-    "title": "Apa yang kami bangun",
-    "subtitle": "Rekayasa sistem menyeluruh — dari memetakan alur kerja hingga peluncuran ke produksi dan seterusnya.",
-    "categorySystems": "Sistem bisnis",
-    "categoryIot": "IoT & perangkat keras",
-    "categoryPlatform": "Platform",
-    "categoryInfrastructure": "Infrastruktur",
+    "title": "Yang kami bangun",
+    "subtitle": "Software khusus untuk bisnis Indonesia, dari sesi pemetaan alur kerja pertama hingga peluncuran dan pendampingan jangka panjang.",
     "categories": {
       "all": "Semua layanan"
     },
@@ -212,7 +226,7 @@
     "process": {
       "eyebrow": "Proses kami",
       "title": "Cara kami bekerja bersama Anda",
-      "subtitle": "Setiap kerja sama mengikuti disiplin yang sama — disesuaikan dengan operasi Anda, bukan siklus pengembangan yang seragam.",
+      "subtitle": "Disiplin yang sama di setiap proyek, sehingga Anda selalu tahu langkah berikutnya.",
       "steps": {
         "discover": {
           "title": "Pahami alur kerjanya",
@@ -220,54 +234,69 @@
         },
         "design": {
           "title": "Rancang agar mudah diadopsi",
-          "description": "Sistem yang dibentuk mengikuti cara kerja tim Anda hari ini, dengan ruang untuk tumbuh."
+          "description": "Tampilan dan alur yang mengikuti cara kerja tim Anda saat ini, dengan ruang untuk berkembang."
         },
         "deliver": {
-          "title": "Kirim ke produksi",
-          "description": "Kontrol akses, pembayaran, caching, dan pemantauan sejak hari pertama — bukan ditambahkan setelah peluncuran."
+          "title": "Luncurkan dengan percaya diri",
+          "description": "Hak akses, pembayaran, performa, dan monitoring siap sejak hari pertama — bukan ditambal setelah peluncuran."
         },
         "support": {
           "title": "Mendampingi setelah peluncuran",
-          "description": "Kami kembangkan sistemnya seiring bisnis tumbuh. Tidak menghilang setelah serah terima."
+          "description": "Kami terus menyempurnakan sistem seiring bisnis Anda tumbuh."
         }
       }
     },
     "cta": {
       "eyebrow": "Langkah berikutnya",
       "title": "Belum yakin layanan mana yang cocok?",
-      "description": "Ceritakan apa yang masih manual, berulang, atau ditambal dengan spreadsheet. Kami akan memetakan hambatannya dan memberi rekomendasi yang jujur.",
-      "button": "Mulai percakapan"
+      "description": "Ceritakan apa yang memperlambat tim Anda. Kami akan memetakan hambatannya dan memberi rekomendasi yang jujur.",
+      "button": "Diskusikan proyek"
     },
     "items": {
-      "workflow-systems": {
-        "title": "Sistem Bisnis Khusus",
-        "problem": "Proses manual, perkakas yang tak saling terhubung, dan akal-akalan yang tak bisa berkembang.",
-        "build": "Platform yang disesuaikan untuk mendigitalkan alur kerja Anda yang sebenarnya — pemesanan, operasi, pelaporan, dan administrasi.",
-        "outcome": "Satu sistem yang benar-benar dipakai tim Anda, menggantikan spreadsheet dan perkakas dadakan yang berserakan."
+      "business-systems": {
+        "title": "Sistem bisnis khusus & ERP",
+        "problem": "Pesanan, stok, karyawan, dan laporan tersebar di spreadsheet, kertas, dan grup WhatsApp — lambat dijalankan dan sulit dipercaya.",
+        "build": "Sistem berbasis web yang mengikuti alur kerja Anda: ERP, inventori dan POS, SDM dan penjadwalan, keanggotaan, pemesanan, persetujuan, dan laporan.",
+        "outcome": "Satu sistem data yang benar-benar dipakai tim, dengan hak akses sesuai peran dan angka real-time untuk manajemen."
+      },
+      "mobile-apps": {
+        "title": "Aplikasi mobile",
+        "problem": "Pelanggan, staf lapangan, atau anggota perlu bertindak di mana saja, tetapi proses Anda hanya bisa dijalankan dari meja kantor.",
+        "build": "Aplikasi Android dan iOS yang terhubung ke backend yang sama dengan sistem web Anda — listing, pendaftaran, check-in, dan notifikasi.",
+        "outcome": "Data dan alur kerja yang sama di genggaman semua orang, tanpa harus mengurus dua sistem yang terpisah."
+      },
+      "websites": {
+        "title": "Website perusahaan & landing page",
+        "problem": "Calon pelanggan tidak menemukan Anda secara online, atau website Anda tidak menjelaskan apa yang Anda tawarkan dan cara menghubungi Anda.",
+        "build": "Website cepat dan multibahasa — profil perusahaan, katalog produk dan layanan, halaman properti dan peluncuran — dengan tombol tanya dan WhatsApp yang jelas.",
+        "outcome": "Kehadiran online yang tepercaya dan mengubah pengunjung menjadi calon pelanggan, bukan brosur yang tak dibaca."
+      },
+      "ai-automation": {
+        "title": "AI & otomatisasi",
+        "problem": "Staf menghabiskan berjam-jam mengetik ulang dokumen, memilah permintaan, dan mengejar persetujuan rutin.",
+        "build": "Ekstraksi dokumen (OCR), distribusi tugas otomatis, notifikasi, dan fitur AI yang tertanam di sistem yang sudah dipakai tim Anda.",
+        "outcome": "Lebih sedikit input data berulang, proses lebih cepat, dan tim bebas fokus pada pekerjaan yang butuh pertimbangan."
       },
       "iot-integration": {
-        "title": "Integrasi IoT & Perangkat Keras",
-        "problem": "Perangkat lunak yang tak mampu menjangkau dunia fisik — perangkat absensi, sensor, lingkungan tanpa internet.",
-        "build": "Integrasi yang tetap berjalan tanpa internet dengan pemindai sidik jari, perangkat IoT, dan perangkat edge.",
-        "outcome": "Aliran data yang andal antara lapangan dan sistem pusat Anda, bahkan saat koneksi tak menentu."
+        "title": "Integrasi IoT & perangkat keras",
+        "problem": "Software yang tidak terhubung ke dunia fisik — mesin absensi, sensor, dan lokasi dengan internet yang tidak stabil.",
+        "build": "Integrasi offline-first dengan mesin sidik jari, perangkat IoT, dan edge device yang tersinkron kembali saat koneksi pulih.",
+        "outcome": "Data dari lapangan mengalir andal ke sistem pusat Anda, bahkan tanpa koneksi yang selalu tersedia."
       },
-      "platform-centralization": {
-        "title": "Penyatuan Platform",
-        "problem": "Data penting yang berserakan di berbagai kota, divisi, dan saluran komunikasi.",
-        "build": "Platform keanggotaan, SDM, penjadwalan, dan pemasok/reseller yang menyatu dengan pemantauan real-time.",
-        "outcome": "Satu sumber data tepercaya yang bisa diandalkan ribuan pengguna di banyak lokasi."
-      },
-      "production-infrastructure": {
-        "title": "Infrastruktur Produksi",
-        "problem": "Sistem yang mulus saat demo tetapi ambruk di hadapan trafik, peran pengguna, dan alur pembayaran nyata.",
-        "build": "Kontrol akses berbasis peran, gerbang pembayaran, lapisan caching, antrean tugas asinkron, dan pemantauan.",
-        "outcome": "Infrastruktur yang tahan dipakai sungguhan — bukan purwarupa yang didandani untuk presentasi."
+      "system-support": {
+        "title": "Ambil alih & pemeliharaan sistem",
+        "problem": "Sistem yang ada lambat, rapuh, atau ditinggalkan developer sebelumnya, dan setiap perubahan terasa berisiko.",
+        "build": "Peninjauan kode dan infrastruktur, perbaikan bug, peningkatan performa, hak akses, pembayaran, monitoring, dan pengembangan fitur berkelanjutan.",
+        "outcome": "Sistem yang tetap cepat dan aman saat dipakai sungguhan, dengan tim yang bertanggung jawab menjaganya tetap berjalan."
       }
-    }
+    },
+    "categorySoftware": "Software",
+    "categoryIntelligent": "AI & IoT",
+    "categorySupport": "Pendampingan"
   },
   "projects": {
     "title": "Proyek",
-    "subtitle": "Sistem yang kami rancang, bangun, dan kirimkan — lengkap dengan masalah, pendekatan, dan solusi di balik masing-masing.",
+    "subtitle": "Sistem yang kami rancang, bangun, dan luncurkan — lengkap dengan masalah, pendekatan, dan hasil di balik masing-masing.",
     "viewCaseStudy": "Lihat studi kasus",
     "filterAll": "Semua",
     "filterSoftware": "Software",
@@ -275,8 +304,8 @@
     "filterWeb": "Web",
     "caseStudy": {
       "back": "Semua proyek",
-      "title": "Masalah → pendekatan → solusi",
-      "subtitle": "Bagaimana kami memetakan hambatan, merancang mengikuti alur kerja nyata, dan mengirim sistem yang berjalan di produksi.",
+      "title": "Masalah → pendekatan → hasil",
+      "subtitle": "Cara kami menemukan hambatan, merancang sesuai alur kerja nyata, dan meluncurkan sistem yang dipakai setiap hari.",
       "problem": "Masalahnya",
       "approach": "Pendekatan kami",
       "solution": "Yang kami bangun",
@@ -306,7 +335,7 @@
       "yanks-brits": {
         "title": "Sistem Karyawan Yanks & Brits",
         "description": "Sistem manajemen karyawan yang menangani penjadwalan, penggajian, dan data staf untuk Yanks & Brits.",
-        "client": "Yanks & Brits · Perhotelan",
+        "client": "Yanks & Brits · Hospitality",
         "problem": "Jadwal, absensi, dan penggajian bergantung pada daftar shift manual dan spreadsheet kantor — rawan salah dan lambat setiap periode gajian.",
         "approach": "Kami duduk bersama tim operasional untuk memahami cara shift disusun, ditukar, dan dibayar — lalu membangun mengikuti langkah-langkah itu, bukan template SDM generik.",
         "solution": "Platform karyawan berbasis Django yang mencakup penjadwalan, data staf, dan alur penggajian dalam satu tempat dengan hak akses berbasis peran.",
@@ -323,11 +352,11 @@
       },
       "pgi-tower": {
         "title": "PGI Tower",
-        "description": "Situs landing page PGI Tower yang menampilkan profil properti, fasilitas, dan titik kontak konversi dengan tata letak responsif modern.",
+        "description": "Website PGI Tower yang menampilkan profil properti, fasilitas, dan cara menghubungi yang jelas, dengan tata letak responsif modern.",
         "client": "PT Property Group Imperium · Properti",
         "problem": "Properti ini butuh kehadiran daring yang meyakinkan — brosur PDF dan halaman usang tak mampu menarik calon pembeli atau menampilkan fasilitas dengan jelas.",
         "approach": "Kami menyusun situs mengikuti cara calon pembeli menilai properti: lokasi, fasilitas, tipe unit, dan jalur kontak yang jelas — mengutamakan tampilan seluler.",
-        "solution": "Situs pemasaran Next.js yang cepat dengan Tailwind CSS — tata letak responsif, sorotan fasilitas, dan bagian kontak yang berfokus pada konversi.",
+        "solution": "Website Next.js yang cepat dengan Tailwind CSS — tata letak responsif, sorotan fasilitas, dan tombol tanya yang jelas.",
         "outcome": "Profil properti modern yang bisa dijelajahi di perangkat apa pun — dengan jalur kontak yang jelas, bukan tindak lanjut luring yang berserakan."
       },
       "sejahtera-bersama-erp": {
@@ -354,7 +383,7 @@
         "client": "CV Chinergy Shenindo · Industri",
         "problem": "Pemasok industri yang sudah mapan belum punya kehadiran daring yang meyakinkan untuk menampilkan lini layanan, kelengkapan katalog, dan jangkauan nasionalnya kepada calon klien perkebunan dan industri.",
         "approach": "Kami menyusun situs mengikuti cara pembeli industri menilai pemasok — layanan, katalog suku cadang, jaringan mitra, dan jalur permintaan penawaran yang jelas — dalam bahasa Indonesia dan Inggris.",
-        "solution": "Situs pemasaran Next.js multibahasa dengan Tailwind CSS yang menampilkan layanan fabrikasi, perbaikan, dan suku cadang, wilayah mitra, serta bagian kontak dan permintaan penawaran yang berfokus pada konversi.",
+        "solution": "Website Next.js multibahasa dengan Tailwind CSS yang menampilkan layanan fabrikasi, perbaikan, dan suku cadang, wilayah mitra, serta tombol tanya dan permintaan penawaran yang jelas.",
         "outcome": "Profil daring tepercaya yang menampilkan seluruh kapabilitas industri Chinergy dan mendorong permintaan penawaran, bukan sekadar penjangkauan luring."
       },
       "citikopi": {
@@ -372,12 +401,12 @@
         "client": "PT Genba Inti Solusindo · HVAC",
         "problem": "Kontraktor AC dan HVAC ini perlu kehadiran daring yang profesional untuk menampilkan ragam produk, layanan pemasangan dan perawatan, serta menjaring permintaan di Sumatera.",
         "approach": "Kami menata situs sesuai yang dicari pembeli — jenis AC, layanan, dan bukti kredibilitas — dengan jalur kontak dan permintaan yang jelas.",
-        "solution": "Landing page Next.js yang responsif dengan Tailwind CSS, menampilkan ragam produk AC, layanan HVAC, profil perusahaan, dan bagian kontak yang berfokus pada konversi.",
+        "solution": "Website Next.js responsif dengan Tailwind CSS yang menampilkan ragam produk AC, layanan HVAC, profil perusahaan, dan tombol tanya yang jelas.",
         "outcome": "Profil kontraktor yang meyakinkan, menampilkan ragam produk dan mengubah pengunjung menjadi permintaan layanan."
       },
       "skyview-setiabudi": {
         "title": "Apartemen Skyview Setiabudi",
-        "description": "Landing page properti untuk apartemen modern di pusat Kota Medan — fasilitas, tipe unit, harga, dan konversi pemesanan.",
+        "description": "Website untuk apartemen modern di pusat Kota Medan — fasilitas, tipe unit, harga, dan jalur langsung ke pemesanan.",
         "client": "Skyview Setiabudi · Properti",
         "problem": "Proyek apartemen modern ini perlu kehadiran daring yang menarik untuk menampilkan fasilitas, tipe unit, dan harga, serta mengarahkan calon pembeli ke pemesanan resmi.",
         "approach": "Kami menyusun situs mengikuti cara pembeli menilai hunian — lokasi, fasilitas, tipe unit beserta harga, dan galeri — dengan jalur pemesanan yang jelas dan tepercaya.",
@@ -405,8 +434,8 @@
     }
   },
   "faq": {
-    "title": "Pertanyaan yang Sering Diajukan",
-    "subtitle": "Jawaban lugas tentang cara kami bekerja — proses, jadwal, IoT, dan apa yang terjadi setelah peluncuran.",
+    "title": "Pertanyaan yang sering diajukan",
+    "subtitle": "Jawaban lugas seputar cara kami bekerja — proses, jadwal, biaya, dan apa yang terjadi setelah peluncuran.",
     "eyebrow": "FAQ",
     "categories": {
       "all": "Semua",
@@ -418,16 +447,16 @@
     "cta": {
       "eyebrow": "Masih ada pertanyaan?",
       "title": "Tanyakan langsung kepada kami",
-      "description": "Jika situasi Anda tak terjawab oleh FAQ, ceritakan saja apa yang sedang terjadi. Kami akan membalas dalam satu hari kerja."
+      "description": "Jika situasi Anda tidak terjawab di sini, ceritakan saja kondisinya. Biasanya kami membalas dalam hitungan jam."
     },
     "items": {
       "what-is-trixync": {
         "question": "Apa itu Trixync?",
-        "answer": "Trixync adalah studio teknologi dan sistem yang berbasis di Medan, Sumatera Utara. Kami merancang perangkat lunak dan solusi IoT khusus yang membenahi cara bisnis beroperasi — bukan sekadar menambah satu aplikasi lagi."
+        "answer": "Trixync adalah software house di Medan, Sumatera Utara. Kami membangun aplikasi web, aplikasi mobile, ERP, dan sistem IoT khusus yang mengikuti cara bisnis Anda benar-benar berjalan — bukan sekadar menambah satu aplikasi lagi."
       },
       "engagement-process": {
         "question": "Bagaimana proses kerja sama Anda?",
-        "answer": "Kami mulai dengan memahami alur kerja dan hambatan Anda yang sebenarnya — duduk bersama tim Anda, bukan sekadar membaca ringkasan. Dari situ kami merancang, membangun secara bertahap dengan mutu produksi, dan tetap mendampingi setelah peluncuran."
+        "answer": "Kami mulai dengan memahami alur kerja dan hambatan Anda — duduk bersama tim Anda, bukan sekadar membaca brief. Lalu kami merancang, membangun secara bertahap yang bisa Anda tinjau, dan tetap terlibat setelah peluncuran."
       },
       "timeline": {
         "question": "Berapa lama waktu pengerjaan proyek pada umumnya?",
@@ -435,47 +464,67 @@
       },
       "pricing": {
         "question": "Bagaimana Anda menentukan harga proyek?",
-        "answer": "Kami menghitung cakupan berdasarkan masalah yang diselesaikan, bukan jam kerja yang dicatat. Setelah penjajakan, kami sampaikan proposal yang jelas beserta tahapannya — tanpa tagihan mengejutkan."
+        "answer": "Kami menetapkan harga berdasarkan masalah yang diselesaikan, bukan jumlah jam kerja. Landing page dan website perusahaan mulai dari Rp5 juta; sistem bisnis khusus dan ERP diberi penawaran setelah sesi discovery sesuai modul dan kompleksitasnya. Anda menerima proposal yang jelas berisi ruang lingkup, milestone, dan biaya, dan setiap perubahan disepakati sebelum dikerjakan — tanpa tagihan kejutan."
       },
       "iot-capability": {
-        "question": "Bisakah Anda berintegrasi dengan perangkat keras dan perangkat IoT?",
+        "question": "Bisakah Anda mengintegrasikan perangkat keras dan IoT?",
         "answer": "Bisa. Kami telah membangun sistem yang tetap jalan tanpa internet dengan pemindai sidik jari, sensor, dan perangkat edge. Kami terbiasa di titik temu perangkat lunak dan dunia fisik."
       },
       "post-launch": {
         "question": "Apakah Anda memberikan dukungan setelah peluncuran?",
-        "answer": "Tentu. Peluncuran adalah tonggak, bukan akhir. Kami menyediakan pemeliharaan berkelanjutan, pengembangan fitur, dan pemantauan infrastruktur seiring bisnis Anda tumbuh."
+        "answer": "Ya. Perbaikan bug gratis selama 3 bulan setelah peluncuran; setelah itu, paket pemeliharaan kami mencakup perbaikan, pembaruan, monitoring, dan hosting, dan kami membangun fitur baru seiring bisnis Anda tumbuh."
       },
       "industries": {
         "question": "Anda menangani industri apa saja?",
-        "answer": "Kami pernah bekerja dengan instansi pemerintah, tim SDM, operator wisata, organisasi keanggotaan, dan jaringan distribusi. Fokus kami adalah kerumitan operasional, bukan satu bidang tertentu."
+        "answer": "Rekrutmen, hospitality, perjalanan, logistik, distribusi dan ritel, pendidikan, properti, makanan dan minuman, pemasok industri, serta organisasi keanggotaan. Kesamaannya adalah kompleksitas operasional, bukan jenis industrinya."
       },
       "remote-work": {
         "question": "Apakah Anda menerima klien jarak jauh?",
-        "answer": "Ya. Meski berbasis di Medan, kami berkolaborasi dengan tim di seluruh Indonesia maupun mancanegara lewat alur kerja jarak jauh yang tertata."
+        "answer": "Ya. Sebagian besar kolaborasi berjalan lewat video call, WhatsApp, dan papan proyek bersama, jadi berada di luar Medan bukan halangan."
       },
       "medan-based": {
         "question": "Apakah Anda hanya melayani di Medan?",
-        "answer": "Kantor pusat kami di Medan, Sumatera Utara, tetapi kami melayani klien se-Indonesia. Untuk bisnis lokal di Sumatera, kami menyediakan sesi penjajakan langsung di lokasi."
+        "answer": "Tidak. Kami berkantor pusat di Medan dan bekerja dengan klien di seluruh Indonesia. Bisnis di Medan dan sekitarnya juga bisa memesan sesi discovery langsung di lokasi."
       },
       "maintenance": {
         "question": "Bisakah Anda mengambil alih sistem yang sudah ada?",
         "answer": "Dalam banyak kasus, bisa. Kami akan menilai kode, infrastruktur, dan kesesuaian operasionalnya lebih dulu sebelum menyarankan untuk memperluas, menata ulang, atau membangun kembali."
+      },
+      "payment-terms": {
+        "question": "Bagaimana sistem pembayarannya?",
+        "answer": "DP 60% untuk memulai proyek, dan pelunasan 40% saat serah terima akhir setelah Anda meninjau dan menyetujui hasilnya."
+      },
+      "code-ownership": {
+        "question": "Siapa pemilik source code-nya?",
+        "answer": "Anda. Setelah proyek lunas, source code dan semua yang kami bangun untuk Anda menjadi milik bisnis Anda."
+      },
+      "nda": {
+        "question": "Apakah Anda bersedia menandatangani NDA?",
+        "answer": "Ya. Kami bersedia menandatangani perjanjian kerahasiaan (NDA) sebelum Anda berbagi detail bisnis, dan kami tetap menjaga kerahasiaan data serta proses Anda."
+      },
+      "warranty": {
+        "question": "Apakah ada garansi setelah peluncuran?",
+        "answer": "Ya. Perbaikan bug gratis selama 3 bulan pertama setelah peluncuran. Setelah itu, perbaikan sudah termasuk dalam biaya pemeliharaan bulanan."
+      },
+      "hosting": {
+        "question": "Siapa yang mengurus hosting dan server?",
+        "answer": "Kami. Hosting, domain, deployment, pembaruan, dan backup semuanya kami tangani — Anda cukup menerima produk jadi yang siap dipakai."
       }
     }
   },
   "contact": {
     "eyebrow": "Kontak",
-    "title": "Mari bicarakan alur kerja Anda",
-    "subtitle": "Ceritakan apa yang masih manual, berserakan, atau tumbang saat beban tinggi. Kami akan membalas dalam satu hari kerja.",
+    "title": "Mari bicarakan proyek Anda",
+    "subtitle": "Ceritakan apa yang masih manual, tercecer, atau memperlambat tim Anda. Biasanya kami membalas dalam hitungan jam.",
     "whatsappCta": "Chat via WhatsApp",
     "channels": {
       "eyebrow": "Hubungi kami",
       "title": "Saluran langsung",
-      "description": "Lebih suka pesan singkat? Gunakan formulir atau hubungi kami langsung — mana pun yang paling nyaman untuk Anda."
+      "description": "Ingin langsung tanpa formulir? Kirim pesan atau email kepada kami."
     },
     "response": {
-      "title": "Satu hari kerja",
-      "description": "Kami membaca setiap pesan secara pribadi dan membalas dengan langkah berikutnya — bukan balasan otomatis."
+      "title": "Balasan dalam hitungan jam",
+      "description": "Kami membaca setiap pesan sendiri dan membalas dengan langkah berikutnya — biasanya dalam hitungan jam, paling lambat satu hari kerja."
     },
     "nextSteps": {
       "eyebrow": "Yang terjadi selanjutnya",
@@ -487,7 +536,7 @@
         },
         "respond": {
           "title": "Kami balas dengan jelas",
-          "description": "Balasan langsung dalam satu hari kerja — pertanyaan, kecocokan, atau usulan menjadwalkan panggilan."
+          "description": "Balasan langsung, biasanya dalam hitungan jam — pertanyaan, kecocokan, atau usulan panggilan."
         },
         "discover": {
           "title": "Penjajakan bila cocok",
@@ -503,32 +552,34 @@
     },
     "form": {
       "eyebrow": "Permintaan proyek",
-      "title": "Kirim pesan kepada kami",
-      "description": "Isi rinciannya di bawah — kami akan membuka WhatsApp dengan pesan Anda yang siap dikirim.",
+      "title": "Ceritakan proyek Anda",
+      "description": "Cukup sekitar satu menit. Kami akan membuka WhatsApp dengan detail Anda yang sudah terisi — tinggal ketuk kirim. Lebih suka email? Tulis ke hello@trixync.id.",
       "name": "Nama lengkap",
-      "email": "Alamat email",
+      "email": "Email (opsional)",
       "company": "Perusahaan (opsional)",
       "projectType": "Jenis proyek",
       "projectTypes": {
-        "systems": "Sistem bisnis khusus",
-        "iot": "Integrasi IoT / perangkat keras",
-        "platform": "Penyatuan platform",
-        "infrastructure": "Infrastruktur / sistem yang sudah ada",
+        "systems": "Sistem bisnis / ERP",
+        "mobile": "Aplikasi mobile",
+        "website": "Website perusahaan",
+        "ai-iot": "Integrasi AI atau IoT",
+        "support": "Sistem yang sudah ada / pemeliharaan",
         "other": "Belum yakin"
       },
       "budgetRange": "Perkiraan anggaran",
       "budgetHint": "Kisaran kasar pun tidak masalah — membantu kami menyarankan cakupan yang tepat.",
       "budgetRanges": {
-        "under-10m": "Di bawah Rp 10 juta",
-        "10-25m": "Rp 10 – 25 juta",
-        "25-50m": "Rp 25 – 50 juta",
-        "50-100m": "Rp 50 – 100 juta",
-        "above-100m": "Di atas Rp 100 juta",
+        "under-10m": "Di bawah Rp10 juta",
+        "10-25m": "Rp10–25 juta",
+        "25-50m": "Rp25–50 juta",
+        "50-100m": "Rp50–100 juta",
+        "above-100m": "Di atas Rp100 juta",
         "not-sure": "Belum tahu / ingin diskusi dulu"
       },
       "message": "Ceritakan tantangan Anda",
       "submit": "Kirim via WhatsApp",
       "success": "WhatsApp terbuka — periksa pesannya lalu ketuk kirim.",
+      "successRetry": "Tidak terbuka? Ketuk di sini.",
       "whatsappMessage": {
         "intro": "Halo Trixync! Ada permintaan proyek baru dari situs Anda:"
       }
@@ -536,7 +587,7 @@
   },
   "footer": {
     "tagline": "Built in Sync",
-    "description": "Kami memetakan cara bisnis Anda berjalan — lalu membangun sistem siap produksi di perangkat lunak dan IoT.",
+    "description": "Software house di Medan. Kami memetakan cara bisnis Anda berjalan, lalu membangun sistem web, mobile, ERP, dan IoT yang sesuai.",
     "ctaEyebrow": "Mari bangun",
     "ctaTitle": "Ceritakan apa yang masih dikerjakan tim Anda secara manual.",
     "ctaDescription": "Yang berulang, yang terduplikasi, yang ditambal dengan spreadsheet dan WhatsApp — ceritakan semuanya. Kami akan menemukan hambatan yang sebenarnya dan berterus terang apakah sebuah sistem layak dibangun.",

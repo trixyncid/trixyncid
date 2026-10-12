@@ -54,10 +54,9 @@ export function EncryptedText({
   useEffect(() => {
     if (!isInView || !text) return;
 
-    setRevealCount(0);
-    setScrambleChars(deterministicScramble(text, charset));
     startTimeRef.current = performance.now();
-    lastFlipTimeRef.current = startTimeRef.current;
+    // Backdate the last flip so the first frame re-scrambles (and resets) immediately.
+    lastFlipTimeRef.current = startTimeRef.current - flipDelayMs;
 
     let isCancelled = false;
     let currentScramble = deterministicScramble(text, charset);

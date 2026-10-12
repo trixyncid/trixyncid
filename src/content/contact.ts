@@ -1,8 +1,9 @@
 export const contactProjectTypeKeys = [
   "systems",
-  "iot",
-  "platform",
-  "infrastructure",
+  "mobile",
+  "website",
+  "ai-iot",
+  "support",
   "other",
 ] as const;
 

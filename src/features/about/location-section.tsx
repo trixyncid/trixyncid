@@ -3,17 +3,12 @@
 import { MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { siteConfig } from "@/content/site";
+import { projects } from "@/content/projects";
 import { ScrollReveal } from "@/components/shared/scroll-reveal";
 import { SectionShell } from "@/components/shared/SectionShell";
 import { motion } from "motion/react";
 
-const statKeys = ["homeBase", "nationwide", "remote"] as const;
-
-const statLabels = {
-  homeBase: "Medan",
-  nationwide: "Indonesia",
-  remote: "Remote",
-} as const;
+const statKeys = ["projects", "homeBase", "reach"] as const;
 
 export function LocationSection() {
   const t = useTranslations("about.location");
@@ -58,9 +53,9 @@ export function LocationSection() {
                   className="rounded-2xl border border-border/60 bg-card/30 px-4 py-4 dark:bg-card/20"
                 >
                   <p className="font-heading text-xl font-semibold text-foreground md:text-2xl">
-                    {statLabels[key]}
+                    {t(`stats.${key}.value`, { count: projects.length })}
                   </p>
-                  <p className="mt-1 text-sm text-muted-foreground">{t(`stats.${key}`)}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{t(`stats.${key}.label`)}</p>
                 </motion.div>
               ))}
             </div>

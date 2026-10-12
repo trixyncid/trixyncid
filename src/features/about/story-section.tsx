@@ -1,18 +1,12 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
+import { TracingBeam } from "@/components/ui/tracing-beam";
 import { storyBeatKeys } from "@/content/about";
 import { AboutStoryBeat } from "@/features/about/about-story-beat";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { ScrollReveal } from "@/components/shared/scroll-reveal";
 import { SectionShell } from "@/components/shared/SectionShell";
-import { SectionSkeleton } from "@/components/shared/SectionSkeleton";
-
-const TracingBeam = dynamic(
-  () => import("@/components/ui/tracing-beam").then((m) => m.TracingBeam),
-  { loading: () => <SectionSkeleton className="h-[420px]" />, ssr: false },
-);
 
 export function StorySection() {
   const t = useTranslations("about");

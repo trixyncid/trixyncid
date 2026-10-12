@@ -1,12 +1,14 @@
 export const siteConfig = {
   name: "Trixync",
   domain: "trixync.id",
-  tagline: "Technology & Systems Studio",
+  tagline: "Software House in Medan",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.trixync.id",
   email: "hello@trixync.id",
+  /** Sitemap lastModified — bump when page content meaningfully changes. */
+  contentUpdatedAt: "2026-10-12",
   /** Used for WhatsApp links and structured data only — not shown in the UI */
-  telephone: "+62 882 6130 6403",
-  whatsapp: "6288261306403",
+  telephone: "+62 878 9338 8812",
+  whatsapp: "6287893388812",
   address: {
     street: "Medan, North Sumatra",
     city: "Medan",

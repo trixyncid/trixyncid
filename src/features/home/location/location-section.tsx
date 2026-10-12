@@ -3,8 +3,11 @@
 import { useTranslations } from "next-intl";
 import { MapPin } from "lucide-react";
 import { siteConfig } from "@/content/site";
+import { projects } from "@/content/projects";
 import { ScrollReveal } from "@/components/shared/scroll-reveal";
 import { SectionShell } from "@/components/shared/SectionShell";
+
+const locationStatKeys = ["projects", "homeBase", "reach"] as const;
 
 export function LocationSection() {
   const t = useTranslations("home.location");
@@ -31,18 +34,14 @@ export function LocationSection() {
         <ScrollReveal delay={0.08}>
           <p className="max-w-xl text-base leading-[1.75] text-muted-foreground">{t("description")}</p>
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
-            <div>
-              <p className="font-heading text-2xl font-semibold text-foreground">Medan</p>
-              <p className="mt-1 text-sm text-muted-foreground">{t("stats.homeBase")}</p>
-            </div>
-            <div>
-              <p className="font-heading text-2xl font-semibold text-foreground">Indonesia</p>
-              <p className="mt-1 text-sm text-muted-foreground">{t("stats.nationwide")}</p>
-            </div>
-            <div>
-              <p className="font-heading text-2xl font-semibold text-foreground">Remote</p>
-              <p className="mt-1 text-sm text-muted-foreground">{t("stats.remote")}</p>
-            </div>
+            {locationStatKeys.map((key) => (
+              <div key={key}>
+                <p className="font-heading text-2xl font-semibold text-foreground">
+                  {t(`stats.${key}.value`, { count: projects.length })}
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">{t(`stats.${key}.label`)}</p>
+              </div>
+            ))}
           </div>
           <p className="mt-8 text-sm text-muted-foreground/80">
             {siteConfig.address.city}, {siteConfig.address.region}, {siteConfig.address.country}

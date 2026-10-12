@@ -36,9 +36,9 @@ export async function SiteFooter() {
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
               {t("ctaEyebrow")}
             </p>
-            <p className="mt-3 font-heading text-2xl font-semibold tracking-tight text-foreground md:text-[2rem] md:leading-tight">
+            <h2 className="mt-3 font-heading text-2xl font-semibold tracking-tight text-foreground md:text-[2rem] md:leading-tight">
               {t("ctaTitle")}
-            </p>
+            </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{t("ctaDescription")}</p>
           </div>
           <Link

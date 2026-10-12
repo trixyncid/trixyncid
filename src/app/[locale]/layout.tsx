@@ -14,6 +14,7 @@ import { PageAmbientGlow } from "@/components/shared/page-ambient-glow";
 import { ThreeDeprecationFilter } from "@/components/shared/three-deprecation-filter";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
+import { siteConfig } from "@/content/site";
 import { htmlLangMap, routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
@@ -40,13 +41,14 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.trixync.id"),
+  metadataBase: new URL(siteConfig.url),
+  title: { default: siteConfig.name, template: "%s" },
   icons: {
     icon: [
       { url: "/brand/logo-icon.svg", media: "(prefers-color-scheme: light)" },
       { url: "/brand/logo-icon-white.svg", media: "(prefers-color-scheme: dark)" },
     ],
-    apple: "/brand/logo-icon.svg",
+    apple: { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
   },
 };
 
@@ -65,6 +67,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   setRequestLocale(locale);
   const messages = await getMessages();
   const tCommon = await getTranslations("common");
+  const tMeta = await getTranslations("metadata.home");
 
   return (
     <html
@@ -87,7 +90,12 @@ export default async function LocaleLayout({ children, params }: Props) {
           >
             {tCommon("skipToMain")}
           </a>
-          <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
+          <JsonLd
+            data={[
+              organizationJsonLd({ locale: locale as Locale, description: tMeta("description") }),
+              websiteJsonLd(locale as Locale),
+            ]}
+          />
           <ThemeProvider>
             <NextIntlClientProvider messages={messages}>
               <SiteHeader />

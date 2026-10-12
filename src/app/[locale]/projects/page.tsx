@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { createPageMetadata } from "@/lib/metadata";
+import { pageBreadcrumbJsonLd } from "@/lib/seo";
+import { JsonLd } from "@/components/shared/JsonLd";
 import { type Locale } from "@/i18n/routing";
 import { ProjectsGridSection } from "@/features/projects";
 
@@ -20,5 +22,17 @@ export default async function ProjectsPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <ProjectsGridSection />;
+  const tNav = await getTranslations("nav");
+  const breadcrumb = pageBreadcrumbJsonLd({
+    locale: locale as Locale,
+    homeName: tNav("home"),
+    trail: [{ name: tNav("projects"), path: "/projects" }],
+  });
+
+  return (
+    <>
+      <JsonLd data={breadcrumb} />
+      <ProjectsGridSection />
+    </>
+  );
 }

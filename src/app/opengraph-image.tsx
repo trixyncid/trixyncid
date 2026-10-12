@@ -95,7 +95,7 @@ export default async function Image() {
               marginTop: 14,
             }}
           >
-            Technology & Systems Studio · Medan, Indonesia
+            Software House · Web, Mobile, ERP & IoT · Medan
           </div>
 
           <div

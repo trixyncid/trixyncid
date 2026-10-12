@@ -1,9 +1,17 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import dynamic from "next/dynamic";
-import { Cpu, Layers, LayoutGrid, Shield, Workflow } from "lucide-react";
+import {
+  Cpu,
+  Globe,
+  LayoutGrid,
+  LifeBuoy,
+  Smartphone,
+  Sparkles,
+  Workflow,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Timeline } from "@/components/ui/timeline";
 import { AnimatePresence, motion } from "motion/react";
 import {
   processStepKeys,
@@ -16,28 +24,23 @@ import {
 import { PageHeader } from "@/components/shared/PageHeader";
 import { ScrollReveal } from "@/components/shared/scroll-reveal";
 import { SectionShell } from "@/components/shared/SectionShell";
-import { SectionSkeleton } from "@/components/shared/SectionSkeleton";
 import { cn } from "@/lib/utils";
 import { ServiceCard } from "./service-card";
 
-const Timeline = dynamic(
-  () => import("@/components/ui/timeline").then((m) => m.Timeline),
-  { loading: () => <SectionSkeleton className="h-96" />, ssr: false },
-);
-
 const iconMap = {
   workflow: Workflow,
+  smartphone: Smartphone,
+  globe: Globe,
+  sparkles: Sparkles,
   cpu: Cpu,
-  layers: Layers,
-  shield: Shield,
+  lifebuoy: LifeBuoy,
 } as const;
 
-const filterIcons: Record<ServiceFilterKey, typeof LayoutGrid | typeof Workflow> = {
+const filterIcons: Record<ServiceFilterKey, typeof LayoutGrid> = {
   all: LayoutGrid,
-  systems: Workflow,
-  iot: Cpu,
-  platform: Layers,
-  infrastructure: Shield,
+  software: Workflow,
+  intelligent: Sparkles,
+  support: LifeBuoy,
 };
 
 function filterLabelKey(filter: ServiceFilterKey) {

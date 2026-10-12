@@ -1,15 +1,9 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
+import { Timeline } from "@/components/ui/timeline";
 import { ScrollReveal } from "@/components/shared/scroll-reveal";
 import { SectionShell } from "@/components/shared/SectionShell";
-import { SectionSkeleton } from "@/components/shared/SectionSkeleton";
-
-const Timeline = dynamic(
-  () => import("@/components/ui/timeline").then((m) => m.Timeline),
-  { loading: () => <SectionSkeleton className="h-96" />, ssr: false },
-);
 
 const stepKeys = ["bottleneck", "design", "build", "support"] as const;
 

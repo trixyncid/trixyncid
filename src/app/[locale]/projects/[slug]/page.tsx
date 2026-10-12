@@ -6,7 +6,7 @@ import { siteConfig } from "@/content/site";
 import { getProject, projectIds } from "@/content/projects";
 import { ProjectDetailSection } from "@/features/projects/project-detail-section";
 import { createPageMetadata, notFoundMetadata } from "@/lib/metadata";
-import { breadcrumbJsonLd, projectPageJsonLd } from "@/lib/seo";
+import { pageBreadcrumbJsonLd, projectPageJsonLd } from "@/lib/seo";
 import { routing, type Locale } from "@/i18n/routing";
 
 type Props = {
@@ -24,7 +24,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = getProject(slug);
 
   if (!project) {
-    return notFoundMetadata();
+    const tCommon = await getTranslations({ locale, namespace: "common" });
+    return notFoundMetadata(tCommon("notFound.title"));
   }
 
   const t = await getTranslations({ locale, namespace: `projects.items.${slug}` });
@@ -37,6 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: t("description"),
     },
     image: `${siteConfig.url}${project.image}`,
+    imageAlt: t("title"),
     openGraphType: "article",
   });
 }
@@ -49,19 +51,25 @@ export default async function ProjectDetailPage({ params }: Props) {
   if (!project) notFound();
 
   const t = await getTranslations({ locale, namespace: `projects.items.${slug}` });
-  const tProjects = await getTranslations({ locale, namespace: "projects" });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
   const pageUrl = `${siteConfig.url}/${locale}/projects/${slug}`;
 
   const structuredData = [
-    breadcrumbJsonLd([
-      { name: tProjects("title"), url: `${siteConfig.url}/${locale}/projects` },
-      { name: t("title"), url: pageUrl },
-    ]),
+    pageBreadcrumbJsonLd({
+      locale: locale as Locale,
+      homeName: tNav("home"),
+      trail: [
+        { name: tNav("projects"), path: "/projects" },
+        { name: t("title"), path: `/projects/${slug}` },
+      ],
+    }),
     projectPageJsonLd({
+      locale: locale as Locale,
       name: t("title"),
       description: t("description"),
       url: pageUrl,
       image: project.image,
+      keywords: project.tags,
     }),
   ];
 

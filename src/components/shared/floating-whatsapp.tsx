@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { track } from "@vercel/analytics";
 import { siteConfig } from "@/content/site";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
@@ -20,6 +21,7 @@ export function FloatingWhatsApp() {
   return (
     <a
       href={href}
+      onClick={() => track("contact_click", { channel: "whatsapp", location: "floating_button" })}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={t("label")}

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { createPageMetadata } from "@/lib/metadata";
 import { faqIds } from "@/content/faq";
-import { faqJsonLd } from "@/lib/seo";
+import { faqJsonLd, pageBreadcrumbJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { type Locale } from "@/i18n/routing";
 import { FaqSection } from "@/features/faq";
@@ -23,6 +23,7 @@ export default async function FaqPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("faq");
+  const tNav = await getTranslations("nav");
 
   const faqItems = faqIds.map((id) => ({
     question: t(`items.${id}.question`),
@@ -31,7 +32,16 @@ export default async function FaqPage({ params }: Props) {
 
   return (
     <>
-      <JsonLd data={faqJsonLd(faqItems)} />
+      <JsonLd
+        data={[
+          pageBreadcrumbJsonLd({
+            locale: locale as Locale,
+            homeName: tNav("home"),
+            trail: [{ name: tNav("faq"), path: "/faq" }],
+          }),
+          faqJsonLd(faqItems),
+        ]}
+      />
       <FaqSection />
     </>
   );

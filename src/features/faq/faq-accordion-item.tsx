@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { Plus } from "lucide-react";
 import { useId } from "react";
 import { useHydrationSafeReducedMotion } from "@/hooks/use-hydration-safe-reduced-motion";
@@ -87,27 +87,24 @@ export function FaqAccordionItem({
         </motion.span>
       </button>
 
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.div
-            id={panelId}
-            role="region"
-            aria-labelledby={buttonId}
-            key="content"
-            initial={reducedMotion ? false : { height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={reducedMotion ? undefined : { height: 0, opacity: 0 }}
-            transition={{ duration, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden"
-          >
-            <div className="border-t border-border/40 px-5 pb-5 pt-4 sm:px-6 sm:pb-6 sm:pl-[4.25rem]">
-              <p className="text-sm leading-relaxed text-muted-foreground md:text-[0.9375rem] md:leading-7">
-                {answer}
-              </p>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Panel stays mounted so every answer is in the server HTML for crawlers;
+          collapsed panels are height 0 and inert. */}
+      <motion.div
+        id={panelId}
+        role="region"
+        aria-labelledby={buttonId}
+        initial={false}
+        animate={isOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+        transition={{ duration, ease: [0.22, 1, 0.36, 1] }}
+        inert={!isOpen}
+        className="overflow-hidden"
+      >
+        <div className="border-t border-border/40 px-5 pb-5 pt-4 sm:px-6 sm:pb-6 sm:pl-[4.25rem]">
+          <p className="text-sm leading-relaxed text-muted-foreground md:text-[0.9375rem] md:leading-7">
+            {answer}
+          </p>
+        </div>
+      </motion.div>
     </motion.article>
   );
 }

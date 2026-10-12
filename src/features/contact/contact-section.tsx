@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Clock, Mail, MapPin, MessageCircle } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
+import { track } from "@vercel/analytics";
 import {
   contactBudgetRangeKeys,
   contactChannelKeys,
@@ -49,7 +50,7 @@ const nextStepKeys = ["review", "respond", "discover"] as const;
 
 export function ContactSection() {
   const t = useTranslations("contact");
-  const [status, setStatus] = useState<"idle" | "success">("idle");
+  const [whatsappUrl, setWhatsappUrl] = useState<string | null>(null);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -76,9 +77,17 @@ export function ContactSection() {
     });
 
     const url = buildWhatsAppUrl(siteConfig.whatsapp, whatsappMessage);
-    window.open(url, "_blank", "noopener,noreferrer");
-    setStatus("success");
-    form.reset();
+    track("contact_form_submit", { projectType: projectTypeKey, budget: budgetKey });
+    // Passing "noopener" makes window.open always return null, so open without it
+    // to detect blocked popups (common in in-app browsers), then detach the opener.
+    const popup = window.open(url, "_blank");
+    if (popup) {
+      popup.opener = null;
+    } else {
+      window.location.href = url;
+    }
+    // Keep the form filled so nothing is lost if WhatsApp didn't open.
+    setWhatsappUrl(url);
   }
 
   return (
@@ -128,6 +137,7 @@ export function ContactSection() {
                             {href ? (
                               <a
                                 href={href}
+                                onClick={() => track("contact_click", { channel, location: "contact_page" })}
                                 target={channel === "whatsapp" ? "_blank" : undefined}
                                 rel={channel === "whatsapp" ? "noopener noreferrer" : undefined}
                                 className="mt-1 block text-sm leading-snug font-medium break-words text-foreground transition-colors hover:text-brand"
@@ -178,7 +188,7 @@ export function ContactSection() {
                       <FormInput id="name" name="name" required autoComplete="name" />
                     </FormField>
                     <FormField id="email" label={t("form.email")}>
-                      <FormInput id="email" name="email" type="email" required autoComplete="email" />
+                      <FormInput id="email" name="email" type="email" autoComplete="email" />
                     </FormField>
                   </div>
 
@@ -227,7 +237,7 @@ export function ContactSection() {
                   </button>
 
                   <AnimatePresence mode="wait">
-                    {status === "success" ? (
+                    {whatsappUrl ? (
                       <motion.p
                         key="success"
                         role="status"
@@ -238,7 +248,15 @@ export function ContactSection() {
                         exit={{ opacity: 0, y: -4 }}
                         className="rounded-xl border border-green-500/20 bg-green-500/10 px-4 py-3 text-center text-sm text-green-600 dark:text-green-400"
                       >
-                        {t("form.success")}
+                        {t("form.success")}{" "}
+                        <a
+                          href={whatsappUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-semibold underline underline-offset-2"
+                        >
+                          {t("form.successRetry")}
+                        </a>
                       </motion.p>
                     ) : null}
                   </AnimatePresence>

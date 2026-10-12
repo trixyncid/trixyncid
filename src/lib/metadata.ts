@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/content/site";
-import { ogLocaleMap, routing, type Locale } from "@/i18n/routing";
+import { htmlLangMap, ogLocaleMap, routing, type Locale } from "@/i18n/routing";
 
 type MetaMessages = {
   title: string;
@@ -12,6 +12,7 @@ type PageMetadataOptions = {
   path: string;
   meta: MetaMessages;
   image?: string;
+  imageAlt?: string;
   openGraphType?: "website" | "article";
 };
 
@@ -19,12 +20,17 @@ function buildLanguageAlternates(path: string) {
   const normalizedPath = path === "/" ? "" : path;
   const languages: Record<string, string> = {};
 
+  // hreflang codes match <html lang> (zh-Hans for Simplified Chinese); URL paths keep /zh.
   for (const locale of routing.locales) {
-    languages[locale] = `${siteConfig.url}/${locale}${normalizedPath}`;
+    languages[htmlLangMap[locale]] = `${siteConfig.url}/${locale}${normalizedPath}`;
   }
   languages["x-default"] = `${siteConfig.url}/en${normalizedPath}`;
 
   return languages;
+}
+
+export function localeUrl(locale: Locale, path = "/") {
+  return `${siteConfig.url}/${locale}${path === "/" ? "" : path}`;
 }
 
 export function buildAlternates(path: string) {
@@ -33,9 +39,12 @@ export function buildAlternates(path: string) {
   };
 }
 
-function buildOgImages(image?: string) {
-  const url = image ?? `${siteConfig.url}/opengraph-image`;
-  return [{ url, width: 1200, height: 630, alt: siteConfig.name }];
+function buildOgImages(image?: string, alt?: string) {
+  if (image) {
+    // Project screenshots vary in size, so let crawlers read the real dimensions.
+    return [{ url: image, alt: alt ?? siteConfig.name }];
+  }
+  return [{ url: `${siteConfig.url}/opengraph-image`, width: 1200, height: 630, alt: siteConfig.name }];
 }
 
 export function createPageMetadata({
@@ -43,11 +52,12 @@ export function createPageMetadata({
   path,
   meta,
   image,
+  imageAlt,
   openGraphType = "website",
 }: PageMetadataOptions): Metadata {
   const normalizedPath = path === "/" ? "" : path;
   const pageUrl = `${siteConfig.url}/${locale}${normalizedPath}`;
-  const ogImages = buildOgImages(image);
+  const ogImages = buildOgImages(image, imageAlt);
   const alternateLocales = routing.locales
     .filter((loc) => loc !== locale)
     .map((loc) => ogLocaleMap[loc as Locale]);
@@ -78,9 +88,9 @@ export function createPageMetadata({
   };
 }
 
-export function notFoundMetadata(): Metadata {
+export function notFoundMetadata(title = "Page not found"): Metadata {
   return {
-    title: "Page not found — Trixync",
+    title: `${title} — Trixync`,
     robots: { index: false, follow: false },
   };
 }

@@ -66,7 +66,7 @@ export function MobileNav({
   if (!open) return null;
 
   return (
-    <div className={cn("mobile-nav-root fixed inset-0 z-[60] md:hidden", className)}>
+    <div className={cn("mobile-nav-root fixed inset-0 z-[60] lg:hidden", className)}>
       <button
         type="button"
         aria-label={tNav("closeMenu")}

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { createPageMetadata } from "@/lib/metadata";
+import { pageBreadcrumbJsonLd } from "@/lib/seo";
+import { JsonLd } from "@/components/shared/JsonLd";
 import { type Locale } from "@/i18n/routing";
 import { ContactSection } from "@/features/contact";
 
@@ -20,5 +22,17 @@ export default async function ContactPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <ContactSection />;
+  const tNav = await getTranslations("nav");
+  const breadcrumb = pageBreadcrumbJsonLd({
+    locale: locale as Locale,
+    homeName: tNav("home"),
+    trail: [{ name: tNav("contact"), path: "/contact" }],
+  });
+
+  return (
+    <>
+      <JsonLd data={breadcrumb} />
+      <ContactSection />
+    </>
+  );
 }

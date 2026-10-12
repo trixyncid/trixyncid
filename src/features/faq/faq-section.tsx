@@ -1,9 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import dynamic from "next/dynamic";
 import { Building2, Cpu, LifeBuoy, Route } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { TracingBeam } from "@/components/ui/tracing-beam";
 import {
   faqCategoryKeys,
   faqIdsForCategory,
@@ -14,14 +14,8 @@ import { FaqAccordionItem } from "@/features/faq/faq-accordion-item";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { ScrollReveal } from "@/components/shared/scroll-reveal";
 import { SectionShell } from "@/components/shared/SectionShell";
-import { SectionSkeleton } from "@/components/shared/SectionSkeleton";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, LayoutGroup, motion } from "motion/react";
-
-const TracingBeam = dynamic(
-  () => import("@/components/ui/tracing-beam").then((m) => m.TracingBeam),
-  { loading: () => <SectionSkeleton className="h-[480px]" />, ssr: false },
-);
 
 const categoryIcons = {
   studio: Building2,
