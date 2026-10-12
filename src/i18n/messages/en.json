@@ -383,6 +383,24 @@
         "approach": "We structured the site the way buyers evaluate a residence — location, facilities, unit types with pricing, and gallery — with clear, trusted booking paths.",
         "solution": "A responsive Next.js site with Tailwind CSS highlighting premium facilities, studio-to-2BR unit types with pricing, photo gallery, and official contact and booking sections.",
         "outcome": "A polished property profile that presents units and facilities clearly and channels inquiries to official booking rather than scattered offline follow-up."
+      },
+      "malavari-films": {
+        "title": "Malavari Films Academy",
+        "description": "Online filmmaking course platform — class catalog, secure video lessons, checkout with online payments, and a personal learning library.",
+        "client": "Malavari Films · Online education",
+        "problem": "A filmmaking creator wanted to sell video classes directly, but needed protected streaming, reliable payments, and course management without depending on third-party course marketplaces.",
+        "approach": "We designed around the buyer journey — browse classes, check out, then learn — and treated video protection and encoding cost as first-class concerns from day one.",
+        "solution": "A Next.js storefront and student dashboard on a Django REST API, with adaptive HLS video encoded in the background and streamed only to buyers, online payment checkout, promo codes, downloadable materials, and an admin panel for classes and orders.",
+        "outcome": "An owned sales channel where purchases unlock courses automatically and lessons stream securely, with no marketplace fees or manual access handling."
+      },
+      "mitra-laju-interocean": {
+        "title": "Mitra Laju Interocean Operations",
+        "description": "Freight forwarding operations dashboard — shipments, containers, costings, and sellings managed in one role-based system.",
+        "client": "PT Mitra Laju Interocean · Logistics",
+        "problem": "Shipment bookings, container details, vendor costs, and customer pricing were tracked across separate spreadsheets, making margins hard to see and access hard to control between teams.",
+        "approach": "We mapped how domestic, export, operations, and costing teams actually work, then defined clear role-based permissions so each team sees and edits only what it owns.",
+        "solution": "A Next.js dashboard on a Bun + Elysia API with PostgreSQL, covering master data (customers, vendors, ports, vessels), shipments with containers and attachments, costings, sellings, and analytics, with access enforced per role and shipment type.",
+        "outcome": "One source of truth for every shipment from booking to margin, with management analytics and access controls replacing scattered spreadsheets."
       }
     }
   },

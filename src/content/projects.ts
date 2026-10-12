@@ -20,6 +20,14 @@ export const projects: ProjectItem[] = [
     featured: true,
   },
   {
+    id: "malavari-films",
+    category: "software",
+    image: "/projects/malavari-films.png",
+    tags: ["Next.js", "Django", "Video Streaming", "Payments"],
+    liveUrl: "https://malavarifilms.com",
+    featured: true,
+  },
+  {
     id: "gerindra-sumut",
     category: "enterprise",
     image: "/projects/gerindra.png",
@@ -54,6 +62,13 @@ export const projects: ProjectItem[] = [
     category: "enterprise",
     image: "/projects/ims.png",
     tags: ["Django", "ERP", "POS", "Inventory"],
+    featured: true,
+  },
+  {
+    id: "mitra-laju-interocean",
+    category: "enterprise",
+    image: "/projects/mli.png",
+    tags: ["Next.js", "Elysia", "PostgreSQL", "Logistics"],
     featured: true,
   },
   {

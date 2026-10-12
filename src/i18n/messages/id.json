@@ -383,6 +383,24 @@
         "approach": "Kami menyusun situs mengikuti cara pembeli menilai hunian — lokasi, fasilitas, tipe unit beserta harga, dan galeri — dengan jalur pemesanan yang jelas dan tepercaya.",
         "solution": "Situs Next.js responsif dengan Tailwind CSS yang menonjolkan fasilitas premium, tipe unit dari studio hingga dua kamar beserta harga, galeri foto, serta bagian kontak dan pemesanan resmi.",
         "outcome": "Profil properti yang rapi, menampilkan unit dan fasilitas dengan jelas serta mengarahkan calon pembeli ke pemesanan resmi, bukan tindak lanjut luring yang berserakan."
+      },
+      "malavari-films": {
+        "title": "Malavari Films Academy",
+        "description": "Platform kursus filmmaking online — katalog kelas, video pelajaran yang aman, checkout dengan pembayaran online, dan perpustakaan belajar pribadi.",
+        "client": "Malavari Films · Edukasi online",
+        "problem": "Seorang kreator filmmaking ingin menjual kelas video secara langsung, tetapi membutuhkan streaming yang terlindungi, pembayaran yang andal, dan pengelolaan kursus tanpa bergantung pada marketplace kursus pihak ketiga.",
+        "approach": "Kami merancang mengikuti perjalanan pembeli — melihat kelas, checkout, lalu belajar — dan menjadikan perlindungan video serta biaya encoding sebagai prioritas sejak awal.",
+        "solution": "Storefront dan dashboard siswa berbasis Next.js di atas Django REST API, dengan video HLS adaptif yang di-encode di latar belakang dan hanya di-stream ke pembeli, checkout pembayaran online, kode promo, materi yang dapat diunduh, serta panel admin untuk kelas dan pesanan.",
+        "outcome": "Kanal penjualan milik sendiri di mana pembelian langsung membuka akses kursus dan pelajaran di-stream dengan aman, tanpa biaya marketplace atau pengaturan akses manual."
+      },
+      "mitra-laju-interocean": {
+        "title": "Sistem Operasional Mitra Laju Interocean",
+        "description": "Dashboard operasional freight forwarding — pengiriman, kontainer, costing, dan selling dikelola dalam satu sistem berbasis peran.",
+        "client": "PT Mitra Laju Interocean · Logistik",
+        "problem": "Booking pengiriman, detail kontainer, biaya vendor, dan harga ke pelanggan dicatat di spreadsheet terpisah, sehingga margin sulit terlihat dan akses antar tim sulit dikendalikan.",
+        "approach": "Kami memetakan cara kerja nyata tim domestik, ekspor, operasional, dan costing, lalu menetapkan hak akses berbasis peran agar setiap tim hanya melihat dan mengubah data yang menjadi tanggung jawabnya.",
+        "solution": "Dashboard Next.js di atas API Bun + Elysia dengan PostgreSQL, mencakup master data (pelanggan, vendor, pelabuhan, kapal), pengiriman beserta kontainer dan lampiran, costing, selling, dan analitik, dengan akses yang dibatasi per peran dan jenis pengiriman.",
+        "outcome": "Satu sumber data untuk setiap pengiriman dari booking hingga margin, dengan analitik manajemen dan kontrol akses yang menggantikan spreadsheet yang berserakan."
       }
     }
   },
