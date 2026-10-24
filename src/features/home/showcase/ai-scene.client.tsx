@@ -10,11 +10,11 @@ import { downgradeVisuals } from "@/hooks/use-rich-visuals";
 import { useRenderActive } from "@/hooks/use-render-active";
 
 /**
- * Pointer state written by the card's DOM handlers and read inside useFrame,
+ * Pointer state written by the visual's DOM handlers and read inside useFrame,
  * so moving the mouse never re-renders React.
  */
 export type RobotInteraction = {
-  /** Pointer position over the card, -1..1 on each axis. */
+  /** Pointer position over the visual, -1..1 on each axis. */
   x: number;
   y: number;
   hover: boolean;
@@ -516,12 +516,15 @@ function WorkflowOrbit({
   );
 }
 
-type StrengthAiSceneProps = {
+type AiSceneProps = {
   interaction: React.RefObject<RobotInteraction>;
+  /** Stop rendering while the scene is on screen but hidden (e.g. a faded-out layer). */
+  paused?: boolean;
 };
 
-export function StrengthAiScene({ interaction }: StrengthAiSceneProps) {
-  const { ref, active } = useRenderActive<HTMLDivElement>();
+export function AiScene({ interaction, paused = false }: AiSceneProps) {
+  const { ref, active: inView } = useRenderActive<HTMLDivElement>();
+  const active = inView && !paused;
   // 60 fps while someone is interacting, 30 fps for the idle float.
   const getFps = () => {
     const input = interaction.current;
@@ -543,6 +546,10 @@ export function StrengthAiScene({ interaction }: StrengthAiSceneProps) {
         gl={{ antialias: true, alpha: true, powerPreference: "default" }}
         frameloop="demand"
         events={inertCanvasEvents}
+        // Size from layout (offsetWidth), not getBoundingClientRect: the parents are
+        // scaled/moved by scroll animations, and re-measuring that on scroll resized
+        // the canvas mid-scroll and made the scene jump.
+        resize={{ scroll: false, offsetSize: true }}
         style={{ background: "transparent" }}
       >
         <FrameDriver active={active} getFps={getFps} onSlow={downgradeVisuals} />
@@ -552,7 +559,7 @@ export function StrengthAiScene({ interaction }: StrengthAiSceneProps) {
   );
 }
 
-function SceneContents({ interaction }: StrengthAiSceneProps) {
+function SceneContents({ interaction }: AiSceneProps) {
   const materials = useMaterials();
   const halo = useHaloTexture();
 

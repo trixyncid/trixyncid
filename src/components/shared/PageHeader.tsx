@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import { ScrollReveal } from "@/components/shared/scroll-reveal";
 
 type PageHeaderProps = {
-  eyebrow?: string;
   title: string;
   subtitle?: string;
   align?: "left" | "center";
@@ -11,7 +10,6 @@ type PageHeaderProps = {
 };
 
 export function PageHeader({
-  eyebrow,
   title,
   subtitle,
   align = "left",
@@ -26,11 +24,6 @@ export function PageHeader({
         className,
       )}
     >
-      {eyebrow && (
-        <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
-          {eyebrow}
-        </p>
-      )}
       <h1 className="font-heading text-2xl font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl md:leading-tight">
         {title}
       </h1>

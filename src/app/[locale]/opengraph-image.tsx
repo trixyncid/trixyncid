@@ -1,10 +1,17 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
+import { getTranslations } from "next-intl/server";
+import { routing, type Locale } from "@/i18n/routing";
 
-export const alt = "Trixync — Built in Sync";
+export const alt = "Trixync, Built in Sync";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+
+// One card per language, rendered at build time.
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 function buildDotGrid() {
   const width = 1200;
@@ -21,7 +28,47 @@ function buildDotGrid() {
   return `data:image/svg+xml;base64,${Buffer.from(svg).toString("base64")}`;
 }
 
-export default async function Image() {
+/**
+ * The default renderer has Latin glyphs only. For Chinese, load a Noto Sans SC
+ * subset holding just this text (TTF, which the renderer can read).
+ */
+async function loadCjkFont(text: string) {
+  try {
+    const css = await fetch(
+      `https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600&text=${encodeURIComponent(text)}`,
+      { cache: "force-cache" },
+    ).then((res) => res.text());
+    const url = css.match(/src: url\((.+?)\) format\('(?:opentype|truetype)'\)/)?.[1];
+    if (!url) return null;
+    return await fetch(url, { cache: "force-cache" }).then((res) => res.arrayBuffer());
+  } catch {
+    return null;
+  }
+}
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function Image({ params }: Props) {
+  const { locale: requested } = await params;
+  const locale: Locale = routing.locales.includes(requested as Locale) ? (requested as Locale) : routing.defaultLocale;
+  const t = await getTranslations({ locale, namespace: "metadata.og" });
+  let line = t("line");
+  let cta = t("cta");
+  let fonts: { name: string; data: ArrayBuffer; weight: 600; style: "normal" }[] | undefined;
+  if (locale === "zh") {
+    const font = await loadCjkFont(`Built in Sync${line}${cta}`);
+    if (font) {
+      fonts = [{ name: "Noto Sans SC", data: font, weight: 600, style: "normal" }];
+    } else {
+      // No CJK glyphs available: an English card beats one full of empty boxes.
+      const tEn = await getTranslations({ locale: "en", namespace: "metadata.og" });
+      line = tEn("line");
+      cta = tEn("cta");
+    }
+  }
+
   const logo = await readFile(
     join(process.cwd(), "public/brand/logo-full-white.svg"),
     "base64",
@@ -41,7 +88,7 @@ export default async function Image() {
           alignItems: "center",
           justifyContent: "center",
           background: "#101726",
-          fontFamily: "sans-serif",
+          fontFamily: fonts ? "Noto Sans SC" : "sans-serif",
         }}
       >
         <img
@@ -93,7 +140,7 @@ export default async function Image() {
               marginTop: 14,
             }}
           >
-            Software House · Web, Mobile, ERP & IoT · Medan
+            {line}
           </div>
 
           <div
@@ -110,11 +157,11 @@ export default async function Image() {
               fontWeight: 600,
             }}
           >
-            Talk to us
+            {cta}
           </div>
         </div>
       </div>
     ),
-    { ...size },
+    { ...size, fonts },
   );
 }

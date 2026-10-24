@@ -1,23 +1,11 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import Link from "next/link";
-import { useReducedMotion } from "motion/react";
 import { useLocale, useTranslations } from "next-intl";
 import { HeroHeadline } from "./hero-headline";
+import { HeroVisual } from "./hero-visual";
 import { HeroReveal } from "@/components/shared/scroll-reveal";
-import { useDeferredMount } from "@/hooks/use-deferred-mount";
-import { useRichVisuals } from "@/hooks/use-rich-visuals";
 import { type Locale } from "@/i18n/routing";
-
-const BackgroundBeams = dynamic(
-  () => import("@/components/ui/background-beams").then((m) => m.BackgroundBeams),
-  { ssr: false },
-);
-
-const HeroScene = dynamic(() => import("./hero-scene.client").then((m) => m.HeroScene), {
-  ssr: false,
-});
 
 function HeroBackdrop() {
   return (
@@ -32,45 +20,21 @@ export function HeroSection() {
   const t = useTranslations("home.hero");
   const locale = useLocale() as Locale;
   const prefix = `/${locale}`;
-  const reducedMotion = useReducedMotion();
-  // WebGL + animated beams only on capable desktops; phones, tablets and
-  // low-power machines get the static gradient backdrop.
-  const richVisuals = useRichVisuals();
-  const effectsReady = useDeferredMount({
-    timeout: 3000,
-    disabled: reducedMotion === true,
-  });
 
   return (
-    <section className="relative -mt-20 min-h-[85svh] overflow-visible pb-20 pt-[calc(var(--site-header-height)+3rem)] md:pb-28 md:pt-[calc(var(--site-header-height)+4rem)]">
+    <section className="relative -mt-20 overflow-x-clip pb-[min(76vw,21rem)] pt-[calc(var(--site-header-height)+3rem)] md:pt-[calc(var(--site-header-height)+4rem)] lg:pb-12">
       <div className="pointer-events-none absolute inset-0 [mask-image:linear-gradient(to_bottom,black_0%,black_55%,transparent_92%)]">
         <HeroBackdrop />
-        {effectsReady && richVisuals && (
-          <>
-            <BackgroundBeams className="absolute inset-0 h-full w-full opacity-25 dark:opacity-40" />
-            <HeroScene />
-          </>
-        )}
-        <div
-          className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/20 to-transparent [mask-image:linear-gradient(to_bottom,transparent_0%,transparent_22%,black_44%,black_100%)] dark:from-background/75 dark:via-background/25"
-          aria-hidden
-        />
         <div className="grain-overlay absolute inset-0 opacity-40 max-md:hidden" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-xl">
-          <HeroReveal delay={0}>
-            <p className="mb-6 text-xs font-medium uppercase tracking-[0.22em] text-muted-foreground">
-              {t("eyebrow")}
-            </p>
-          </HeroReveal>
-
-          {/* The headline is the LCP element, so it paints immediately with no fade. */}
-          <HeroHeadline line1={t("headline")} line2={t("headlineHighlight")} />
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <HeroVisual />
+        <div className="relative z-10 max-w-2xl">
+          <HeroHeadline>{t("headline")}</HeroHeadline>
 
           <HeroReveal delay={0.08}>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground md:text-[1.0625rem]">
+            <p className="mt-8 max-w-lg text-base leading-relaxed text-foreground/80 md:text-lg">
               {t("subheadline")}
             </p>
           </HeroReveal>
@@ -79,13 +43,13 @@ export function HeroSection() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
               <Link
                 href={`${prefix}/contact`}
-                className="inline-flex items-center justify-center rounded-full bg-brand px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-brand-light"
+                className="inline-flex items-center justify-center rounded-full bg-brand px-6 py-3 text-sm font-medium text-primary-foreground transition-[background-color,scale] duration-150 hover:bg-brand-light active:scale-[0.97]"
               >
                 {t("ctaPrimary")}
               </Link>
               <Link
                 href={`${prefix}/projects`}
-                className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground/90 transition-colors hover:border-foreground/30 hover:text-foreground"
+                className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground/90 transition-[border-color,color,scale] duration-150 hover:border-foreground/30 hover:text-foreground active:scale-[0.97]"
               >
                 {t("ctaSecondary")}
               </Link>

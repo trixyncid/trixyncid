@@ -1,14 +1,13 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, ExternalLink } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import type { ProjectItem } from "@/content/projects";
-import { ScrollReveal } from "@/components/shared/scroll-reveal";
+import { projects, type ProjectItem } from "@/content/projects";
+import { HeroReveal, ScrollReveal } from "@/components/shared/scroll-reveal";
 import { SectionShell } from "@/components/shared/SectionShell";
+import { Timeline } from "@/components/ui/timeline";
+import { HoverEffectGrid } from "@/components/ui/card-hover-effect";
 import { type Locale } from "@/i18n/routing";
-import { cn } from "@/lib/utils";
 
 const categoryLabelKeys = {
   software: "filterSoftware",
@@ -16,149 +15,181 @@ const categoryLabelKeys = {
   web: "filterWeb",
 } as const;
 
-const categoryStyles = {
-  software: "border-sky-400/30 bg-sky-500/10 text-sky-700 dark:text-sky-300",
-  enterprise: "border-brand-light/30 bg-brand/10 text-brand-text",
-  web: "border-violet-400/30 bg-violet-500/10 text-violet-700 dark:text-violet-300",
-} as const;
+/** "PT Mitra Laju Interocean · Logistics" → ["PT Mitra Laju Interocean", "Logistics"] */
+function splitClient(client: string) {
+  const [name, industry] = client.split(" · ");
+  return { name: name ?? client, industry: industry ?? "" };
+}
+
+/**
+ * The outcome as a statement whose words brighten line by line as it scrolls
+ * into the reading zone (`.word-reveal` in globals.css). The full sentence is
+ * plain text in the HTML; languages written without spaces split per character.
+ */
+function RevealStatement({ text }: { text: string }) {
+  const parts = /\s/.test(text) ? text.split(/(\s+)/) : Array.from(text);
+  return (
+    <p className="word-reveal max-w-4xl font-heading text-2xl font-semibold leading-snug tracking-tight text-foreground md:text-4xl md:leading-[1.2]">
+      {parts.map((part, index) => (/^\s+$/.test(part) ? part : <span key={index}>{part}</span>))}
+    </p>
+  );
+}
 
 type ProjectDetailSectionProps = {
   project: ProjectItem;
 };
 
+/**
+ * A case study: the facts up front, the product large (it settles to full
+ * size and drifts as it scrolls), the story on the site's scroll rail, the
+ * outcome as a statement, then the next case study. All motion is CSS, so
+ * every word is in the server HTML for search and answer engines.
+ */
 export function ProjectDetailSection({ project }: ProjectDetailSectionProps) {
   const t = useTranslations("projects");
   const locale = useLocale() as Locale;
   const prefix = `/${locale}`;
   const ns = `items.${project.id}` as const;
+  const client = splitClient(t(`${ns}.client`));
 
-  const blocks = [
-    { key: "problem" as const, label: t("caseStudy.problem") },
-    { key: "approach" as const, label: t("caseStudy.approach") },
-    { key: "solution" as const, label: t("caseStudy.solution") },
-  ];
+  const next = projects[(projects.findIndex((p) => p.id === project.id) + 1) % projects.length]!;
+
+  const facts = [
+    { label: t("caseStudy.client"), value: client.name },
+    { label: t("caseStudy.industry"), value: client.industry },
+    { label: t("caseStudy.category"), value: t(categoryLabelKeys[project.category]) },
+    { label: t("caseStudy.stack"), value: project.tags.join(" · ") },
+  ].filter((fact) => fact.value);
+
+  const story = (["problem", "approach", "solution"] as const).map((key) => ({
+    title: t(`caseStudy.${key}`),
+    content: (
+      <p className="text-base leading-relaxed text-foreground/80 md:text-lg">{t(`${ns}.${key}`)}</p>
+    ),
+  }));
 
   return (
-    <SectionShell containerSize="wide">
-      <ScrollReveal>
-        <Link
-          href={`${prefix}/projects`}
-          className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          {t("caseStudy.back")}
-        </Link>
-      </ScrollReveal>
+    <article>
+      <SectionShell containerSize="wide" className="pb-0 md:pb-0">
+        <HeroReveal>
+          <Link
+            href={`${prefix}/projects`}
+            className="group/back inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+          >
+            <ArrowLeft className="h-4 w-4 transition-transform duration-200 group-hover/back:-translate-x-0.5" />
+            {t("caseStudy.back")}
+          </Link>
+        </HeroReveal>
 
-      <div className="grid gap-10 lg:grid-cols-[1fr_1.15fr] lg:gap-14 lg:items-start">
-        <ScrollReveal>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border/60 bg-muted/20 shadow-sm">
-            <Image
-              src={project.image}
-              alt={t(`${ns}.title`)}
-              fill
-              className="object-cover object-top"
-              sizes="(max-width: 1024px) 100vw, 45vw"
-              priority
-            />
-          </div>
-        </ScrollReveal>
-
-        <ScrollReveal delay={0.06}>
-          <div className="flex flex-col gap-5">
-            <div className="flex flex-wrap items-center gap-2">
-              <span
-                className={cn(
-                  "rounded-full border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em]",
-                  categoryStyles[project.category],
-                )}
-              >
-                {t(categoryLabelKeys[project.category])}
-              </span>
-              {project.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded-full border border-border/60 bg-muted/40 px-3 py-1 text-xs font-medium text-muted-foreground"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-
-            <div>
-              <p className="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">
-                {t(`${ns}.client`)}
-              </p>
-              <h1 className="mt-2 font-heading text-3xl font-semibold tracking-tight text-foreground md:text-4xl md:leading-tight">
-                {t(`${ns}.title`)}
-              </h1>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
-                {t(`${ns}.description`)}
-              </p>
-            </div>
-
-            <div className="flex flex-wrap gap-3">
-              {project.liveUrl && (
+        <div className="mt-10 grid gap-10 lg:grid-cols-[7fr_5fr] lg:items-end lg:gap-16">
+          <div>
+            <HeroReveal delay={0.04}>
+              <p className="text-sm font-medium text-brand-text">{t(categoryLabelKeys[project.category])}</p>
+            </HeroReveal>
+            {/* The page title paints at once; no entrance on the h1. */}
+            <h1 className="mt-3 font-heading text-4xl font-semibold leading-[1.05] tracking-[-0.03em] text-foreground md:text-6xl">
+              {t(`${ns}.title`)}
+            </h1>
+            <HeroReveal delay={0.1}>
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/80">{t(`${ns}.description`)}</p>
+            </HeroReveal>
+            {project.liveUrl && (
+              <HeroReveal delay={0.16}>
                 <a
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-brand-light"
+                  className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-primary-foreground transition-[background-color,scale] duration-150 hover:bg-brand-light active:scale-[0.97]"
                 >
                   {t("caseStudy.visitSite")}
                   <ExternalLink className="h-4 w-4" />
                 </a>
-              )}
-              {project.githubUrl && (
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand/30"
-                >
-                  {t("caseStudy.viewCode")}
-                  <ArrowUpRight className="h-4 w-4" />
-                </a>
-              )}
-            </div>
+              </HeroReveal>
+            )}
           </div>
-        </ScrollReveal>
-      </div>
 
-      <div className="section-divider mx-auto my-14 max-w-4xl opacity-50 md:my-16" aria-hidden />
-
-      <ScrollReveal className="mb-8 max-w-2xl">
-        <h2 className="font-heading text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
-          {t("caseStudy.title")}
-        </h2>
-        <p className="mt-3 text-base leading-relaxed text-muted-foreground">{t("caseStudy.subtitle")}</p>
-      </ScrollReveal>
-
-      <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
-        {blocks.map((block, index) => (
-          <ScrollReveal key={block.key} delay={index * 0.06}>
-            <article className="flex h-full flex-col rounded-3xl border border-border/60 bg-card/40 p-6 dark:bg-card/25 md:p-7">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-text">
-                {block.label}
-              </p>
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground/90 md:text-[0.9375rem]">
-                {t(`${ns}.${block.key}`)}
-              </p>
-            </article>
-          </ScrollReveal>
-        ))}
-      </div>
-
-      <ScrollReveal className="mt-8 md:mt-10">
-        <div className="rounded-3xl border border-brand/15 bg-brand/[0.04] p-6 dark:border-brand/25 dark:bg-brand/[0.08] md:p-8">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-text">
-            {t("caseStudy.outcome")}
-          </p>
-          <p className="mt-3 max-w-3xl text-base leading-relaxed text-foreground md:text-lg">
-            {t(`${ns}.outcome`)}
-          </p>
+          <HeroReveal delay={0.12}>
+            <dl className="grid gap-x-8 gap-y-5 rounded-3xl bg-card p-6 sm:grid-cols-2 md:p-7">
+              {facts.map((fact) => (
+                <div key={fact.label}>
+                  <dt className="text-sm text-muted-foreground">{fact.label}</dt>
+                  <dd className="mt-1 text-base font-medium text-foreground">{fact.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </HeroReveal>
         </div>
-      </ScrollReveal>
-    </SectionShell>
+
+        {/* The product, large: settles to full size and drifts inside its frame as it scrolls. */}
+        <div className="case-media relative mt-12 aspect-[10/7] overflow-clip rounded-3xl bg-card md:mt-16 lg:aspect-[16/9]">
+          <div className="case-media-img absolute inset-x-0 -inset-y-[5%]">
+            <Image
+              src={project.image}
+              alt={`${t(`${ns}.title`)}: ${t(`${ns}.description`)}`}
+              fill
+              priority
+              sizes="(min-width: 1280px) 1216px, 100vw"
+              className="object-cover object-top"
+            />
+          </div>
+        </div>
+      </SectionShell>
+
+      <SectionShell containerSize="wide">
+        <div className="grid gap-4 lg:grid-cols-[4fr_8fr] lg:gap-12">
+          <ScrollReveal className="max-w-2xl lg:sticky lg:top-32 lg:self-start lg:pt-24">
+            <h2 className="font-heading text-3xl font-semibold tracking-tight text-foreground md:text-[2.5rem] md:leading-tight">
+              {t("caseStudy.title")}
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">{t("caseStudy.subtitle")}</p>
+          </ScrollReveal>
+          <div className="[&_.max-w-7xl]:!px-0 [&>div]:!bg-transparent [&>div]:md:!px-0">
+            <Timeline data={story} />
+          </div>
+        </div>
+      </SectionShell>
+
+      <SectionShell containerSize="wide">
+        <h2 className="text-sm font-medium text-brand-text">{t("caseStudy.outcome")}</h2>
+        <div className="mt-5">
+          <RevealStatement text={t(`${ns}.outcome`)} />
+        </div>
+      </SectionShell>
+
+      <SectionShell containerSize="wide" className="pt-0 md:pt-0">
+        <ScrollReveal>
+          <h2 className="text-sm font-medium text-muted-foreground">{t("caseStudy.next")}</h2>
+        </ScrollReveal>
+        <HoverEffectGrid className="mt-5">
+          <ScrollReveal className="h-full">
+            <Link
+              href={`${prefix}/projects/${next.id}`}
+              className="group/next grid h-full overflow-clip rounded-3xl bg-card md:grid-cols-[5fr_7fr]"
+            >
+              <div className="flex flex-col justify-center gap-3 p-7 md:p-10">
+                <p className="text-sm text-muted-foreground">{t(`items.${next.id}.client`)}</p>
+                <p className="font-heading text-2xl font-semibold tracking-tight text-foreground md:text-4xl md:leading-tight">
+                  {t(`items.${next.id}.title`)}
+                </p>
+                <p className="text-base leading-relaxed text-foreground/80">{t(`items.${next.id}.description`)}</p>
+                <span className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-foreground transition-colors group-hover/next:text-brand-text">
+                  {t("viewCaseStudy")}
+                  <ArrowUpRight className="h-4 w-4 transition-transform duration-200 group-hover/next:-translate-y-0.5 group-hover/next:translate-x-0.5" />
+                </span>
+              </div>
+              <div className="relative aspect-[10/7] md:aspect-auto">
+                <Image
+                  src={next.image}
+                  alt=""
+                  fill
+                  sizes="(min-width: 768px) 58vw, 100vw"
+                  className="object-cover object-top transition-transform duration-700 ease-out group-hover/next:scale-[1.03]"
+                />
+              </div>
+            </Link>
+          </ScrollReveal>
+        </HoverEffectGrid>
+      </SectionShell>
+    </article>
   );
 }

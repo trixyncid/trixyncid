@@ -12,6 +12,7 @@ import { Logo } from "./Logo";
 import { navLinks } from "@/content/site";
 import { type Locale } from "@/i18n/routing";
 import { useScrolled } from "@/hooks/use-scrolled";
+import { useHeadroom } from "@/hooks/use-headroom";
 import { setBackgroundPaused } from "@/lib/background-activity";
 import { cn } from "@/lib/utils";
 
@@ -31,6 +32,7 @@ export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const scrolled = useScrolled(12);
+  const hidden = useHeadroom() && !mobileOpen;
 
   // Pause synchronously on click so WebGL/beams freeze *before* the menu
   // paints — useEffect would be one frame too late and cause the open jank.
@@ -79,7 +81,13 @@ export function SiteHeader() {
     <>
       <header
         className={cn(
-          "fixed top-0 z-50 w-full",
+          "fixed top-0 z-50 w-full transition-transform motion-reduce:transition-none",
+          // Showing is a touch slower and softer than hiding: it answers the user's scroll up.
+          hidden
+            ? "-translate-y-full duration-200 ease-[cubic-bezier(0.4,0,1,1)]"
+            : "translate-y-0 duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
+          // Stay put while a keyboard user is inside it or a dropdown is open.
+          "has-[:focus-visible]:translate-y-0 has-[[aria-expanded=true]]:translate-y-0",
           mobileOpen && "z-[80]",
         )}
       >

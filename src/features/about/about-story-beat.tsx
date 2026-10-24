@@ -10,7 +10,7 @@ export function AboutStoryBeat({ index, title, text }: AboutStoryBeatProps) {
   return (
     <article
       className={cn(
-        "group relative overflow-hidden rounded-2xl border border-border/60 bg-card/30 p-6 dark:bg-card/20 md:p-7",
+        "group relative overflow-clip rounded-2xl border border-border/60 bg-card/30 p-6 dark:bg-card/20 md:p-7",
         "transition-[border-color,box-shadow] duration-300 hover:border-brand/25 hover:shadow-[0_8px_32px_rgba(33,56,184,0.06)] dark:hover:shadow-[0_8px_32px_rgba(56,102,242,0.1)]",
       )}
     >
@@ -20,7 +20,7 @@ export function AboutStoryBeat({ index, title, text }: AboutStoryBeatProps) {
       />
 
       <div className="relative flex items-start gap-4 md:gap-5">
-        <span className="mt-0.5 shrink-0 font-heading text-sm font-semibold tabular-nums text-muted-foreground transition-colors duration-300 group-hover:text-brand-text">
+        <span className="mt-0.5 shrink-0 font-heading text-sm font-semibold tabular-nums scroll-rail-text text-brand-text">
           {String(index + 1).padStart(2, "0")}
         </span>
 

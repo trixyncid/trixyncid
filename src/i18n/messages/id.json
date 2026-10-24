@@ -23,6 +23,37 @@
     "contact": {
       "title": "Hubungi Trixync — Software House di Medan",
       "description": "Diskusikan proyek aplikasi web, aplikasi mobile, ERP, atau IoT Anda dengan Trixync di Medan via WhatsApp, email, atau formulir kontak."
+    },
+    "og": {
+      "alt": "Trixync, Built in Sync",
+      "line": "Software house · Aplikasi Web, Mobile, ERP & IoT · Medan",
+      "cta": "Hubungi kami"
+    },
+    "facts": {
+      "projects": {
+        "value": "{count}",
+        "label": "Proyek diluncurkan dan dipakai setiap hari"
+      },
+      "price": {
+        "value": "Mulai Rp5 juta",
+        "label": "Untuk website dan landing page. Sistem bisnis dan ERP diberi penawaran setelah sesi discovery."
+      },
+      "timeline": {
+        "value": "6–10 minggu",
+        "label": "Untuk sistem alur kerja yang terfokus. Platform multi-modul dengan IoT memakan 3–6 bulan."
+      },
+      "warranty": {
+        "value": "3 bulan",
+        "label": "Perbaikan bug gratis setelah peluncuran, lalu paket pemeliharaan bulanan."
+      },
+      "ownership": {
+        "value": "Kode milik Anda",
+        "label": "Source code menjadi milik bisnis Anda setelah proyek lunas."
+      },
+      "payment": {
+        "value": "60 / 40",
+        "label": "Uang muka untuk memulai, sisanya saat serah terima setelah Anda menyetujui hasil akhirnya."
+      }
     }
   },
   "common": {
@@ -62,39 +93,17 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Software house · Medan, Indonesia",
       "headline": "Bisnis Anda, dalam satu sistem.",
-      "headlineHighlight": "Built in Sync.",
-      "subheadline": "Aplikasi web, aplikasi mobile, ERP, dan sistem IoT khusus untuk bisnis yang sudah kewalahan dengan spreadsheet dan grup WhatsApp — dirancang mengikuti cara kerja tim Anda, dan didampingi setelah peluncuran.",
+      "subheadline": "Software house di Medan yang membangun aplikasi web, aplikasi mobile, ERP, dan sistem IoT khusus untuk bisnis yang sudah kewalahan dengan spreadsheet dan grup WhatsApp. Dirancang mengikuti cara kerja tim Anda, dan didampingi setelah peluncuran.",
       "ctaPrimary": "Diskusikan proyek",
       "ctaSecondary": "Lihat hasil kerja kami"
     },
-    "strengths": {
-      "title": "Yang kami tawarkan",
+    "showcase": {
+      "title": "Yang kami bangun",
       "subtitle": "Software, AI, dan IoT — dibuktikan lewat sistem yang kami bangun dan masih kami dampingi.",
-      "items": {
-        "aiSystems": {
-          "eyebrow": "AI · Software · IoT",
-          "title": "AI di titik yang benar-benar membantu alur kerja",
-          "description": "Ekstraksi dokumen, distribusi tugas otomatis, dan otomatisasi yang tertanam di sistem yang sudah dipakai tim Anda — bukan demo chatbot yang ditempel di samping."
-        },
-        "realWorld": {
-          "title": "Software yang terhubung ke dunia nyata",
-          "description": "Dari perangkat IoT yang tetap jalan tanpa internet hingga absensi sidik jari — kami terbiasa di titik temu perangkat lunak dan perangkat fisik."
-        },
-        "centralize": {
-          "title": "Data yang tercecer, disatukan di satu tempat",
-          "description": "Sistem keanggotaan, jadwal SDM, dasbor pemasok — kami ubah spreadsheet, grup WhatsApp, dan berkas kertas menjadi satu sumber data."
-        },
-        "production": {
-          "title": "Dibangun untuk dipakai setiap hari, bukan sekadar demo",
-          "description": "Orang yang tepat melihat data yang tepat, pembayaran berjalan lancar, halaman tetap cepat di akhir bulan, dan masalah terdeteksi sebelum staf Anda menyadarinya."
-        },
-        "stakeholders": {
-          "title": "Dirancang bersama penggunanya",
-          "description": "Setiap sistem berawal dari waktu bersama orang-orang yang menjalankan pekerjaannya — koordinator keanggotaan, tim SDM, operator tur — sebelum satu baris kode pun ditulis."
-        }
-      }
+      "resultFor": "Hasil untuk {client}",
+      "whatChanges": "Yang berubah",
+      "allServices": "Lihat semua layanan"
     },
     "approach": {
       "title": "Cara kami menyelesaikan masalah",
@@ -119,39 +128,16 @@
       }
     },
     "projects": {
-      "title": "Sistem yang dipakai setiap hari",
+      "title": "Sistem lain yang dipakai setiap hari",
       "subtitle": "Software yang menjalankan operasi nyata untuk bisnis di seluruh Indonesia.",
-      "eyebrow": "Karya pilihan",
       "viewAll": "Semua proyek"
     },
-    "location": {
-      "eyebrow": "Tempat kami bekerja",
-      "title": "Berakar di Medan",
-      "description": "Kami bekerja langsung di lokasi bersama bisnis di Medan dan Sumatera Utara, dan secara remote dengan tim di seluruh Indonesia. Tim yang sama, baik bertemu langsung maupun lewat panggilan.",
-      "stats": {
-        "projects": {
-          "value": "{count}",
-          "label": "Proyek diluncurkan"
-        },
-        "homeBase": {
-          "value": "Medan",
-          "label": "Basis kami"
-        },
-        "reach": {
-          "value": "Seluruh Indonesia",
-          "label": "Langsung atau remote"
-        }
-      }
-    },
-    "cta": {
-      "eyebrow": "Langkah berikutnya",
-      "title": "Punya proses yang perlu dibenahi?",
-      "description": "Ceritakan bagian operasional Anda yang masih bergantung pada spreadsheet. Kami akan jujur memberi tahu apakah software adalah jawabannya.",
-      "button": "Diskusikan proyek"
+    "faq": {
+      "title": "Pertanyaan yang paling sering muncul",
+      "all": "Semua {count} jawaban"
     }
   },
   "about": {
-    "eyebrow": "Tentang",
     "title": "Software house yang berawal dari alur kerja Anda",
     "subtitle": "Kami tim di Medan yang membangun sistem web, mobile, ERP, dan IoT. Kami meluangkan waktu bersama orang-orang yang menjalankan operasional Anda sebelum merancang apa pun, dan tetap mendampingi setelah peluncuran.",
     "story": {
@@ -171,7 +157,6 @@
       }
     },
     "values": {
-      "eyebrow": "Prinsip",
       "title": "Yang menggerakkan kerja kami",
       "subtitle": "Tiga komitmen yang hadir di setiap proyek, dari percakapan pertama hingga lama setelah peluncuran.",
       "items": {
@@ -190,7 +175,6 @@
       }
     },
     "location": {
-      "eyebrow": "Tempat kami bekerja",
       "title": "Berakar di Medan",
       "description": "Berbasis di Medan, Sumatera Utara, dan bekerja dengan klien di seluruh Indonesia, langsung di lokasi maupun secara remote.",
       "stats": {
@@ -208,14 +192,12 @@
         }
       },
       "cta": {
-        "eyebrow": "Bekerja sama dengan kami",
         "title": "Mari petakan alur kerja Anda",
         "description": "Baik Anda di Sumatera maupun bekerja jarak jauh, kami mulai dengan memahami bagaimana operasi Anda benar-benar berjalan."
       }
     }
   },
   "services": {
-    "eyebrow": "Layanan",
     "title": "Yang kami bangun",
     "subtitle": "Software khusus untuk bisnis Indonesia, dari sesi pemetaan alur kerja pertama hingga peluncuran dan pendampingan jangka panjang.",
     "categories": {
@@ -227,7 +209,6 @@
       "outcome": "Hasilnya"
     },
     "process": {
-      "eyebrow": "Proses kami",
       "title": "Cara kami bekerja bersama Anda",
       "subtitle": "Disiplin yang sama di setiap proyek, sehingga Anda selalu tahu langkah berikutnya.",
       "steps": {
@@ -250,7 +231,6 @@
       }
     },
     "cta": {
-      "eyebrow": "Langkah berikutnya",
       "title": "Belum yakin layanan mana yang cocok?",
       "description": "Ceritakan apa yang memperlambat tim Anda. Kami akan memetakan hambatannya dan memberi rekomendasi yang jujur.",
       "button": "Diskusikan proyek"
@@ -298,7 +278,6 @@
     "categorySupport": "Pendampingan"
   },
   "projects": {
-    "eyebrow": "Portofolio",
     "title": "Proyek",
     "subtitle": "Sistem yang kami rancang, bangun, dan luncurkan — lengkap dengan masalah, pendekatan, dan hasil di balik masing-masing.",
     "viewCaseStudy": "Lihat studi kasus",
@@ -315,7 +294,12 @@
       "solution": "Yang kami bangun",
       "outcome": "Hasilnya",
       "visitSite": "Kunjungi situs",
-      "viewCode": "Lihat kode sumber"
+      "viewCode": "Lihat kode sumber",
+      "client": "Klien",
+      "industry": "Industri",
+      "category": "Jenis",
+      "stack": "Dibangun dengan",
+      "next": "Studi kasus berikutnya"
     },
     "items": {
       "kms-connect": {
@@ -440,7 +424,6 @@
   "faq": {
     "title": "Pertanyaan yang sering diajukan",
     "subtitle": "Jawaban lugas seputar cara kami bekerja — proses, jadwal, biaya, dan apa yang terjadi setelah peluncuran.",
-    "eyebrow": "FAQ",
     "categories": {
       "all": "Semua",
       "studio": "Tentang kami",
@@ -449,7 +432,6 @@
       "support": "Setelah peluncuran"
     },
     "cta": {
-      "eyebrow": "Masih ada pertanyaan?",
       "title": "Tanyakan langsung kepada kami",
       "description": "Jika situasi Anda tidak terjawab di sini, ceritakan saja kondisinya. Biasanya kami membalas dalam hitungan jam."
     },
@@ -517,12 +499,10 @@
     }
   },
   "contact": {
-    "eyebrow": "Kontak",
     "title": "Mari bicarakan proyek Anda",
     "subtitle": "Ceritakan apa yang masih manual, tercecer, atau memperlambat tim Anda. Biasanya kami membalas dalam hitungan jam.",
     "whatsappCta": "Chat via WhatsApp",
     "channels": {
-      "eyebrow": "Hubungi kami",
       "title": "Saluran langsung",
       "description": "Ingin langsung tanpa formulir? Kirim pesan atau email kepada kami."
     },
@@ -531,7 +511,6 @@
       "description": "Kami membaca setiap pesan sendiri dan membalas dengan langkah berikutnya — biasanya dalam hitungan jam, paling lambat satu hari kerja."
     },
     "nextSteps": {
-      "eyebrow": "Yang terjadi selanjutnya",
       "title": "Setelah Anda mengirim pesan",
       "items": {
         "review": {
@@ -555,7 +534,6 @@
       "location": "Lokasi"
     },
     "form": {
-      "eyebrow": "Permintaan proyek",
       "title": "Ceritakan proyek Anda",
       "description": "Cukup sekitar satu menit. Kami akan membuka WhatsApp dengan detail Anda yang sudah terisi — tinggal ketuk kirim. Lebih suka email? Tulis ke hello@trixync.id.",
       "name": "Nama lengkap",
@@ -592,7 +570,6 @@
   "footer": {
     "tagline": "Built in Sync",
     "description": "Software house di Medan. Kami memetakan cara bisnis Anda berjalan, lalu membangun sistem web, mobile, ERP, dan IoT yang sesuai.",
-    "ctaEyebrow": "Mari bangun",
     "ctaTitle": "Ceritakan apa yang masih dikerjakan tim Anda secara manual.",
     "ctaDescription": "Yang berulang, yang terduplikasi, yang ditambal dengan spreadsheet dan WhatsApp — ceritakan semuanya. Kami akan menemukan hambatan yang sebenarnya dan berterus terang apakah sebuah sistem layak dibangun.",
     "navigate": "Navigasi",

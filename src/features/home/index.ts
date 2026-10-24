@@ -1,5 +1,5 @@
 export { HeroSection } from "./hero/hero-section";
-export { StrengthsSection } from "./strengths/strengths-section";
+export { ShowcaseSection } from "./showcase/showcase-section";
 export { ApproachSection } from "./approach/approach-section";
 export { FeaturedProjectsSection } from "./featured-projects/featured-projects-section";
-export { LocationSection } from "./location/location-section";
+export { HomeFaqSection } from "./faq/home-faq-section";

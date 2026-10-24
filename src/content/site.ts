@@ -28,6 +28,21 @@ export const siteConfig = {
   },
 } as const;
 
+/**
+ * Company facts for structured data (what search and AI assistants read about
+ * Trixync). Each one is published only once it's filled in, so leave a field
+ * unset rather than guess it.
+ */
+export const companyFacts: {
+  /** Year founded, e.g. "2023". */
+  foundingDate?: string;
+  founder?: { name: string; linkedin?: string };
+  /** People on the team, e.g. 8. */
+  numberOfEmployees?: number;
+  /** The Google Business Profile URL (Maps listing) for Medan. */
+  googleBusinessProfile?: string;
+} = {};
+
 export const navLinks = [
   { key: "home", href: "/" },
   { key: "about", href: "/about" },

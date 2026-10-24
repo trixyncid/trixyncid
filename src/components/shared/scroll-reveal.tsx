@@ -1,117 +1,50 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
-import { motion, useReducedMotion } from "motion/react";
 import { cn } from "@/lib/utils";
 
-const EASE = [0.22, 1, 0.36, 1] as const;
-
-type RevealPhase = "static" | "hidden" | "shown";
-
-/**
- * Content is visible in the server HTML (no JS, crawlers, fast LCP). After
- * hydration, only elements still below the viewport are hidden and then
- * revealed as they scroll in — anything already on screen never flashes.
+/*
+ * Scroll reveals play once as content enters the viewport, then stay shown
+ * (see `.reveal` in globals.css and `RevealObserver`). These wrappers only add
+ * classes, so they work in server components, and content is always visible
+ * in the server HTML.
  */
-function useRevealPhase(ref: React.RefObject<HTMLElement | null>, amount: number) {
-  const [phase, setPhase] = useState<RevealPhase>("static");
-  // Only read inside effects, so the server/client mismatch of this hook is harmless.
-  const disabled = useReducedMotion() === true;
-
-  useEffect(() => {
-    const node = ref.current;
-    if (disabled || !node || typeof IntersectionObserver === "undefined") return;
-
-    let first = true;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (first) {
-          first = false;
-          // Already visible (or scrolled past) on load: leave it alone.
-          if (entry.isIntersecting || entry.boundingClientRect.top < 0) {
-            observer.disconnect();
-            return;
-          }
-          setPhase("hidden");
-          return;
-        }
-        if (entry.isIntersecting) {
-          setPhase("shown");
-          observer.disconnect();
-        }
-      },
-      { threshold: amount, rootMargin: "0px 0px -40px 0px" },
-    );
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, [ref, amount, disabled]);
-
-  return disabled ? "static" : phase;
-}
 
 type ScrollRevealProps = {
   children: React.ReactNode;
   className?: string;
+  /** Extra delay (seconds) before this block plays its entrance. */
   delay?: number;
-  amount?: number;
 };
 
-export function ScrollReveal({ children, className, delay = 0, amount = 0.15 }: ScrollRevealProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const phase = useRevealPhase(ref, amount);
-
+export function ScrollReveal({ children, className, delay = 0 }: ScrollRevealProps) {
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial={false}
-      animate={phase === "hidden" ? { opacity: 0 } : { opacity: 1 }}
-      transition={phase === "hidden" ? { duration: 0 } : { duration: 0.28, delay, ease: EASE }}
+    <div
+      className={cn("reveal", className)}
+      style={
+        delay ? ({ "--reveal-delay": `${delay}s` } as React.CSSProperties) : undefined
+      }
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
 type ScrollStaggerProps = {
   children: React.ReactNode;
   className?: string;
-  stagger?: number;
-  amount?: number;
 };
 
-export function ScrollStagger({ children, className, stagger = 0.05, amount = 0.12 }: ScrollStaggerProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const phase = useRevealPhase(ref, amount);
-
-  return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial={false}
-      animate={phase === "hidden" ? "hidden" : "visible"}
-      variants={{
-        hidden: {},
-        visible: { transition: { staggerChildren: stagger } },
-      }}
-    >
-      {children}
-    </motion.div>
-  );
+/** Children wrapped in `ScrollStaggerItem` reveal one after another as they enter together. */
+export function ScrollStagger({ children, className }: ScrollStaggerProps) {
+  return <div className={cn("reveal-stagger", className)}>{children}</div>;
 }
 
-export function ScrollStaggerItem({ children, className }: { children: React.ReactNode; className?: string }) {
-  return (
-    <motion.div
-      className={className}
-      variants={{
-        hidden: { opacity: 0, transition: { duration: 0 } },
-        visible: { opacity: 1, transition: { duration: 0.28, ease: EASE } },
-      }}
-    >
-      {children}
-    </motion.div>
-  );
+export function ScrollStaggerItem({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return <div className={cn("reveal", className)}>{children}</div>;
 }
 
 type HeroRevealProps = {

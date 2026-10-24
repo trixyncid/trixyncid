@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { valueKeys, valueVisualMeta } from "@/content/about";
-import { StrengthPillarCard } from "@/features/home/strengths/strength-pillar-card";
+import { PillarCard } from "./pillar-card";
 import { ScrollReveal, ScrollStagger, ScrollStaggerItem } from "@/components/shared/scroll-reveal";
 import { SectionShell } from "@/components/shared/SectionShell";
 
@@ -11,14 +11,9 @@ export function ValuesSection() {
 
   return (
     <>
-      <div className="section-divider mx-auto max-w-4xl opacity-50" aria-hidden />
-
       <SectionShell containerSize="wide">
         <ScrollReveal className="mx-auto mb-10 max-w-2xl text-center md:mb-14">
-          <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
-            {t("eyebrow")}
-          </p>
-          <h2 className="mt-3 font-heading text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
+          <h2 className="font-heading text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
             {t("title")}
           </h2>
           <p className="mt-3 text-base leading-relaxed text-muted-foreground">{t("subtitle")}</p>
@@ -31,7 +26,7 @@ export function ValuesSection() {
 
             return (
               <ScrollStaggerItem key={key} className="h-full">
-                <StrengthPillarCard
+                <PillarCard
                   title={t(`items.${key}.title`)}
                   description={t(`items.${key}.description`)}
                   icon={Icon}

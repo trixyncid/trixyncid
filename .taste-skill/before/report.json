@@ -1,0 +1,2451 @@
+{
+ "url": "http://localhost:3000/en",
+ "at": "2026-10-24T09:29:44.249Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.52,
+    0.65,
+    0.15,
+    0.67,
+    0.76,
+    0.22,
+    0.19
+   ],
+   "motion": {
+    "elements": 46,
+    "css": 42,
+    "transitions": 3,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5793,
+     "screens": 6.4,
+     "words": 655,
+     "img": 16,
+     "video": 0,
+     "canvas": 2,
+     "svg": 21,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fhero%2Fsync-core-dark.webp&w=750&q=",
+      "image?url=%2Fprojects%2Fims.jpg&w=750&q=75",
+      "image?url=%2Fprojects%2Fmli.jpg&w=750&q=75",
+      "image?url=%2Fprojects%2Fmalavari-films.jpg&w=750",
+      "image?url=%2Fprojects%2Fkms.jpg&w=750&q=75",
+      "image?url=%2Fprojects%2Fgoholiday.jpg&w=750&q=75",
+      "image?url=%2Fprojects%2Fpgi.jpg&w=750&q=75"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your business, in one system. Built in Sync. Built in Sync.",
+     "words": 11,
+     "chars": 59,
+     "lines": 3,
+     "size": 56,
+     "vw": 3.9,
+     "font": "Poppins",
+     "weight": 600,
+     "tracking": -0.025,
+     "leading": 1.08,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.4,
+     "top": 184,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your business, in one system. Built in Sync. Built in Sync.",
+     "words": 11,
+     "lines": 3,
+     "size": 56,
+     "font": "Poppins"
+    },
+    "headings": [
+     {
+      "text": "Your business, in one system. Built in Sync. Built in Sync.",
+      "words": 11,
+      "chars": 59,
+      "lines": 3,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 184,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What we bring to the table",
+      "words": 6,
+      "chars": 26,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 802,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "How we solve problems",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 1900,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Systems in daily use",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 2821,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sejahtera Bersama ERP",
+      "words": 3,
+      "chars": 21,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 3285,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Mitra Laju Interocean Operations",
+      "words": 4,
+      "chars": 32,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.35,
+      "top": 3285,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Malavari Films Academy",
+      "words": 3,
+      "chars": 22,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 3869,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "KMS Connect App",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.35,
+      "top": 3869,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "GoHoliday DC",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 4453,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "PGI Tower",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.35,
+      "top": 4479,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Rooted in Medan",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 4884,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tell us what your team still does by hand.",
+      "words": 9,
+      "chars": 42,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 5197,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Kumbh Sans",
+       "share": 0.84,
+       "mono": false
+      },
+      {
+       "family": "Poppins",
+       "share": 0.16,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      24,
+      30,
+      32,
+      52,
+      56
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Kumbh Sans",
+      "size": 17,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.4
+     },
+     "measureChars": 84,
+     "max": {
+      "size": 56,
+      "vw": 3.9,
+      "font": "Poppins",
+      "text": "Your business, in one system."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 8,
+     "microLabelShare": 0.028,
+     "microSamples": [
+      "Software house · Medan, Indonesia",
+      "AI · Software · IoT",
+      "Selected work",
+      "Where we work",
+      "Let's build",
+      "Navigate"
+     ],
+     "upperShare": 0.09,
+     "centerShare": 0,
+     "smallText": 11
+    },
+    "eyebrows": [
+     {
+      "text": "Software house · Medan, Indonesia",
+      "above": "Your business, in one system. Built in S",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 144
+     },
+     {
+      "text": "Selected work",
+      "above": "Systems in daily use",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2793
+     },
+     {
+      "text": "UD Sejahtera Bersama · Distribution",
+      "above": "Sejahtera Bersama ERP",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3253
+     },
+     {
+      "text": "PT Mitra Laju Interocean · Logistics",
+      "above": "Mitra Laju Interocean Operations",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3253
+     },
+     {
+      "text": "Malavari Films · Online education",
+      "above": "Malavari Films Academy",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3837
+     },
+     {
+      "text": "KMS · Recruitment platform",
+      "above": "KMS Connect App",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3837
+     },
+     {
+      "text": "GoHoliday · Travel marketplace",
+      "above": "GoHoliday DC",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4421
+     },
+     {
+      "text": "PT Property Group Imperium · Property",
+      "above": "PGI Tower",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4447
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#030304",
+     "bodyBgHsl": {
+      "h": 240,
+      "s": 0.14,
+      "l": 0.01
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#030304",
+       "top": 0,
+       "hsl": {
+        "h": 240,
+        "s": 0.14,
+        "l": 0.01
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#949bab",
+       "share": 0.81
+      },
+      {
+       "color": "#f2f4f8",
+       "share": 0.15
+      },
+      {
+       "color": "#7d9bff",
+       "share": 0.02
+      },
+      {
+       "color": "#fcfdff",
+       "share": 0.01
+      },
+      {
+       "color": "#74d4ff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#2138b8",
+      "hsl": {
+       "h": 231,
+       "s": 0.7,
+       "l": 0.43
+      },
+      "fg": "#fcfdff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Discuss your project",
+      "Discuss your project",
+      "See our work"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 6,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 21,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.absolute.inset-0 → radial-gradient(100% 70% at 50% -20%, rgba(33, 56, 184, 0.2), rgba(0, 0, 0, 0) 62%), radial-gradient(55% 45% a",
+      "div.absolute.inset-0 → radial-gradient(90% 55% at 50% 0px, rgba(33, 56, 184, 0.22), rgba(0, 0, 0, 0) 62%), radial-gradient(80% 60% at",
+      "div.absolute.inset-0 → linear-gradient(to right, oklab(0.0979222 0.00118304 -0.00423069 / 0.75) 0%, oklab(0.0979223 0.00118304 -0.004",
+      "div.absolute.inset-0 → radial-gradient(70% 60% at 50% 40%, rgba(33, 56, 184, 0.25), rgba(0, 0, 0, 0) 70%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 6,
+     "hairlineSamples": [
+      "div.section-divider.mx-auto 896px rule",
+      "div.section-divider.mx-auto 896px rule",
+      "div.section-divider.mx-auto 896px rule",
+      "div.section-divider.mx-auto 896px rule",
+      "div.section-divider.mx-auto 896px rule"
+     ],
+     "outlinedBoxes": 11,
+     "dashed": 0,
+     "blurred": 11,
+     "roundedBoxes": 15,
+     "boxRadius": 26,
+     "squareMedia": 4,
+     "roundedMedia": 6,
+     "mediaRadius": 26,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.85
+     },
+     {
+      "type": "img",
+      "ratio": 0.35
+     },
+     {
+      "type": "canvas",
+      "ratio": 0.35
+     },
+     {
+      "type": "svg",
+      "ratio": 0.17
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "poppins",
+     "kumbh sans",
+     "kumbh sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5793,
+    "margins": {
+     "left": 112,
+     "right": 192
+    },
+    "sections": [
+     {
+      "sel": "main#main-content.relative.flex-1",
+      "tag": "main",
+      "top": 0,
+      "height": 5080,
+      "words": 85,
+      "media": 2,
+      "middle": 32,
+      "heading": {
+       "text": "Your business, in one system.",
+       "size": 56,
+       "tag": "h1"
+      },
+      "left": 112,
+      "right": 54,
+      "textLeft": 112,
+      "textRight": 759,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.relative",
+      "tag": "footer",
+      "top": 5080,
+      "height": 713,
+      "words": 44,
+      "media": 0,
+      "middle": 276,
+      "heading": {
+       "text": "Navigate",
+       "size": 12,
+       "tag": "h3"
+      },
+      "left": 112,
+      "right": 192,
+      "textLeft": 112,
+      "textRight": 192,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 876,
+      "height": 1068
+     },
+     {
+      "top": 2544,
+      "height": 2872
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Your business, in one system. Built in Sync. Built in Sync.",
+      "size": 56,
+      "top": 184,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 112,
+      "n": 4
+     },
+     {
+      "x": 232,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 8,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 660,
+     "y": 780,
+     "w": 780,
+     "h": 120
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.49,
+    0.84,
+    0.3,
+    0.61,
+    0.76,
+    0.76,
+    0.42,
+    0.25
+   ],
+   "motion": {
+    "elements": 45,
+    "css": 42,
+    "transitions": 3,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 8068,
+     "screens": 7.9,
+     "words": 648,
+     "img": 16,
+     "video": 0,
+     "canvas": 2,
+     "svg": 21,
+     "sections": 5,
+     "horizontalOverflow": 12,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fhero%2Fsync-core-dark.webp&w=828&q=",
+      "image?url=%2Fprojects%2Fims.jpg&w=828&q=75",
+      "image?url=%2Fprojects%2Fmli.jpg&w=828&q=75",
+      "image?url=%2Fprojects%2Fmalavari-films.jpg&w=828",
+      "image?url=%2Fprojects%2Fkms.jpg&w=828&q=75",
+      "image?url=%2Fprojects%2Fgoholiday.jpg&w=828&q=75",
+      "image?url=%2Fprojects%2Fpgi.jpg&w=828&q=75"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your business, in one system. Built in Sync. Built in Sync.",
+     "words": 11,
+     "chars": 59,
+     "lines": 3,
+     "size": 44,
+     "vw": 5.7,
+     "font": "Poppins",
+     "weight": 600,
+     "tracking": -0.025,
+     "leading": 1.08,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.75,
+     "top": 184,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your business, in one system. Built in Sync. Built in Sync.",
+     "words": 11,
+     "lines": 3,
+     "size": 44,
+     "font": "Poppins"
+    },
+    "headings": [
+     {
+      "text": "Your business, in one system. Built in Sync. Built in Sync.",
+      "words": 11,
+      "chars": 59,
+      "lines": 3,
+      "size": 44,
+      "vw": 5.7,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.75,
+      "top": 184,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What we bring to the table",
+      "words": 6,
+      "chars": 26,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 990,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "How we solve problems",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2402,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Systems in daily use",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.62,
+      "top": 3423,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sejahtera Bersama ERP",
+      "words": 3,
+      "chars": 21,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 3852,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Mitra Laju Interocean Operations",
+      "words": 4,
+      "chars": 32,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 4364,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Malavari Films Academy",
+      "words": 3,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 4876,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "KMS Connect App",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 5388,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "GoHoliday DC",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 5875,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "PGI Tower",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 6412,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Rooted in Medan",
+      "words": 3,
+      "chars": 15,
+      "lines": 2,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 6814,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tell us what your team still does by hand.",
+      "words": 9,
+      "chars": 42,
+      "lines": 2,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.64,
+      "top": 7175,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Kumbh Sans",
+       "share": 0.84,
+       "mono": false
+      },
+      {
+       "family": "Poppins",
+       "share": 0.16,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      24,
+      28,
+      30,
+      32,
+      44
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Kumbh Sans",
+      "size": 17,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.4
+     },
+     "measureChars": 61,
+     "max": {
+      "size": 44,
+      "vw": 5.7,
+      "font": "Poppins",
+      "text": "Your business, in one system."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 8,
+     "microLabelShare": 0.029,
+     "microSamples": [
+      "Software house · Medan, Indonesia",
+      "AI · Software · IoT",
+      "Selected work",
+      "Where we work",
+      "Let's build",
+      "Navigate"
+     ],
+     "upperShare": 0.09,
+     "centerShare": 0,
+     "smallText": 11
+    },
+    "eyebrows": [
+     {
+      "text": "Software house · Medan, Indonesia",
+      "above": "Your business, in one system. Built in S",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 144
+     },
+     {
+      "text": "Selected work",
+      "above": "Systems in daily use",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3395
+     },
+     {
+      "text": "UD Sejahtera Bersama · Distribution",
+      "above": "Sejahtera Bersama ERP",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3820
+     },
+     {
+      "text": "PT Mitra Laju Interocean · Logistics",
+      "above": "Mitra Laju Interocean Operations",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4332
+     },
+     {
+      "text": "Malavari Films · Online education",
+      "above": "Malavari Films Academy",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4844
+     },
+     {
+      "text": "KMS · Recruitment platform",
+      "above": "KMS Connect App",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 5356
+     },
+     {
+      "text": "GoHoliday · Travel marketplace",
+      "above": "GoHoliday DC",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 5843
+     },
+     {
+      "text": "PT Property Group Imperium · Property",
+      "above": "PGI Tower",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 6380
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#030304",
+     "bodyBgHsl": {
+      "h": 240,
+      "s": 0.14,
+      "l": 0.01
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#030304",
+       "top": 0,
+       "hsl": {
+        "h": 240,
+        "s": 0.14,
+        "l": 0.01
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#949bab",
+       "share": 0.81
+      },
+      {
+       "color": "#f2f4f8",
+       "share": 0.15
+      },
+      {
+       "color": "#7d9bff",
+       "share": 0.02
+      },
+      {
+       "color": "#fcfdff",
+       "share": 0.01
+      },
+      {
+       "color": "#74d4ff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#2138b8",
+      "hsl": {
+       "h": 231,
+       "s": 0.7,
+       "l": 0.43
+      },
+      "fg": "#fcfdff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Discuss your project",
+      "See our work"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 6,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 21,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.absolute.inset-0 → radial-gradient(100% 70% at 50% -20%, rgba(33, 56, 184, 0.2), rgba(0, 0, 0, 0) 62%), radial-gradient(55% 45% a",
+      "div.absolute.inset-0 → radial-gradient(90% 55% at 50% 0px, rgba(33, 56, 184, 0.22), rgba(0, 0, 0, 0) 62%), radial-gradient(80% 60% at",
+      "div.absolute.inset-0 → linear-gradient(to right, oklab(0.0979222 0.00118304 -0.00423069 / 0.75) 0%, oklab(0.0979223 0.00118304 -0.004",
+      "div.absolute.inset-0 → radial-gradient(70% 60% at 50% 40%, rgba(33, 56, 184, 0.25), rgba(0, 0, 0, 0) 70%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 6,
+     "hairlineSamples": [
+      "div.section-divider.mx-auto 768px rule",
+      "div.section-divider.mx-auto 768px rule",
+      "div.section-divider.mx-auto 768px rule",
+      "div.section-divider.mx-auto 768px rule",
+      "div.section-divider.mx-auto 768px rule"
+     ],
+     "outlinedBoxes": 11,
+     "dashed": 0,
+     "blurred": 11,
+     "roundedBoxes": 15,
+     "boxRadius": 26,
+     "squareMedia": 4,
+     "roundedMedia": 6,
+     "mediaRadius": 26,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.92
+     },
+     {
+      "type": "img",
+      "ratio": 0.37
+     },
+     {
+      "type": "canvas",
+      "ratio": 0.37
+     },
+     {
+      "type": "svg",
+      "ratio": 0.31
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "poppins",
+     "kumbh sans",
+     "kumbh sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 8068,
+    "margins": {
+     "left": 24,
+     "right": 112
+    },
+    "sections": [
+     {
+      "sel": "main#main-content.relative.flex-1",
+      "tag": "main",
+      "top": 0,
+      "height": 7058,
+      "words": 85,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Your business, in one system.",
+       "size": 44,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 112,
+      "textLeft": 24,
+      "textRight": 235,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.relative",
+      "tag": "footer",
+      "top": 7058,
+      "height": 1010,
+      "words": 44,
+      "media": 0,
+      "middle": 37,
+      "heading": null,
+      "left": 24,
+      "right": 96,
+      "textLeft": 24,
+      "textRight": 96,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1064,
+      "height": 1384
+     },
+     {
+      "top": 3148,
+      "height": 4340
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Your business, in one system. Built in Sync. Built in Sync.",
+      "size": 44,
+      "top": 184,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 4
+     },
+     {
+      "x": 144,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 8,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.3,
+    0.69,
+    0.79,
+    0.36,
+    0.53,
+    0.82,
+    0.78,
+    0.61,
+    0.32,
+    0.19,
+    0.13
+   ],
+   "motion": {
+    "elements": 51,
+    "css": 50,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 413,
+     "h": 894
+    },
+    "page": {
+     "height": 8527,
+     "screens": 9.5,
+     "words": 648,
+     "img": 16,
+     "video": 0,
+     "canvas": 0,
+     "svg": 21,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fhero%2Fsync-core-dark.webp&w=640&q=",
+      "image?url=%2Fprojects%2Fims.jpg&w=640&q=75",
+      "image?url=%2Fprojects%2Fmli.jpg&w=640&q=75",
+      "image?url=%2Fprojects%2Fmalavari-films.jpg&w=640",
+      "image?url=%2Fprojects%2Fkms.jpg&w=640&q=75",
+      "image?url=%2Fprojects%2Fgoholiday.jpg&w=640&q=75",
+      "image?url=%2Fprojects%2Fpgi.jpg&w=640&q=75"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your business, in one system. Built in Sync. Built in Sync.",
+     "words": 11,
+     "chars": 59,
+     "lines": 3,
+     "size": 34,
+     "vw": 8.2,
+     "font": "Poppins",
+     "weight": 600,
+     "tracking": -0.025,
+     "leading": 1.12,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.87,
+     "top": 168,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your business, in one system. Built in Sync. Built in Sync.",
+     "words": 11,
+     "lines": 3,
+     "size": 34,
+     "font": "Poppins"
+    },
+    "headings": [
+     {
+      "text": "Your business, in one system. Built in Sync. Built in Sync.",
+      "words": 11,
+      "chars": 59,
+      "lines": 3,
+      "size": 34,
+      "vw": 8.2,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 168,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What we bring to the table",
+      "words": 6,
+      "chars": 26,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 967,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "How we solve problems",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 2733,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Systems in daily use",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 3672,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sejahtera Bersama ERP",
+      "words": 3,
+      "chars": 21,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 4063,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Mitra Laju Interocean Operations",
+      "words": 4,
+      "chars": 32,
+      "lines": 2,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 4479,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Malavari Films Academy",
+      "words": 3,
+      "chars": 22,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 4959,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "KMS Connect App",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 5407,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "GoHoliday DC",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 5855,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "PGI Tower",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 6303,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Rooted in Medan",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 6681,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "13",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 6897,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Medan",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 6977,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Nationwide",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 7057,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Tell us what your team still does by hand.",
+      "words": 9,
+      "chars": 42,
+      "lines": 2,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 7266,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 15,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 3,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Kumbh Sans",
+       "share": 0.84,
+       "mono": false
+      },
+      {
+       "family": "Poppins",
+       "share": 0.16,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      16,
+      20,
+      24,
+      34
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Kumbh Sans",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.4
+     },
+     "measureChars": 45,
+     "max": {
+      "size": 34,
+      "vw": 8.2,
+      "font": "Poppins",
+      "text": "Your business, in one system."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 8,
+     "microLabelShare": 0.029,
+     "microSamples": [
+      "Software house · Medan, Indonesia",
+      "AI · Software · IoT",
+      "Selected work",
+      "Where we work",
+      "Let's build",
+      "Navigate"
+     ],
+     "upperShare": 0.09,
+     "centerShare": 0,
+     "smallText": 11
+    },
+    "eyebrows": [
+     {
+      "text": "Software house · Medan, Indonesia",
+      "above": "Your business, in one system. Built in S",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 128
+     },
+     {
+      "text": "Selected work",
+      "above": "Systems in daily use",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3644
+     },
+     {
+      "text": "UD Sejahtera Bersama · Distribution",
+      "above": "Sejahtera Bersama ERP",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4031
+     },
+     {
+      "text": "PT Mitra Laju Interocean · Logistics",
+      "above": "Mitra Laju Interocean Operations",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4447
+     },
+     {
+      "text": "Malavari Films · Online education",
+      "above": "Malavari Films Academy",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4927
+     },
+     {
+      "text": "KMS · Recruitment platform",
+      "above": "KMS Connect App",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 5375
+     },
+     {
+      "text": "GoHoliday · Travel marketplace",
+      "above": "GoHoliday DC",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 5823
+     },
+     {
+      "text": "PT Property Group Imperium · Property",
+      "above": "PGI Tower",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 6255
+     },
+     {
+      "text": "Where we work",
+      "above": "Rooted in Medan",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 6653
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#030304",
+     "bodyBgHsl": {
+      "h": 240,
+      "s": 0.14,
+      "l": 0.01
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#030304",
+       "top": 0,
+       "hsl": {
+        "h": 240,
+        "s": 0.14,
+        "l": 0.01
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#949bab",
+       "share": 0.81
+      },
+      {
+       "color": "#f2f4f8",
+       "share": 0.15
+      },
+      {
+       "color": "#7d9bff",
+       "share": 0.02
+      },
+      {
+       "color": "#fcfdff",
+       "share": 0.01
+      },
+      {
+       "color": "#74d4ff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#2138b8",
+      "hsl": {
+       "h": 231,
+       "s": 0.7,
+       "l": 0.43
+      },
+      "fg": "#fcfdff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Discuss your project",
+      "See our work"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 6,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 17,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.absolute.inset-0 → radial-gradient(100% 70% at 50% -20%, rgba(33, 56, 184, 0.2), rgba(0, 0, 0, 0) 62%), radial-gradient(55% 45% a",
+      "div.absolute.inset-0 → radial-gradient(90% 55% at 50% 0px, rgba(33, 56, 184, 0.22), rgba(0, 0, 0, 0) 62%), radial-gradient(80% 60% at",
+      "div.absolute.inset-0 → linear-gradient(to right, oklab(0.0979222 0.00118304 -0.00423069 / 0.75) 0%, oklab(0.0979223 0.00118304 -0.004",
+      "div.absolute.inset-0 → radial-gradient(70% 60% at 50% 40%, rgba(33, 56, 184, 0.25), rgba(0, 0, 0, 0) 70%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 6,
+     "hairlineSamples": [
+      "div.section-divider.mx-auto 390px rule",
+      "div.section-divider.mx-auto 390px rule",
+      "div.section-divider.mx-auto 390px rule",
+      "div.section-divider.mx-auto 390px rule",
+      "div.section-divider.mx-auto 390px rule"
+     ],
+     "outlinedBoxes": 11,
+     "dashed": 0,
+     "blurred": 6,
+     "roundedBoxes": 11,
+     "boxRadius": 26,
+     "squareMedia": 1,
+     "roundedMedia": 6,
+     "mediaRadius": 26,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.42
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "poppins",
+     "kumbh sans",
+     "kumbh sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 413,
+     "h": 894
+    },
+    "pageH": 8527,
+    "margins": {
+     "left": 16,
+     "right": 44
+    },
+    "sections": [
+     {
+      "sel": "main#main-content.relative.flex-1",
+      "tag": "main",
+      "top": 0,
+      "height": 7157,
+      "words": 47,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Your business, in one system.",
+       "size": 34,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 51,
+      "textLeft": 16,
+      "textRight": 51,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.relative",
+      "tag": "footer",
+      "top": 7157,
+      "height": 1370,
+      "words": 44,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 44,
+      "textLeft": 16,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 960,
+      "height": 1840
+     },
+     {
+      "top": 3444,
+      "height": 4208
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Your business, in one system. Built in Sync. Built in Sync.",
+      "size": 34,
+      "top": 168,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "1 headline(s) wrap past two lines at 1440px: \"Your business, in one system. Built in Sync. Bui\" → 3 lines (11 words, 56px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "hero-words",
+   "width": 1440,
+   "message": "Hero headline is 11 words (\"Your business, in one system. Built in Sync. Built in Sync.\"). Gallery median is 5.",
+   "fix": "Say the one thing. Move the rest to the supporting line.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "8 eyebrow/kicker label(s) above headings: \"Software house · Medan, Indonesia\" above \"Your business, in one system. Built in S\"; \"Selected work\" above \"Systems in daily use\"; \"UD Sejahtera Bersama · Distribution\" above \"Sejahtera Bersama ERP\"; \"PT Mitra Laju Interocean · Logistics\" above \"Mitra Laju Interocean Operations\"; \"Malavari Films · Online education\" above \"Malavari Films Academy\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "8 tiny uppercase letter-spaced labels (e.g. \"Software house · Medan, Indonesia\", \"AI · Software · IoT\", \"Selected work\", \"Where we work\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "21 gradient fill(s): div.absolute.inset-0 → radial-gradient(100% 70% at 50% -20%, rgba(33, 56, 184, 0.2), rgba(0, 0, 0, 0) 62%), radial-gradient(55% 45% a | div.absolute.inset-0 → radial-gradient(90% 55% at 50% 0px, rgba(33, 56, 184, 0.22), rgba(0, 0, 0, 0) 62%), radial-gradient(80% 60% at | div.absolute.inset-0 → linear-gradient(to right, oklab(0.0979222 0.00118304 -0.00423069 / 0.75) 0%, oklab(0.0979223 0.00118304 -0.004",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "6 box-shadow(s) on elements at rest: article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0 | article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0 | article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "6 thin rule(s)/divider line(s): div.section-divider.mx-auto 896px rule | div.section-divider.mx-auto 896px rule | div.section-divider.mx-auto 896px rule | div.section-divider.mx-auto 896px rule",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "11 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "glass",
+   "width": 1440,
+   "message": "11 backdrop-blur surfaces.",
+   "fix": "One blurred sticky bar at most; glass cards are a tell.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (10, 11, 12, 14, 15, 16, 17, 24, 30, 32, 52, 56).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "11 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The page sits off-centre: its content comes to 112px from the left edge but only to 192px from the right, at 1440px.",
+   "fix": "Give the page one pair of equal margins. Check the wrapper for a max-width without margin-inline: auto, a grid with an empty last column, or padding on one side only. If one side is meant to hold air, it must still be closed by something that reaches the margin (a picture, the navigation's last item, a figure).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "blank-gap",
+   "width": 1440,
+   "message": "2 stretch(es) of the page hold nothing at all: 1068px at 876px; 2872px at 2544px (the screen is 900px tall).",
+   "fix": "Close the gap: a section gap is 120–240px on desktop and 72–112px on a phone. Look for a min-height: 100vh on a short section, an empty grid row, a hidden element still holding its space, or a reveal that never fired. A deliberate rest is a placed picture or colour field, not nothing.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "empty-screens",
+   "width": 1440,
+   "message": "2 of 7 desktop screens are almost empty ground (under 20% of the screen holds text, a picture or a colour field): screens 3, 7.",
+   "fix": "An empty screen is a rest only once per page. Elsewhere it means the section is underbuilt: set its content larger, give it the full information, put it on a colour field, or cut it."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 768,
+   "message": "1 headline(s) wrap past two lines at 768px: \"Your business, in one system. Built in Sync. Bui\" → 3 lines (11 words, 44px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "overflow",
+   "width": 768,
+   "message": "Page scrolls sideways by 12px at 768px.",
+   "fix": "Constrain the element that is wider than the viewport (max-width: 100%, or overflow: clip on its section)."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "1 headline(s) wrap past two lines at 390px: \"Your business, in one system. Built in Sync. Bui\" → 3 lines (11 words, 34px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/rbc/Developer/trixync-landing-page/.taste-skill/before/desktop-fold.jpg",
+   "pages": [
+    "/Users/rbc/Developer/trixync-landing-page/.taste-skill/before/desktop-page-01.jpg",
+    "/Users/rbc/Developer/trixync-landing-page/.taste-skill/before/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/rbc/Developer/trixync-landing-page/.taste-skill/before/tablet-fold.jpg",
+   "pages": [
+    "/Users/rbc/Developer/trixync-landing-page/.taste-skill/before/tablet-page-01.jpg",
+    "/Users/rbc/Developer/trixync-landing-page/.taste-skill/before/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/rbc/Developer/trixync-landing-page/.taste-skill/before/mobile-fold.jpg",
+   "pages": [
+    "/Users/rbc/Developer/trixync-landing-page/.taste-skill/before/mobile-page-01.jpg",
+    "/Users/rbc/Developer/trixync-landing-page/.taste-skill/before/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

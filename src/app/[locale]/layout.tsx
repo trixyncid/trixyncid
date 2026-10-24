@@ -7,6 +7,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { MotionProvider } from "@/components/layout/MotionProvider";
+import { RevealObserver } from "@/components/layout/RevealObserver";
 import { ThemeScript } from "@/components/layout/ThemeScript";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
@@ -16,6 +17,7 @@ import { ThreeDeprecationFilter } from "@/components/shared/three-deprecation-fi
 import { JsonLd } from "@/components/shared/JsonLd";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { siteConfig } from "@/content/site";
+import { services } from "@/content/services";
 import { htmlLangMap, routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
@@ -78,6 +80,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   );
   const tCommon = await getTranslations("common");
   const tMeta = await getTranslations("metadata.home");
+  const tServices = await getTranslations("services.items");
 
   return (
     <html
@@ -102,7 +105,15 @@ export default async function LocaleLayout({ children, params }: Props) {
           </a>
           <JsonLd
             data={[
-              organizationJsonLd({ locale: locale as Locale, description: tMeta("description") }),
+              organizationJsonLd({
+                locale: locale as Locale,
+                description: tMeta("description"),
+                services: services.map((service) => ({
+                  id: service.id,
+                  name: tServices(`${service.id}.title`),
+                  description: tServices(`${service.id}.build`),
+                })),
+              }),
               websiteJsonLd(locale as Locale),
             ]}
           />
@@ -115,6 +126,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               </main>
               <SiteFooter />
               <FloatingWhatsApp />
+              <RevealObserver />
             </NextIntlClientProvider>
             </MotionProvider>
           </ThemeProvider>

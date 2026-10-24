@@ -13,7 +13,7 @@ export function ApproachSection() {
   const data = stepKeys.map((key) => ({
     title: t(`steps.${key}.title`),
     content: (
-      <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
+      <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
         {t(`steps.${key}.description`)}
       </p>
     ),
@@ -21,15 +21,18 @@ export function ApproachSection() {
 
   return (
     <SectionShell id="approach">
-      <ScrollReveal className="mb-4 max-w-2xl">
-        <h2 className="font-heading text-2xl font-semibold tracking-tight text-foreground md:text-3xl">{t("title")}</h2>
-        <p className="mt-3 text-base text-muted-foreground">{t("subtitle")}</p>
-      </ScrollReveal>
-      <ScrollReveal delay={0.08}>
-        <div className="[&_.max-w-7xl]:!px-0 [&>div]:!bg-transparent">
+      {/* Desktop: the heading holds its place on the left while the steps scroll past on the right. */}
+      <div className="grid gap-4 lg:grid-cols-[4fr_8fr] lg:gap-12">
+        <ScrollReveal className="max-w-2xl lg:sticky lg:top-32 lg:self-start lg:pt-24">
+          <h2 className="font-heading text-3xl font-semibold tracking-tight text-foreground md:text-[2.5rem] md:leading-tight">
+            {t("title")}
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">{t("subtitle")}</p>
+        </ScrollReveal>
+        <div className="[&_.max-w-7xl]:!px-0 [&>div]:!bg-transparent [&>div]:md:!px-0">
           <Timeline data={data} />
         </div>
-      </ScrollReveal>
+      </div>
     </SectionShell>
   );
 }

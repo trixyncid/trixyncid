@@ -70,6 +70,9 @@ export default async function ProjectDetailPage({ params }: Props) {
       url: pageUrl,
       image: project.image,
       keywords: project.tags,
+      outcome: t("outcome"),
+      client: t("client").split(" · ")[0] ?? t("client"),
+      industry: t("client").split(" · ")[1],
     }),
   ];
 

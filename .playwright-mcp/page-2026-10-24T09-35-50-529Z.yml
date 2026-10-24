@@ -1,0 +1,217 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: /en
+          - img "Trixync" [ref=e9]
+        - navigation "Main navigation" [ref=e10]:
+          - link "About" [ref=e11] [cursor=pointer]:
+            - /url: /en/about
+          - link "Services" [ref=e12] [cursor=pointer]:
+            - /url: /en/services
+          - link "Projects" [ref=e13] [cursor=pointer]:
+            - /url: /en/projects
+          - link "FAQ" [ref=e14] [cursor=pointer]:
+            - /url: /en/faq
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - 'button "Language: English" [ref=e18] [cursor=pointer]'
+            - switch "Dark mode" [checked] [ref=e24] [cursor=pointer]
+          - link "Discuss your project" [ref=e28] [cursor=pointer]:
+            - /url: /en/contact
+    - main [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e33]:
+          - paragraph [ref=e35]: Software house · Medan, Indonesia
+          - heading "Your business, in one system. Built in Sync." [level=1] [ref=e36]:
+            - generic [ref=e37]: Your business, in one system.
+            - generic [ref=e38]: Built in Sync.
+          - paragraph [ref=e40]: Custom web apps, mobile apps, ERP, and IoT systems for businesses that have outgrown spreadsheets and WhatsApp groups — designed around how your team works, and supported after launch.
+          - generic [ref=e42]:
+            - link "Discuss your project" [ref=e43] [cursor=pointer]:
+              - /url: /en/contact
+            - link "See our work" [ref=e44] [cursor=pointer]:
+              - /url: /en/projects
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - heading "What we bring to the table" [level=2] [ref=e48]
+            - paragraph [ref=e49]: Software, AI, and IoT, backed by systems we've built and still support.
+          - generic [ref=e50]:
+            - article [ref=e52] [cursor=pointer]:
+              - generic [ref=e55]:
+                - paragraph [ref=e56]: AI · Software · IoT
+                - heading "AI where it actually helps the workflow" [level=3] [ref=e57]
+                - paragraph [ref=e58]: Document extraction, smart routing, and automation built into the tools your team already uses — not a chatbot demo bolted on the side.
+            - article [ref=e60]:
+              - generic [ref=e61]:
+                - heading "Software that connects to the real world" [level=3] [ref=e69]
+                - paragraph [ref=e70]: From offline-first IoT hardware to fingerprint attendance — we're comfortable where software meets physical devices.
+            - article [ref=e72]:
+              - generic [ref=e73]:
+                - heading "Scattered data, brought into one place" [level=3] [ref=e79]
+                - paragraph [ref=e80]: Membership systems, HR rosters, supplier dashboards — we turn spreadsheets, WhatsApp groups, and paper into one system of record.
+            - article [ref=e82]:
+              - generic [ref=e83]:
+                - heading "Built to run every day, not just to demo" [level=3] [ref=e96]
+                - paragraph [ref=e97]: The right people see the right data, payments go through, pages stay fast at month-end, and problems get caught before your staff notice them.
+            - article [ref=e99]:
+              - generic [ref=e100]:
+                - heading "Designed with the people who use it" [level=3] [ref=e106]
+                - paragraph [ref=e107]: Every system started with time alongside the people who run the work — membership coordinators, HR teams, tour operators — before a line of code was written.
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - heading "How we solve problems" [level=2] [ref=e112]
+            - paragraph [ref=e113]: Four steps we follow on every project, whatever its size.
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - heading "Find the real bottleneck" [level=3] [ref=e121]
+              - paragraph [ref=e123]: Not what's assumed broken — what's actually slowing the business down or costing money.
+            - generic [ref=e124]:
+              - heading "Design for how you work today" [level=3] [ref=e128]
+              - paragraph [ref=e130]: Adoption shouldn't require your team to change how they operate overnight.
+            - generic [ref=e131]:
+              - heading "Build for the long run" [level=3] [ref=e135]
+              - paragraph [ref=e137]: Built for real users, real data, and busy days from the start — not a demo that breaks under load.
+            - generic [ref=e138]:
+              - heading "Stay involved after launch" [level=3] [ref=e142]
+              - paragraph [ref=e144]: Your business keeps changing, so the system does too. We stay on after handover.
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - paragraph [ref=e150]: Selected work
+              - heading "Systems in daily use" [level=2] [ref=e151]
+              - paragraph [ref=e152]: Software running real operations for businesses across Indonesia.
+            - link "All projects →" [ref=e153] [cursor=pointer]:
+              - /url: /en/projects
+          - generic [ref=e154]:
+            - link [ref=e156] [cursor=pointer]:
+              - /url: /en/projects/sejahtera-bersama-erp
+              - article [ref=e157]:
+                - generic [ref=e159]: Enterprise
+                - generic [ref=e160]:
+                  - paragraph [ref=e161]: UD Sejahtera Bersama · Distribution
+                  - heading "Sejahtera Bersama ERP" [level=3] [ref=e162]
+                  - paragraph [ref=e163]: End-to-end ERP for UD Sejahtera Bersama — inventory, attendance, payroll, purchasing, POS, and production workflow in one system.
+                  - generic [ref=e164]: View case study
+            - link [ref=e169] [cursor=pointer]:
+              - /url: /en/projects/mitra-laju-interocean
+              - article [ref=e170]:
+                - generic [ref=e172]: Enterprise
+                - generic [ref=e173]:
+                  - paragraph [ref=e174]: PT Mitra Laju Interocean · Logistics
+                  - heading "Mitra Laju Interocean Operations" [level=3] [ref=e175]
+                  - paragraph [ref=e176]: Freight forwarding operations dashboard — shipments, containers, costings, and sellings managed in one role-based system.
+                  - generic [ref=e177]: View case study
+            - link [ref=e182] [cursor=pointer]:
+              - /url: /en/projects/malavari-films
+              - article [ref=e183]:
+                - generic [ref=e185]: Software
+                - generic [ref=e186]:
+                  - paragraph [ref=e187]: Malavari Films · Online education
+                  - heading "Malavari Films Academy" [level=3] [ref=e188]
+                  - paragraph [ref=e189]: Online filmmaking course platform — class catalog, secure video lessons, checkout with online payments, and a personal learning library.
+                  - generic [ref=e190]: View case study
+            - link [ref=e195] [cursor=pointer]:
+              - /url: /en/projects/kms-connect
+              - article [ref=e196]:
+                - generic [ref=e198]: Software
+                - generic [ref=e199]:
+                  - paragraph [ref=e200]: KMS · Recruitment platform
+                  - heading "KMS Connect App" [level=3] [ref=e201]
+                  - paragraph [ref=e202]: Fully integrated job listing system with mobile apps, connecting job opportunities and application workflows in one platform experience.
+                  - generic [ref=e203]: View case study
+            - link [ref=e208] [cursor=pointer]:
+              - /url: /en/projects/goholiday-dc
+              - article [ref=e209]:
+                - generic [ref=e211]: Software
+                - generic [ref=e212]:
+                  - paragraph [ref=e213]: GoHoliday · Travel marketplace
+                  - heading "GoHoliday DC" [level=3] [ref=e214]
+                  - paragraph [ref=e215]: Travel marketplace platform where travel businesses can sell tour packages, and resellers can promote tours and earn commission from successful sales.
+                  - generic [ref=e216]: View case study
+            - link [ref=e221] [cursor=pointer]:
+              - /url: /en/projects/pgi-tower
+              - article [ref=e222]:
+                - generic [ref=e224]: Web
+                - generic [ref=e225]:
+                  - paragraph [ref=e226]: PT Property Group Imperium · Property
+                  - heading "PGI Tower" [level=3] [ref=e227]
+                  - paragraph [ref=e228]: Website for PGI Tower presenting the property profile, facilities, and clear ways to get in touch, in a modern responsive layout.
+                  - generic [ref=e229]: View case study
+        - generic [ref=e236]:
+          - generic [ref=e243]:
+            - paragraph [ref=e244]: Where we work
+            - heading "Rooted in Medan" [level=2] [ref=e245]
+          - generic [ref=e246]:
+            - paragraph [ref=e247]: We work on-site with businesses in Medan and North Sumatra, and remotely with teams across Indonesia. Same team whether we're in the room or on a call.
+            - generic [ref=e248]:
+              - generic [ref=e249]:
+                - paragraph [ref=e250]: "13"
+                - paragraph [ref=e251]: Projects shipped
+              - generic [ref=e252]:
+                - paragraph [ref=e253]: Medan
+                - paragraph [ref=e254]: Home base
+              - generic [ref=e255]:
+                - paragraph [ref=e256]: Nationwide
+                - paragraph [ref=e257]: On-site or remote
+            - paragraph [ref=e258]: Medan, North Sumatra, Indonesia
+    - contentinfo [ref=e259]:
+      - generic [ref=e262]:
+        - generic [ref=e263]:
+          - paragraph [ref=e264]: Let's build
+          - heading "Tell us what your team still does by hand." [level=2] [ref=e265]
+          - paragraph [ref=e266]: The repetitive, the duplicated, the spreadsheet-and-WhatsApp workarounds — walk us through them. We'll pinpoint the real bottleneck and tell you straight whether a system is worth building.
+        - link "Discuss your project" [ref=e267] [cursor=pointer]:
+          - /url: /en/contact
+      - generic [ref=e270]:
+        - generic [ref=e271]:
+          - link "Trixync" [ref=e272] [cursor=pointer]:
+            - /url: /en
+            - img "Trixync" [ref=e274]
+            - generic [ref=e276]:
+              - img "Trixync" [ref=e278]
+              - generic [ref=e279]: Built in Sync
+          - paragraph [ref=e280]: A software house in Medan. We map how your business runs, then build the web, mobile, ERP, and IoT systems to match.
+          - paragraph [ref=e281]: Medan, North Sumatra, Indonesia
+        - generic [ref=e285]:
+          - generic [ref=e286]:
+            - heading "Navigate" [level=3] [ref=e287]
+            - list [ref=e288]:
+              - listitem [ref=e289]:
+                - link "Home" [ref=e290] [cursor=pointer]:
+                  - /url: /en
+              - listitem [ref=e291]:
+                - link "About" [ref=e292] [cursor=pointer]:
+                  - /url: /en/about
+              - listitem [ref=e293]:
+                - link "Services" [ref=e294] [cursor=pointer]:
+                  - /url: /en/services
+              - listitem [ref=e295]:
+                - link "Projects" [ref=e296] [cursor=pointer]:
+                  - /url: /en/projects
+              - listitem [ref=e297]:
+                - link "FAQ" [ref=e298] [cursor=pointer]:
+                  - /url: /en/faq
+              - listitem [ref=e299]:
+                - link "Contact" [ref=e300] [cursor=pointer]:
+                  - /url: /en/contact
+          - generic [ref=e301]:
+            - heading "Connect" [level=3] [ref=e302]
+            - list [ref=e303]:
+              - listitem [ref=e304]:
+                - link "hello@trixync.id" [ref=e305] [cursor=pointer]:
+                  - /url: mailto:hello@trixync.id
+              - listitem [ref=e309]:
+                - link "WhatsApp" [ref=e310] [cursor=pointer]:
+                  - /url: https://wa.me/6287893388812
+            - link "Instagram" [ref=e314] [cursor=pointer]:
+              - /url: https://instagram.com/trixync.id
+      - generic [ref=e318]:
+        - paragraph [ref=e319]: © 2026 Trixync. All rights reserved.
+        - paragraph [ref=e320]: trixync.id
+    - link "Chat with Trixync on WhatsApp" [ref=e321] [cursor=pointer]:
+      - /url: https://wa.me/6287893388812?text=Hi%20Trixync!%20I%20found%20your%20website%20and%20would%20like%20to%20discuss%20a%20project.%20Could%20we%20talk%3F
+  - button "Open Next.js Dev Tools" [ref=e330] [cursor=pointer]

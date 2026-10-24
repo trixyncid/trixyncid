@@ -155,7 +155,7 @@ export function MobileNav({
 
           <div className="mt-auto space-y-5 border-t border-border/40 pt-8">
             <div className="space-y-3">
-              <p className="text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 {tNav("language")}
               </p>
               <LanguageSwitcher variant="buttons" />

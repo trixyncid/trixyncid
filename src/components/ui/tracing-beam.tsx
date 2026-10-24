@@ -1,127 +1,25 @@
-"use client";
-import React, { useEffect, useRef, useState } from "react";
-import {
-  motion,
-  useTransform,
-  useScroll,
-  useSpring,
-} from "motion/react";
 import { cn } from "@/lib/utils";
 
-export const TracingBeam = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-
-  const contentRef = useRef<HTMLDivElement>(null);
-  const [svgHeight, setSvgHeight] = useState(0);
-
-  useEffect(() => {
-    const node = contentRef.current;
-    if (!node) return;
-    const observer = new ResizeObserver(() => setSvgHeight(node.offsetHeight));
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, []);
-
-  const y1 = useSpring(
-    useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
-    {
-      stiffness: 500,
-      damping: 90,
-    },
-  );
-  const y2 = useSpring(
-    useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]),
-    {
-      stiffness: 500,
-      damping: 90,
-    },
-  );
-
+/**
+ * A rail beside long-form content (About story, FAQ) that draws itself as you
+ * scroll, with a glowing tip — CSS scroll-driven animation (`.scroll-rail*` in
+ * globals.css), no client JS. Decorative; hidden on phones where there's no
+ * gutter for it.
+ */
+export function TracingBeam({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <motion.div
-      ref={ref}
-      className={cn("relative mx-auto h-full w-full max-w-4xl", className)}
-    >
-      <div className="absolute top-3 -left-20 hidden md:block" aria-hidden>
-        <motion.div
-          transition={{
-            duration: 0.2,
-            delay: 0.5,
-          }}
-          animate={{
-            boxShadow:
-              scrollYProgress.get() > 0
-                ? "none"
-                : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-          }}
-          className="border-border ml-[27px] flex h-4 w-4 items-center justify-center rounded-full border shadow-sm"
-        >
-          <motion.div
-            transition={{
-              duration: 0.2,
-              delay: 0.5,
-            }}
-            animate={{
-              backgroundColor: scrollYProgress.get() > 0 ? "white" : "#3866f2",
-              borderColor: scrollYProgress.get() > 0 ? "white" : "#2138b8",
-            }}
-            className="h-2 w-2 rounded-full border border-neutral-300 bg-white"
-          />
-        </motion.div>
-        <svg
-          viewBox={`0 0 20 ${svgHeight}`}
-          width="20"
-          height={svgHeight} // Set the SVG height
-          className="ml-4 block"
-          aria-hidden="true"
-        >
-          <motion.path
-            d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
-            fill="none"
-            stroke="#9091A0"
-            strokeOpacity="0.16"
-            transition={{
-              duration: 10,
-            }}
-          ></motion.path>
-          <motion.path
-            d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
-            fill="none"
-            stroke="url(#gradient)"
-            strokeWidth="1.25"
-            className="motion-reduce:hidden"
-            transition={{
-              duration: 10,
-            }}
-          ></motion.path>
-          <defs>
-            <motion.linearGradient
-              id="gradient"
-              gradientUnits="userSpaceOnUse"
-              x1="0"
-              x2="0"
-              y1={y1} // set y1 for gradient
-              y2={y2} // set y2 for gradient
-            >
-              <stop stopColor="#3866F2" stopOpacity="0"></stop>
-              <stop stopColor="#3866F2"></stop>
-              <stop offset="0.325" stopColor="#2138B8"></stop>
-              <stop offset="1" stopColor="#7D9BFF" stopOpacity="0"></stop>
-            </motion.linearGradient>
-          </defs>
-        </svg>
+    <div className={cn("scroll-rail relative mx-auto h-full w-full max-w-4xl", className)}>
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-y-0 -left-10 hidden w-0.5 [container-type:size] md:block lg:-left-16"
+      >
+        <div className="absolute inset-0 bg-border [mask-image:linear-gradient(to_bottom,black_0%,black_90%,transparent_100%)]" />
+        <div className="scroll-rail-fill absolute inset-0 origin-top rounded-full bg-gradient-to-b from-brand-light via-brand-light to-brand shadow-[0_0_12px_rgba(56,102,242,0.5)]" />
+        <div className="scroll-rail-tip absolute -left-[5px] -top-1.5 h-3 w-3 rounded-full bg-brand-light shadow-[0_0_16px_4px_rgba(56,102,242,0.6)]" />
+        {/* Start node */}
+        <div className="absolute -left-[7px] top-0 h-4 w-4 rounded-full border-2 border-brand-light bg-background" />
       </div>
-      <div ref={contentRef}>{children}</div>
-    </motion.div>
+      {children}
+    </div>
   );
-};
+}

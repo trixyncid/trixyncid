@@ -23,6 +23,37 @@
     "contact": {
       "title": "Contact Trixync — Software House in Medan",
       "description": "Talk to Trixync in Medan, North Sumatra about your web app, mobile app, ERP or IoT project via WhatsApp, email or the contact form."
+    },
+    "og": {
+      "alt": "Trixync, Built in Sync",
+      "line": "Software house · Web, Mobile, ERP & IoT · Medan",
+      "cta": "Talk to us"
+    },
+    "facts": {
+      "projects": {
+        "value": "{count}",
+        "label": "Projects shipped and in daily use"
+      },
+      "price": {
+        "value": "From Rp5 million",
+        "label": "Websites and landing pages. Business systems and ERP are quoted after a discovery session."
+      },
+      "timeline": {
+        "value": "6–10 weeks",
+        "label": "For a focused workflow system. Multi-module platforms with IoT take 3–6 months."
+      },
+      "warranty": {
+        "value": "3 months",
+        "label": "Of free bug fixes after launch, then a monthly maintenance plan."
+      },
+      "ownership": {
+        "value": "Your code",
+        "label": "The source code belongs to your business once the project is paid in full."
+      },
+      "payment": {
+        "value": "60 / 40",
+        "label": "Down payment to start, the rest at handover once you approve the finished product."
+      }
     }
   },
   "common": {
@@ -62,39 +93,17 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Software house · Medan, Indonesia",
       "headline": "Your business, in one system.",
-      "headlineHighlight": "Built in Sync.",
-      "subheadline": "Custom web apps, mobile apps, ERP, and IoT systems for businesses that have outgrown spreadsheets and WhatsApp groups — designed around how your team works, and supported after launch.",
+      "subheadline": "A software house in Medan building custom web apps, mobile apps, ERP and IoT systems for businesses that have outgrown spreadsheets and WhatsApp groups. Designed around how your team works, and supported after launch.",
       "ctaPrimary": "Discuss your project",
       "ctaSecondary": "See our work"
     },
-    "strengths": {
-      "title": "What we bring to the table",
+    "showcase": {
+      "title": "What we build",
       "subtitle": "Software, AI, and IoT, backed by systems we've built and still support.",
-      "items": {
-        "aiSystems": {
-          "eyebrow": "AI · Software · IoT",
-          "title": "AI where it actually helps the workflow",
-          "description": "Document extraction, smart routing, and automation built into the tools your team already uses — not a chatbot demo bolted on the side."
-        },
-        "realWorld": {
-          "title": "Software that connects to the real world",
-          "description": "From offline-first IoT hardware to fingerprint attendance — we're comfortable where software meets physical devices."
-        },
-        "centralize": {
-          "title": "Scattered data, brought into one place",
-          "description": "Membership systems, HR rosters, supplier dashboards — we turn spreadsheets, WhatsApp groups, and paper into one system of record."
-        },
-        "production": {
-          "title": "Built to run every day, not just to demo",
-          "description": "The right people see the right data, payments go through, pages stay fast at month-end, and problems get caught before your staff notice them."
-        },
-        "stakeholders": {
-          "title": "Designed with the people who use it",
-          "description": "Every system started with time alongside the people who run the work — membership coordinators, HR teams, tour operators — before a line of code was written."
-        }
-      }
+      "resultFor": "Result for {client}",
+      "whatChanges": "What changes",
+      "allServices": "See all services"
     },
     "approach": {
       "title": "How we solve problems",
@@ -119,39 +128,16 @@
       }
     },
     "projects": {
-      "title": "Systems in daily use",
+      "title": "More systems in daily use",
       "subtitle": "Software running real operations for businesses across Indonesia.",
-      "eyebrow": "Selected work",
       "viewAll": "All projects"
     },
-    "location": {
-      "eyebrow": "Where we work",
-      "title": "Rooted in Medan",
-      "description": "We work on-site with businesses in Medan and North Sumatra, and remotely with teams across Indonesia. Same team whether we're in the room or on a call.",
-      "stats": {
-        "projects": {
-          "value": "{count}",
-          "label": "Projects shipped"
-        },
-        "homeBase": {
-          "value": "Medan",
-          "label": "Home base"
-        },
-        "reach": {
-          "value": "Nationwide",
-          "label": "On-site or remote"
-        }
-      }
-    },
-    "cta": {
-      "eyebrow": "Next step",
-      "title": "Have a process worth fixing?",
-      "description": "Walk us through the part of your operation that still runs on spreadsheets. We'll tell you honestly whether software is the answer.",
-      "button": "Discuss your project"
+    "faq": {
+      "title": "Questions people ask first",
+      "all": "All {count} answers"
     }
   },
   "about": {
-    "eyebrow": "About",
     "title": "A software house that starts with your workflow",
     "subtitle": "We're a Medan team building web, mobile, ERP, and IoT systems. We spend time with the people who run your operation before we design anything, and we stay after launch.",
     "story": {
@@ -171,7 +157,6 @@
       }
     },
     "values": {
-      "eyebrow": "Principles",
       "title": "What drives our work",
       "subtitle": "Three commitments that show up in every project, from the first conversation to long after launch.",
       "items": {
@@ -190,7 +175,6 @@
       }
     },
     "location": {
-      "eyebrow": "Where we work",
       "title": "Rooted in Medan",
       "description": "Based in Medan, North Sumatra, and working with clients across Indonesia, on-site or remotely.",
       "stats": {
@@ -208,14 +192,12 @@
         }
       },
       "cta": {
-        "eyebrow": "Work with us",
         "title": "Let's map your workflow",
         "description": "Whether you're in Sumatra or collaborating remotely, we'll start by understanding how your operation actually runs."
       }
     }
   },
   "services": {
-    "eyebrow": "Services",
     "title": "What we build",
     "subtitle": "Custom software for Indonesian businesses, from the first workflow session to launch and long-term support.",
     "categories": {
@@ -227,7 +209,6 @@
       "outcome": "The outcome"
     },
     "process": {
-      "eyebrow": "Our process",
       "title": "How we work with you",
       "subtitle": "The same discipline on every project, so you always know what happens next.",
       "steps": {
@@ -250,7 +231,6 @@
       }
     },
     "cta": {
-      "eyebrow": "Next step",
       "title": "Not sure which service fits?",
       "description": "Tell us what's slowing your team down. We'll map the bottleneck and give you an honest recommendation.",
       "button": "Discuss your project"
@@ -298,7 +278,6 @@
     "categorySupport": "Support"
   },
   "projects": {
-    "eyebrow": "Portfolio",
     "title": "Projects",
     "subtitle": "Systems we've designed, built, and launched — with the problem, approach, and result behind each one.",
     "viewCaseStudy": "View case study",
@@ -315,7 +294,12 @@
       "solution": "What we built",
       "outcome": "The outcome",
       "visitSite": "Visit live site",
-      "viewCode": "View source"
+      "viewCode": "View source",
+      "client": "Client",
+      "industry": "Industry",
+      "category": "Type",
+      "stack": "Built with",
+      "next": "Next case study"
     },
     "items": {
       "kms-connect": {
@@ -440,7 +424,6 @@
   "faq": {
     "title": "Frequently asked questions",
     "subtitle": "Straight answers about how we work — process, timelines, cost, and what happens after launch.",
-    "eyebrow": "FAQ",
     "categories": {
       "all": "All",
       "studio": "About us",
@@ -449,7 +432,6 @@
       "support": "After launch"
     },
     "cta": {
-      "eyebrow": "Still have questions?",
       "title": "Ask us directly",
       "description": "If your situation doesn't fit an answer here, tell us what's going on. We usually reply within hours."
     },
@@ -517,12 +499,10 @@
     }
   },
   "contact": {
-    "eyebrow": "Contact",
     "title": "Let's talk about your project",
     "subtitle": "Tell us what's manual, scattered, or slowing your team down. We usually reply within hours.",
     "whatsappCta": "Chat on WhatsApp",
     "channels": {
-      "eyebrow": "Reach us",
       "title": "Direct channels",
       "description": "Prefer to skip the form? Message or email us directly."
     },
@@ -531,7 +511,6 @@
       "description": "We read every message personally and reply with next steps — usually within hours, always within one business day."
     },
     "nextSteps": {
-      "eyebrow": "What happens next",
       "title": "After you send a message",
       "items": {
         "review": {
@@ -555,7 +534,6 @@
       "location": "Location"
     },
     "form": {
-      "eyebrow": "Project inquiry",
       "title": "Tell us about your project",
       "description": "Takes about a minute. We'll open WhatsApp with your details filled in — just tap send. Prefer email? Write to hello@trixync.id.",
       "name": "Full name",
@@ -592,7 +570,6 @@
   "footer": {
     "tagline": "Built in Sync",
     "description": "A software house in Medan. We map how your business runs, then build the web, mobile, ERP, and IoT systems to match.",
-    "ctaEyebrow": "Let's build",
     "ctaTitle": "Tell us what your team still does by hand.",
     "ctaDescription": "The repetitive, the duplicated, the spreadsheet-and-WhatsApp workarounds — walk us through them. We'll pinpoint the real bottleneck and tell you straight whether a system is worth building.",
     "navigate": "Navigate",

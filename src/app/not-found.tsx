@@ -7,7 +7,7 @@ export default function RootNotFound() {
   return (
     <html lang="en" className="dark">
       <body className="flex min-h-screen flex-col items-center justify-center px-6 text-center font-sans antialiased">
-        <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">404</p>
+        <p className="text-sm font-medium text-muted-foreground">404</p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
           Page not found
         </h1>

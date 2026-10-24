@@ -1,0 +1,65 @@
+TASTESKILL · INSPECT   http://localhost:3000/en
+
+MEASURED (first viewport listed)
+  hero headline   "Your business, in one system. Built in Sync. Built in Sync."  11 words · 3 line(s) · 56px (3.9vw) · Poppins 600 · tracking -0.025em · leading 1.08
+  @768px          3 line(s) · 44px
+  @390px          3 line(s) · 34px
+  typefaces       Kumbh Sans 84%, Poppins 16%
+  sizes in use    10 / 11 / 12 / 14 / 15 / 16 / 17 / 24 / 30 / 32 / 52 / 56 px   body 17px / 1.63
+  colour          page #030304 · sections #030304 · button #2138b8
+  page            6.4 screens · 655 words · 16 images · hero media 85% bg-image
+  headings        12 · longest 3 line(s) · median 3 words
+
+FAIL — fix every one of these
+  [headline-lines] @1440px  1 headline(s) wrap past two lines at 1440px: "Your business, in one system. Built in Sync. Bui" → 3 lines (11 words, 56px)
+      → Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less.
+  [eyebrow] @1440px (+768, 390)  8 eyebrow/kicker label(s) above headings: "Software house · Medan, Indonesia" above "Your business, in one system. Built in S"; "Selected work" above "Systems in daily use"; "UD Sejahtera Bersama · Distribution" above "Sejahtera Bersama ERP"; "PT Mitra Laju Interocean · Logistics" above "Mitra Laju Interocean Operations"; "Malavari Films · Online education" above "Malavari Films Academy"
+      → Delete them. If the label carried real information, fold it into the headline or the supporting sentence.
+  [micro-label] @1440px (+768, 390)  8 tiny uppercase letter-spaced labels (e.g. "Software house · Medan, Indonesia", "AI · Software · IoT", "Selected work", "Where we work").
+      → Use sentence-case text at a readable size, or delete the label.
+  [gradient] @1440px (+768, 390)  21 gradient fill(s): div.absolute.inset-0 → radial-gradient(100% 70% at 50% -20%, rgba(33, 56, 184, 0.2), rgba(0, 0, 0, 0) 62%), radial-gradient(55% 45% a | div.absolute.inset-0 → radial-gradient(90% 55% at 50% 0px, rgba(33, 56, 184, 0.22), rgba(0, 0, 0, 0) 62%), radial-gradient(80% 60% at | div.absolute.inset-0 → linear-gradient(to right, oklab(0.0979222 0.00118304 -0.00423069 / 0.75) 0%, oklab(0.0979223 0.00118304 -0.004
+      → Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.
+  [shadow] @1440px (+768, 390)  6 box-shadow(s) on elements at rest: article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0 | article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0 | article.group/card.relative → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0
+      → Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).
+  [hairline] @1440px (+768, 390)  6 thin rule(s)/divider line(s): div.section-divider.mx-auto 896px rule | div.section-divider.mx-auto 896px rule | div.section-divider.mx-auto 896px rule | div.section-divider.mx-auto 896px rule
+      → Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.
+  [outlined-box] @1440px (+768, 390)  11 boxes drawn with a 1px outline.
+      → Define a surface by its fill (one tone step from the page) or leave the content unboxed.
+  [small-text] @1440px (+768, 390)  11 text blocks under 13px.
+      → Nothing meant to be read goes below 13px.
+  [off-centre] @1440px (+768, 390)  The page sits off-centre: its content comes to 112px from the left edge but only to 192px from the right, at 1440px.
+      → Give the page one pair of equal margins. Check the wrapper for a max-width without margin-inline: auto, a grid with an empty last column, or padding on one side only. If one side is meant to hold air, it must still be closed by something that reaches the margin (a picture, the navigation's last item, a figure).
+  [blank-gap] @1440px (+768, 390)  2 stretch(es) of the page hold nothing at all: 1068px at 876px; 2872px at 2544px (the screen is 900px tall).
+      → Close the gap: a section gap is 120–240px on desktop and 72–112px on a phone. Look for a min-height: 100vh on a short section, an empty grid row, a hidden element still holding its space, or a reveal that never fired. A deliberate rest is a placed picture or colour field, not nothing.
+  [empty-screens] @1440px  2 of 7 desktop screens are almost empty ground (under 20% of the screen holds text, a picture or a colour field): screens 3, 7.
+      → An empty screen is a rest only once per page. Elsewhere it means the section is underbuilt: set its content larger, give it the full information, put it on a colour field, or cut it.
+  [headline-lines] @768px  1 headline(s) wrap past two lines at 768px: "Your business, in one system. Built in Sync. Bui" → 3 lines (11 words, 44px)
+      → Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less.
+  [overflow] @768px  Page scrolls sideways by 12px at 768px.
+      → Constrain the element that is wider than the viewport (max-width: 100%, or overflow: clip on its section).
+  [headline-lines] @390px  1 headline(s) wrap past two lines at 390px: "Your business, in one system. Built in Sync. Bui" → 3 lines (11 words, 34px)
+      → Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less.
+
+WARN — fix, or be able to defend
+  [hero-words] @1440px (+768, 390)  Hero headline is 11 words ("Your business, in one system. Built in Sync. Built in Sync."). Gallery median is 5.
+      → Say the one thing. Move the rest to the supporting line.
+  [glass] @1440px (+768, 390)  11 backdrop-blur surfaces.
+      → One blurred sticky bar at most; glass cards are a tell.
+  [size-count] @1440px (+768)  12 different font sizes (10, 11, 12, 14, 15, 16, 17, 24, 30, 32, 52, 56).
+      → A page needs about five: display, heading, lead, body, small.
+  [no-footage] @1440px  No video anywhere on the page.
+      → Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject.
+
+LOOK AT THE RENDER — open these with your image viewer / Read tool before saying anything about quality:
+  desktop 1440px  .taste-skill/before/desktop-fold.jpg
+                  .taste-skill/before/desktop-page-01.jpg
+                  .taste-skill/before/desktop-page-02.jpg
+  tablet 768px    .taste-skill/before/tablet-fold.jpg
+                  .taste-skill/before/tablet-page-01.jpg
+                  .taste-skill/before/tablet-page-02.jpg
+  mobile 390px    .taste-skill/before/mobile-fold.jpg
+                  .taste-skill/before/mobile-page-01.jpg
+                  .taste-skill/before/mobile-page-02.jpg
+
+report: .taste-skill/before/report.json
+RESULT: 14 FAIL, 4 WARN — not done.

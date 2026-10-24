@@ -9,7 +9,7 @@ export default async function NotFound() {
 
   return (
     <SectionShell containerSize="narrow" className="py-20 text-center">
-      <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
+      <p className="text-sm font-medium text-muted-foreground">
         {t("notFound.eyebrow")}
       </p>
       <h1 className="mt-3 font-heading text-3xl font-semibold tracking-tight text-foreground md:text-4xl">

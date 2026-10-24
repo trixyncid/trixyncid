@@ -1,0 +1,1764 @@
+{
+ "url": "http://localhost:3000/en",
+ "at": "2026-10-24T10:00:38.267Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.48,
+    0.43,
+    0.11,
+    0.47,
+    0.13,
+    0.13
+   ],
+   "motion": {
+    "elements": 36,
+    "css": 16,
+    "transitions": 18,
+    "scripted": 2,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4676,
+     "screens": 5.2,
+     "words": 496,
+     "img": 16,
+     "video": 0,
+     "canvas": 1,
+     "svg": 16,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fhero%2Fsync-core-dark.webp&w=750&q=",
+      "image?url=%2Fprojects%2Fims.jpg&w=1080&q=75",
+      "image?url=%2Fprojects%2Fmli.jpg&w=750&q=75",
+      "image?url=%2Fprojects%2Fmalavari-films.jpg&w=750",
+      "image?url=%2Fprojects%2Fgoholiday.jpg&w=750&q=75"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your business, in one system.",
+     "words": 5,
+     "chars": 29,
+     "lines": 2,
+     "size": 64,
+     "vw": 4.4,
+     "font": "Poppins",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.47,
+     "top": 144,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your business, in one system.",
+     "words": 5,
+     "lines": 2,
+     "size": 64,
+     "font": "Poppins"
+    },
+    "headings": [
+     {
+      "text": "Your business, in one system.",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 144,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What we build",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 1065,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Custom business systems & ERP",
+      "words": 5,
+      "chars": 29,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 1336,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "How we solve problems",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 1918,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "More systems in daily use",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 2810,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Rooted in Medan",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 3677,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tell us what your team still does by hand.",
+      "words": 9,
+      "chars": 42,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 4005,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Kumbh Sans",
+       "share": 0.8,
+       "mono": false
+      },
+      {
+       "family": "Poppins",
+       "share": 0.2,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      24,
+      30,
+      32,
+      40,
+      64
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Kumbh Sans",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 18.7
+     },
+     "measureChars": 57,
+     "max": {
+      "size": 64,
+      "vw": 4.4,
+      "font": "Poppins",
+      "text": "Your business, in one system."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 1,
+     "microLabelShare": 0.003,
+     "microSamples": [
+      "trixync.id"
+     ],
+     "upperShare": 0.01,
+     "centerShare": 0.02,
+     "smallText": 1
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#030304",
+     "bodyBgHsl": {
+      "h": 240,
+      "s": 0.14,
+      "l": 0.01
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#030304",
+       "top": 0,
+       "hsl": {
+        "h": 240,
+        "s": 0.14,
+        "l": 0.01
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#949bab",
+       "share": 0.61
+      },
+      {
+       "color": "#f2f4f8",
+       "share": 0.27
+      },
+      {
+       "color": "#f2f3f8",
+       "share": 0.07
+      },
+      {
+       "color": "#7d9bff",
+       "share": 0.03
+      },
+      {
+       "color": "#fcfdff",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#2138b8",
+      "hsl": {
+       "h": 231,
+       "s": 0.7,
+       "l": 0.43
+      },
+      "fg": "#fcfdff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Discuss your project",
+      "Discuss your project",
+      "See our work"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 3,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.absolute.inset-0 → radial-gradient(100% 70% at 50% -20%, rgba(33, 56, 184, 0.2), rgba(0, 0, 0, 0) 62%), radial-gradient(55% 45% a",
+      "div.absolute.inset-0 → radial-gradient(90% 55% at 50% 0px, rgba(33, 56, 184, 0.22), rgba(0, 0, 0, 0) 62%), radial-gradient(80% 60% at",
+      "div.absolute.inset-0 → linear-gradient(to right, oklab(0.0979222 0.00118304 -0.00423069 / 0.75) 0%, oklab(0.0979223 0.00118304 -0.004"
+     ],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "div.section-divider.mx-auto 896px rule"
+     ],
+     "outlinedBoxes": 3,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 7,
+     "boxRadius": 99,
+     "squareMedia": 3,
+     "roundedMedia": 4,
+     "mediaRadius": 26,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.85
+     },
+     {
+      "type": "img",
+      "ratio": 0.34
+     },
+     {
+      "type": "canvas",
+      "ratio": 0.34
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "poppins",
+     "kumbh sans",
+     "kumbh sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4676,
+    "margins": {
+     "left": 112,
+     "right": 112
+    },
+    "sections": [
+     {
+      "sel": "main#main-content.relative.flex-1",
+      "tag": "main",
+      "top": 0,
+      "height": 3941,
+      "words": 415,
+      "media": 5,
+      "middle": 0,
+      "heading": {
+       "text": "Your business, in one system.",
+       "size": 64,
+       "tag": "h1"
+      },
+      "left": 90,
+      "right": 90,
+      "textLeft": 112,
+      "textRight": 130,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.relative",
+      "tag": "footer",
+      "top": 3941,
+      "height": 735,
+      "words": 85,
+      "media": 0,
+      "middle": 244,
+      "heading": {
+       "text": "Tell us what your team still does by hand.",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 112,
+      "right": 144,
+      "textLeft": 112,
+      "textRight": 144,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your business, in one system.",
+      "size": 64,
+      "top": 144,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 112,
+      "n": 11
+     },
+     {
+      "x": 232,
+      "n": 4
+     },
+     {
+      "x": 592,
+      "n": 4
+     },
+     {
+      "x": 136,
+      "n": 3
+     },
+     {
+      "x": 557,
+      "n": 2
+     },
+     {
+      "x": 973,
+      "n": 2
+     },
+     {
+      "x": 700,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 27,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.02,
+    "voidBox": {
+     "x": 1260,
+     "y": 780,
+     "w": 180,
+     "h": 120
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.47,
+    0.59,
+    0.3,
+    0.46,
+    0.34,
+    0.13,
+    0.2
+   ],
+   "motion": {
+    "elements": 34,
+    "css": 16,
+    "transitions": 17,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6258,
+     "screens": 6.1,
+     "words": 489,
+     "img": 16,
+     "video": 0,
+     "canvas": 1,
+     "svg": 16,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fhero%2Fsync-core-dark.webp&w=828&q=",
+      "image?url=%2Fprojects%2Fims.jpg&w=828&q=75",
+      "image?url=%2Fprojects%2Fmli.jpg&w=828&q=75",
+      "image?url=%2Fprojects%2Fmalavari-films.jpg&w=828",
+      "image?url=%2Fprojects%2Fgoholiday.jpg&w=828&q=75"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your business, in one system.",
+     "words": 5,
+     "chars": 29,
+     "lines": 2,
+     "size": 48,
+     "vw": 6.3,
+     "font": "Poppins",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 1.08,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 144,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your business, in one system.",
+     "words": 5,
+     "lines": 2,
+     "size": 48,
+     "font": "Poppins"
+    },
+    "headings": [
+     {
+      "text": "Your business, in one system.",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 144,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What we build",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1254,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Custom business systems & ERP",
+      "words": 5,
+      "chars": 29,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 2010,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "How we solve problems",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2485,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "More systems in daily use",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.62,
+      "top": 3477,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Rooted in Medan",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 4854,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tell us what your team still does by hand.",
+      "words": 9,
+      "chars": 42,
+      "lines": 2,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.64,
+      "top": 5290,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Kumbh Sans",
+       "share": 0.8,
+       "mono": false
+      },
+      {
+       "family": "Poppins",
+       "share": 0.2,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      24,
+      30,
+      32,
+      40,
+      48
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Kumbh Sans",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 18.7
+     },
+     "measureChars": 57,
+     "max": {
+      "size": 48,
+      "vw": 6.3,
+      "font": "Poppins",
+      "text": "Your business, in one system."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 1,
+     "microLabelShare": 0.003,
+     "microSamples": [
+      "trixync.id"
+     ],
+     "upperShare": 0.01,
+     "centerShare": 0.02,
+     "smallText": 1
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#030304",
+     "bodyBgHsl": {
+      "h": 240,
+      "s": 0.14,
+      "l": 0.01
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#030304",
+       "top": 0,
+       "hsl": {
+        "h": 240,
+        "s": 0.14,
+        "l": 0.01
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#949bab",
+       "share": 0.61
+      },
+      {
+       "color": "#f2f4f8",
+       "share": 0.28
+      },
+      {
+       "color": "#f2f3f8",
+       "share": 0.07
+      },
+      {
+       "color": "#7d9bff",
+       "share": 0.03
+      },
+      {
+       "color": "#fcfdff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#2138b8",
+      "hsl": {
+       "h": 231,
+       "s": 0.7,
+       "l": 0.43
+      },
+      "fg": "#fcfdff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Discuss your project",
+      "See our work"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 3,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.absolute.inset-0 → radial-gradient(100% 70% at 50% -20%, rgba(33, 56, 184, 0.2), rgba(0, 0, 0, 0) 62%), radial-gradient(55% 45% a",
+      "div.absolute.inset-0 → radial-gradient(90% 55% at 50% 0px, rgba(33, 56, 184, 0.22), rgba(0, 0, 0, 0) 62%), radial-gradient(80% 60% at",
+      "div.absolute.inset-0 → linear-gradient(to right, oklab(0.0979222 0.00118304 -0.00423069 / 0.75) 0%, oklab(0.0979223 0.00118304 -0.004"
+     ],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "div.section-divider.mx-auto 768px rule"
+     ],
+     "outlinedBoxes": 3,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 7,
+     "boxRadius": 99,
+     "squareMedia": 3,
+     "roundedMedia": 4,
+     "mediaRadius": 26,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.85
+     },
+     {
+      "type": "img",
+      "ratio": 0.38
+     },
+     {
+      "type": "canvas",
+      "ratio": 0.38
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "poppins",
+     "kumbh sans",
+     "kumbh sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6258,
+    "margins": {
+     "left": 24,
+     "right": 29
+    },
+    "sections": [
+     {
+      "sel": "main#main-content.relative.flex-1",
+      "tag": "main",
+      "top": 0,
+      "height": 5226,
+      "words": 415,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "Your business, in one system.",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 4,
+      "right": 4,
+      "textLeft": 24,
+      "textRight": 29,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.relative",
+      "tag": "footer",
+      "top": 5226,
+      "height": 1032,
+      "words": 85,
+      "media": 0,
+      "middle": 37,
+      "heading": {
+       "text": "Tell us what your team still does by hand.",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 56,
+      "textLeft": 24,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your business, in one system.",
+      "size": 48,
+      "top": 144,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 11
+     },
+     {
+      "x": 48,
+      "n": 5
+     },
+     {
+      "x": 144,
+      "n": 4
+     },
+     {
+      "x": 411,
+      "n": 4
+     },
+     {
+      "x": 429,
+      "n": 2
+     },
+     {
+      "x": 386,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 27,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.21,
+    0.5,
+    0.57,
+    0.35,
+    0.77,
+    0.76,
+    0.37,
+    0.12,
+    0.16
+   ],
+   "motion": {
+    "elements": 34,
+    "css": 16,
+    "transitions": 17,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 413,
+     "h": 894
+    },
+    "page": {
+     "height": 6933,
+     "screens": 7.8,
+     "words": 489,
+     "img": 16,
+     "video": 0,
+     "canvas": 0,
+     "svg": 16,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fhero%2Fsync-core-dark.webp&w=640&q=",
+      "image?url=%2Fprojects%2Fims.jpg&w=640&q=75",
+      "image?url=%2Fprojects%2Fmli.jpg&w=640&q=75",
+      "image?url=%2Fprojects%2Fmalavari-films.jpg&w=640",
+      "image?url=%2Fprojects%2Fgoholiday.jpg&w=640&q=75"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your business, in one system.",
+     "words": 5,
+     "chars": 29,
+     "lines": 2,
+     "size": 36,
+     "vw": 8.7,
+     "font": "Poppins",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 1.08,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.87,
+     "top": 128,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your business, in one system.",
+     "words": 5,
+     "lines": 2,
+     "size": 36,
+     "font": "Poppins"
+    },
+    "headings": [
+     {
+      "text": "Your business, in one system.",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 36,
+      "vw": 8.7,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 128,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What we build",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.3,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 1317,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Custom business systems & ERP",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 1820,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "How we solve problems",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 2365,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "More systems in daily use",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 3275,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Rooted in Medan",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 5141,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "13",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 5357,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Medan",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.4,
+      "top": 5357,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Nationwide",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 5437,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Tell us what your team still does by hand.",
+      "words": 9,
+      "chars": 42,
+      "lines": 2,
+      "size": 24,
+      "vw": 5.8,
+      "font": "Poppins",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 5617,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Kumbh Sans",
+       "share": 0.8,
+       "mono": false
+      },
+      {
+       "family": "Poppins",
+       "share": 0.2,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      24,
+      30,
+      36
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Kumbh Sans",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 18.7
+     },
+     "measureChars": 45,
+     "max": {
+      "size": 36,
+      "vw": 8.7,
+      "font": "Poppins",
+      "text": "Your business, in one system."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 1,
+     "microLabelShare": 0.003,
+     "microSamples": [
+      "trixync.id"
+     ],
+     "upperShare": 0.01,
+     "centerShare": 0.02,
+     "smallText": 1
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#030304",
+     "bodyBgHsl": {
+      "h": 240,
+      "s": 0.14,
+      "l": 0.01
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#030304",
+       "top": 0,
+       "hsl": {
+        "h": 240,
+        "s": 0.14,
+        "l": 0.01
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#949bab",
+       "share": 0.61
+      },
+      {
+       "color": "#f2f4f8",
+       "share": 0.28
+      },
+      {
+       "color": "#f2f3f8",
+       "share": 0.07
+      },
+      {
+       "color": "#7d9bff",
+       "share": 0.03
+      },
+      {
+       "color": "#fcfdff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#2138b8",
+      "hsl": {
+       "h": 231,
+       "s": 0.7,
+       "l": 0.43
+      },
+      "fg": "#fcfdff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Discuss your project",
+      "See our work"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 3,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.absolute.inset-0 → radial-gradient(100% 70% at 50% -20%, rgba(33, 56, 184, 0.2), rgba(0, 0, 0, 0) 62%), radial-gradient(55% 45% a",
+      "div.absolute.inset-0 → radial-gradient(90% 55% at 50% 0px, rgba(33, 56, 184, 0.22), rgba(0, 0, 0, 0) 62%), radial-gradient(80% 60% at",
+      "div.absolute.inset-0 → linear-gradient(to right, oklab(0.0979222 0.00118304 -0.00423069 / 0.75) 0%, oklab(0.0979223 0.00118304 -0.004"
+     ],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "div.section-divider.mx-auto 390px rule"
+     ],
+     "outlinedBoxes": 3,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 26,
+     "squareMedia": 1,
+     "roundedMedia": 4,
+     "mediaRadius": 26,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.49
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "poppins",
+     "kumbh sans",
+     "kumbh sans fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 413,
+     "h": 894
+    },
+    "pageH": 6933,
+    "margins": {
+     "left": 16,
+     "right": 44
+    },
+    "sections": [
+     {
+      "sel": "main#main-content.relative.flex-1",
+      "tag": "main",
+      "top": 0,
+      "height": 5577,
+      "words": 415,
+      "media": 5,
+      "middle": 60,
+      "heading": {
+       "text": "Your business, in one system.",
+       "size": 36,
+       "tag": "h1"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 16,
+      "textRight": -180,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.relative",
+      "tag": "footer",
+      "top": 5577,
+      "height": 1356,
+      "words": 85,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Tell us what your team still does by hand.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 41,
+      "textLeft": 16,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your business, in one system.",
+      "size": 36,
+      "top": 128,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 12
+     },
+     {
+      "x": 96,
+      "n": 8
+     },
+     {
+      "x": 36,
+      "n": 7
+     }
+    ],
+    "leftBlocks": 27,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "1 tiny uppercase letter-spaced label(s): \"trixync.id\"",
+   "fix": "Prefer sentence case at body size.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "3 gradient fill(s): div.absolute.inset-0 → radial-gradient(100% 70% at 50% -20%, rgba(33, 56, 184, 0.2), rgba(0, 0, 0, 0) 62%), radial-gradient(55% 45% a | div.absolute.inset-0 → radial-gradient(90% 55% at 50% 0px, rgba(33, 56, 184, 0.22), rgba(0, 0, 0, 0) 62%), radial-gradient(80% 60% at | div.absolute.inset-0 → linear-gradient(to right, oklab(0.0979222 0.00118304 -0.00423069 / 0.75) 0%, oklab(0.0979223 0.00118304 -0.004",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "hairline",
+   "width": 1440,
+   "message": "1 thin rule(s)/divider line(s): div.section-divider.mx-auto 896px rule",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "3 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "11 different font sizes (10, 12, 14, 16, 18, 20, 24, 30, 32, 40, 64).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "small-text",
+   "width": 1440,
+   "message": "1 text block(s) under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "empty-screens",
+   "width": 1440,
+   "message": "3 of 6 desktop screens are almost empty ground (under 20% of the screen holds text, a picture or a colour field): screens 3, 5, 6.",
+   "fix": "An empty screen is a rest only once per page. Elsewhere it means the section is underbuilt: set its content larger, give it the full information, put it on a colour field, or cut it."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 390,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid."
+  },
+  {
+   "level": "FAIL",
+   "id": "off-centre",
+   "width": 390,
+   "message": "The page sits off-centre: its content comes to 16px from the left edge but only to 44px from the right, at 390px.",
+   "fix": "Give the page one pair of equal margins. Check the wrapper for a max-width without margin-inline: auto, a grid with an empty last column, or padding on one side only. If one side is meant to hold air, it must still be closed by something that reaches the margin (a picture, the navigation's last item, a figure)."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/rbc/Developer/trixync-landing-page/.taste-skill/phase3/desktop-fold.jpg",
+   "pages": [
+    "/Users/rbc/Developer/trixync-landing-page/.taste-skill/phase3/desktop-page-01.jpg",
+    "/Users/rbc/Developer/trixync-landing-page/.taste-skill/phase3/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/rbc/Developer/trixync-landing-page/.taste-skill/phase3/tablet-fold.jpg",
+   "pages": [
+    "/Users/rbc/Developer/trixync-landing-page/.taste-skill/phase3/tablet-page-01.jpg",
+    "/Users/rbc/Developer/trixync-landing-page/.taste-skill/phase3/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/rbc/Developer/trixync-landing-page/.taste-skill/phase3/mobile-fold.jpg",
+   "pages": [
+    "/Users/rbc/Developer/trixync-landing-page/.taste-skill/phase3/mobile-page-01.jpg",
+    "/Users/rbc/Developer/trixync-landing-page/.taste-skill/phase3/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

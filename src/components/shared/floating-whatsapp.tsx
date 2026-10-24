@@ -33,7 +33,7 @@ export function FloatingWhatsApp() {
       className={cn(
         "group fixed z-40 flex items-center gap-0 overflow-hidden rounded-full",
         "bg-brand text-primary-foreground shadow-[0_4px_20px_rgba(33,56,184,0.35)]",
-        "transition-all duration-300 ease-out",
+        "transition-[background-color,box-shadow,scale,padding,gap] duration-300 ease-out",
         "hover:bg-brand-light hover:shadow-[0_6px_28px_rgba(56,102,242,0.45)]",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         "motion-safe:hover:scale-[1.03] motion-safe:active:scale-[0.98]",
@@ -48,7 +48,7 @@ export function FloatingWhatsApp() {
       <span
         className={cn(
           "hidden max-w-0 whitespace-nowrap text-sm font-semibold opacity-0",
-          "transition-all duration-300 sm:group-hover:mr-1 sm:group-hover:inline sm:group-hover:max-w-[10rem] sm:group-hover:opacity-100 sm:group-focus-visible:mr-1 sm:group-focus-visible:inline sm:group-focus-visible:max-w-[10rem] sm:group-focus-visible:opacity-100",
+          "transition-[max-width,opacity,margin] duration-300 sm:group-hover:mr-1 sm:group-hover:inline sm:group-hover:max-w-[10rem] sm:group-hover:opacity-100 sm:group-focus-visible:mr-1 sm:group-focus-visible:inline sm:group-focus-visible:max-w-[10rem] sm:group-focus-visible:opacity-100",
         )}
       >
         {t("shortLabel")}

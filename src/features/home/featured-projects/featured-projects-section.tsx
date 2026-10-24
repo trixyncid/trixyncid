@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { projects } from "@/content/projects";
+import { showcaseProjectIds } from "@/content/showcase";
 import { ProjectShowcaseCard } from "@/components/shared/project-showcase-card";
-import { ScrollReveal, ScrollStagger, ScrollStaggerItem } from "@/components/shared/scroll-reveal";
+import { ScrollReveal, ScrollStaggerItem } from "@/components/shared/scroll-reveal";
+import { HoverEffectGrid } from "@/components/ui/card-hover-effect";
 import { SectionShell } from "@/components/shared/SectionShell";
 import { type Locale } from "@/i18n/routing";
 
@@ -19,19 +21,17 @@ export function FeaturedProjectsSection() {
     web: "filterWeb",
   } as const;
 
-  const featured = projects.filter((p) => p.featured);
+  // Projects already shown in the showcase tabs aren't repeated here.
+  const featured = projects.filter((p) => p.featured && !showcaseProjectIds.includes(p.id));
 
   return (
     <SectionShell id="projects" containerSize="wide">
       <ScrollReveal className="mb-12 flex flex-col items-start justify-between gap-6 md:mb-14 md:flex-row md:items-end">
         <div className="max-w-2xl">
-          <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
-            {t("eyebrow")}
-          </p>
-          <h2 className="font-heading text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
+          <h2 className="font-heading text-3xl font-semibold tracking-tight text-foreground md:text-[2.5rem] md:leading-tight">
             {t("title")}
           </h2>
-          <p className="mt-3 text-base leading-relaxed text-muted-foreground">{t("subtitle")}</p>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">{t("subtitle")}</p>
         </div>
         <Link
           href={`${prefix}/projects`}
@@ -41,15 +41,13 @@ export function FeaturedProjectsSection() {
         </Link>
       </ScrollReveal>
 
-      <ScrollStagger className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
+      <HoverEffectGrid className="grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {featured.map((project) => (
           <ScrollStaggerItem key={project.id} className="h-full">
             <ProjectShowcaseCard
-              size="large"
               title={tProjects(`${project.id}.title`)}
               description={tProjects(`${project.id}.description`)}
               client={tProjects(`${project.id}.client`)}
-              category={project.category}
               categoryLabel={tPage(categoryLabelKeys[project.category])}
               image={project.image}
               href={`${prefix}/projects/${project.id}`}
@@ -58,7 +56,7 @@ export function FeaturedProjectsSection() {
             />
           </ScrollStaggerItem>
         ))}
-      </ScrollStagger>
+      </HoverEffectGrid>
     </SectionShell>
   );
 }

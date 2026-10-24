@@ -18,6 +18,16 @@ export const faqIds = [
 
 export type FaqId = (typeof faqIds)[number];
 
+/** Answered in full on the home page (and marked up as an FAQPage there). */
+export const homeFaqIds = [
+  "pricing",
+  "timeline",
+  "payment-terms",
+  "code-ownership",
+  "warranty",
+  "remote-work",
+] as const satisfies readonly FaqId[];
+
 export const faqCategoryKeys = ["all", "studio", "process", "technical", "support"] as const;
 
 export type FaqCategoryKey = (typeof faqCategoryKeys)[number];

@@ -23,6 +23,37 @@
     "contact": {
       "title": "联系 Trixync — 印尼棉兰软件开发公司",
       "description": "通过 WhatsApp、邮件或联系表单，与位于北苏门答腊棉兰的 Trixync 讨论您的网站、App、ERP 或物联网项目。"
+    },
+    "og": {
+      "alt": "Trixync, Built in Sync",
+      "line": "软件开发公司 · 网站、App、ERP 与物联网 · 棉兰",
+      "cta": "联系我们"
+    },
+    "facts": {
+      "projects": {
+        "value": "{count}",
+        "label": "个已交付并每天在用的项目"
+      },
+      "price": {
+        "value": "500 万印尼盾起",
+        "label": "企业官网与落地页。业务系统与 ERP 在需求调研后报价。"
+      },
+      "timeline": {
+        "value": "6–10 周",
+        "label": "一个聚焦的工作流系统。含物联网的多模块平台需要 3–6 个月。"
+      },
+      "warranty": {
+        "value": "3 个月",
+        "label": "上线后免费修复缺陷，之后为每月维护方案。"
+      },
+      "ownership": {
+        "value": "代码归您",
+        "label": "项目款项结清后，源代码归您的企业所有。"
+      },
+      "payment": {
+        "value": "60 / 40",
+        "label": "首付款后启动，您验收成品并交付时支付余款。"
+      }
     }
   },
   "common": {
@@ -62,39 +93,17 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "软件开发公司 · 印尼棉兰",
       "headline": "让您的业务，运行在同一套系统上。",
-      "headlineHighlight": "Built in Sync.",
-      "subheadline": "为已经被电子表格和 WhatsApp 群拖累的企业，定制开发网页应用、移动应用、ERP 与物联网系统 — 按照团队的实际工作方式设计，上线后持续支持。",
+      "subheadline": "棉兰的软件开发公司，为已经被电子表格和 WhatsApp 群拖累的企业定制开发网页应用、移动应用、ERP 与物联网系统。按照团队的实际工作方式设计，上线后持续支持。",
       "ctaPrimary": "洽谈项目",
       "ctaSecondary": "查看我们的作品"
     },
-    "strengths": {
-      "title": "我们能为您带来什么",
+    "showcase": {
+      "title": "我们开发什么",
       "subtitle": "软件、AI 与物联网 — 以我们开发并持续维护的系统为证。",
-      "items": {
-        "aiSystems": {
-          "eyebrow": "AI · 软件 · 物联网",
-          "title": "把 AI 用在真正帮得上忙的地方",
-          "description": "文档识别提取、智能分派与自动化，直接嵌入团队已在使用的工具中 — 而不是额外挂一个聊天机器人演示。"
-        },
-        "realWorld": {
-          "title": "连接现实世界的软件",
-          "description": "从离线优先的物联网硬件到指纹考勤 — 在软件与实体设备的交汇处，我们游刃有余。"
-        },
-        "centralize": {
-          "title": "把分散的数据汇聚到一处",
-          "description": "会员系统、人力排班、供应商看板 — 我们把电子表格、WhatsApp 群和纸质记录整合成一套统一的数据源。"
-        },
-        "production": {
-          "title": "为每天使用而打造，而非只为演示",
-          "description": "合适的人看到合适的数据，支付顺畅完成，月底高峰页面依旧流畅，问题在员工察觉之前就被发现。"
-        },
-        "stakeholders": {
-          "title": "与真正的使用者一起设计",
-          "description": "每套系统都始于与一线人员共处的时间 — 会员协调员、人事团队、旅游运营方 — 然后才写下第一行代码。"
-        }
-      }
+      "resultFor": "{client} 的成果",
+      "whatChanges": "带来的改变",
+      "allServices": "查看全部服务"
     },
     "approach": {
       "title": "我们如何解决问题",
@@ -119,39 +128,16 @@
       }
     },
     "projects": {
-      "title": "每天都在运行的系统",
+      "title": "更多每天都在运行的系统",
       "subtitle": "为印尼各地企业支撑真实业务运营的软件。",
-      "eyebrow": "精选案例",
       "viewAll": "全部项目"
     },
-    "location": {
-      "eyebrow": "服务区域",
-      "title": "扎根棉兰",
-      "description": "我们在棉兰及北苏门答腊与企业现场合作，也与印尼各地的团队远程协作。无论面对面还是线上，都是同一支团队。",
-      "stats": {
-        "projects": {
-          "value": "{count}",
-          "label": "已交付项目"
-        },
-        "homeBase": {
-          "value": "棉兰",
-          "label": "总部所在地"
-        },
-        "reach": {
-          "value": "全印尼",
-          "label": "现场或远程"
-        }
-      }
-    },
-    "cta": {
-      "eyebrow": "下一步",
-      "title": "有值得改进的流程吗？",
-      "description": "和我们聊聊您业务中仍依赖电子表格的环节。我们会坦诚告诉您，软件是否是正确的答案。",
-      "button": "洽谈项目"
+    "faq": {
+      "title": "大家最先问的问题",
+      "all": "查看全部 {count} 个回答"
     }
   },
   "about": {
-    "eyebrow": "关于我们",
     "title": "从您的工作流程出发的软件开发公司",
     "subtitle": "我们是一支位于棉兰的团队，开发网页、移动、ERP 与物联网系统。在动手设计之前，我们会先与负责运营的人深入交流，上线之后也一直在。",
     "story": {
@@ -171,7 +157,6 @@
       }
     },
     "values": {
-      "eyebrow": "原则",
       "title": "驱动我们工作的信念",
       "subtitle": "贯穿每个项目的三项承诺，从第一次交流到上线后的长期合作。",
       "items": {
@@ -190,7 +175,6 @@
       }
     },
     "location": {
-      "eyebrow": "服务区域",
       "title": "扎根棉兰",
       "description": "总部位于北苏门答腊棉兰，为印尼各地客户提供现场或远程服务。",
       "stats": {
@@ -208,14 +192,12 @@
         }
       },
       "cta": {
-        "eyebrow": "与我们合作",
         "title": "一起梳理您的工作流",
         "description": "无论您身在苏门答腊，还是远程协作，我们都会从真正读懂您的运营方式开始。"
       }
     }
   },
   "services": {
-    "eyebrow": "服务",
     "title": "我们开发什么",
     "subtitle": "为印尼企业量身定制软件，从第一次梳理流程到上线与长期支持。",
     "categories": {
@@ -227,7 +209,6 @@
       "outcome": "成果"
     },
     "process": {
-      "eyebrow": "合作流程",
       "title": "我们如何与您协作",
       "subtitle": "每个项目都遵循同样的规范，让您始终清楚下一步是什么。",
       "steps": {
@@ -250,7 +231,6 @@
       }
     },
     "cta": {
-      "eyebrow": "下一步",
       "title": "不确定哪种服务适合您？",
       "description": "告诉我们是什么在拖慢您的团队。我们会找出瓶颈，并给出坦诚的建议。",
       "button": "洽谈项目"
@@ -298,7 +278,6 @@
     "categorySupport": "运维支持"
   },
   "projects": {
-    "eyebrow": "作品集",
     "title": "项目",
     "subtitle": "我们设计、开发并上线的系统 — 每一个都附有问题、方法与成果。",
     "viewCaseStudy": "查看案例",
@@ -315,7 +294,12 @@
       "solution": "我们构建的内容",
       "outcome": "成果",
       "visitSite": "访问网站",
-      "viewCode": "查看源码"
+      "viewCode": "查看源码",
+      "client": "客户",
+      "industry": "行业",
+      "category": "类型",
+      "stack": "技术栈",
+      "next": "下一个案例"
     },
     "items": {
       "kms-connect": {
@@ -440,7 +424,6 @@
   "faq": {
     "title": "常见问题",
     "subtitle": "关于我们如何工作的直接解答 — 流程、周期、费用以及上线之后。",
-    "eyebrow": "FAQ",
     "categories": {
       "all": "全部",
       "studio": "关于我们",
@@ -449,7 +432,6 @@
       "support": "上线之后"
     },
     "cta": {
-      "eyebrow": "还有疑问？",
       "title": "直接问我们",
       "description": "如果这里的解答不适用于您的情况，请直接告诉我们。我们通常几小时内就会回复。"
     },
@@ -517,12 +499,10 @@
     }
   },
   "contact": {
-    "eyebrow": "联系",
     "title": "聊聊您的项目",
     "subtitle": "告诉我们哪些工作还在手动处理、数据分散或拖慢团队。我们通常几小时内就会回复。",
     "whatsappCta": "通过 WhatsApp 联系",
     "channels": {
-      "eyebrow": "联系方式",
       "title": "直接联系渠道",
       "description": "不想填写表单？直接给我们发消息或邮件即可。"
     },
@@ -531,7 +511,6 @@
       "description": "每条消息我们都会亲自阅读，并告知下一步 — 通常几小时内回复，最迟不超过一个工作日。"
     },
     "nextSteps": {
-      "eyebrow": "接下来会怎样",
       "title": "发送消息之后",
       "items": {
         "review": {
@@ -555,7 +534,6 @@
       "location": "地址"
     },
     "form": {
-      "eyebrow": "项目咨询",
       "title": "介绍一下您的项目",
       "description": "大约只需一分钟。我们会打开 WhatsApp 并自动填好您的信息 — 点一下发送即可。更喜欢邮件？请写信至 hello@trixync.id。",
       "name": "姓名",
@@ -592,7 +570,6 @@
   "footer": {
     "tagline": "Built in Sync",
     "description": "位于棉兰的软件开发公司。我们先梳理您的业务运作方式，再打造与之匹配的网页、移动、ERP 与物联网系统。",
-    "ctaEyebrow": "一起构建",
     "ctaTitle": "说说您的团队还在手动做哪些事。",
     "ctaDescription": "那些重复劳动、多次录入、靠电子表格和 WhatsApp 凑合的环节 — 都告诉我们。我们会找出真正的瓶颈，并坦诚地告诉您一套系统是否值得构建。",
     "navigate": "导航",

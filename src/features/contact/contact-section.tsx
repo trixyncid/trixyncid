@@ -94,7 +94,6 @@ export function ContactSection() {
     <>
       <SectionShell containerSize="wide" className="pb-10 md:pb-14">
         <PageHeader
-          eyebrow={t("eyebrow")}
           title={t("title")}
           subtitle={t("subtitle")}
           align="center"
@@ -105,10 +104,7 @@ export function ContactSection() {
           <ScrollStagger className="space-y-6">
             <ScrollStaggerItem>
               <div className="rounded-3xl border border-border/60 bg-popover p-6 md:p-7">
-                <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
-                  {t("channels.eyebrow")}
-                </p>
-                <h2 className="mt-2 font-heading text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+                <h2 className="font-heading text-xl font-semibold tracking-tight text-foreground md:text-2xl">
                   {t("channels.title")}
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
@@ -131,7 +127,7 @@ export function ContactSection() {
                             <Icon className="h-4 w-4 text-brand-text" strokeWidth={1.75} />
                           </div>
                           <div className="min-w-0 flex-1">
-                            <p className="text-xs font-medium uppercase tracking-[0.12em] text-muted-foreground">
+                            <p className="text-sm text-muted-foreground">
                               {t(`info.${channel}`)}
                             </p>
                             {href ? (
@@ -174,10 +170,7 @@ export function ContactSection() {
           <ScrollReveal delay={0.08}>
             <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-popover p-6 md:p-8">
               <div className="relative">
-                <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
-                  {t("form.eyebrow")}
-                </p>
-                <h2 className="mt-2 font-heading text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+                <h2 className="font-heading text-xl font-semibold tracking-tight text-foreground md:text-2xl">
                   {t("form.title")}
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t("form.description")}</p>
@@ -272,15 +265,10 @@ export function ContactSection() {
         </div>
       </SectionShell>
 
-      <div className="section-divider mx-auto max-w-4xl opacity-50" aria-hidden />
-
       <SectionShell containerSize="narrow" className="pt-10 md:pt-12">
         <ScrollReveal>
           <div className="text-center">
-            <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
-              {t("nextSteps.eyebrow")}
-            </p>
-            <h2 className="mt-3 font-heading text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+            <h2 className="font-heading text-xl font-semibold tracking-tight text-foreground md:text-2xl">
               {t("nextSteps.title")}
             </h2>
           </div>

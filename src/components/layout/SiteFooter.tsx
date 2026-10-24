@@ -28,31 +28,24 @@ export async function SiteFooter() {
 
   return (
     <footer className="relative">
-      <div className="section-divider mx-auto max-w-4xl opacity-50" aria-hidden />
-
-      <Container className="relative pt-10 md:pt-12">
-        <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+      <Container className="relative pt-10 md:pt-16">
+        <div className="reveal flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div className="max-w-2xl">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
-              {t("ctaEyebrow")}
-            </p>
-            <h2 className="mt-3 font-heading text-2xl font-semibold tracking-tight text-foreground md:text-[2rem] md:leading-tight">
+            <h2 className="font-heading text-2xl font-semibold tracking-tight text-foreground md:text-[2rem] md:leading-tight">
               {t("ctaTitle")}
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">{t("ctaDescription")}</p>
           </div>
           <Link
             href={`${prefix}/contact`}
-            className="inline-flex shrink-0 items-center justify-center rounded-full bg-brand px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-brand-light"
+            className="inline-flex shrink-0 items-center justify-center rounded-full bg-brand px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-[background-color,scale] duration-150 hover:bg-brand-light active:scale-[0.97]"
           >
             {tNav("cta")}
           </Link>
         </div>
       </Container>
 
-      <div className="section-divider mx-auto mt-14 max-w-4xl opacity-50 md:mt-16" aria-hidden />
-
-      <Container className="relative py-14 md:py-16">
+      <Container className="relative mt-16 py-14 md:mt-24 md:py-16">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
             <Link
@@ -80,7 +73,7 @@ export async function SiteFooter() {
 
           <div className="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:pl-4">
             <div>
-              <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.18em] text-foreground/70">
+              <h3 className="mb-5 text-sm font-semibold text-foreground">
                 {t("navigate")}
               </h3>
               <ul className="space-y-3">
@@ -99,7 +92,7 @@ export async function SiteFooter() {
             </div>
 
             <div>
-              <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.18em] text-foreground/70">
+              <h3 className="mb-5 text-sm font-semibold text-foreground">
                 {t("connect")}
               </h3>
               <ul className="space-y-3 text-sm text-muted-foreground">
@@ -144,13 +137,11 @@ export async function SiteFooter() {
         </div>
       </Container>
 
-      <div className="section-divider mx-auto max-w-4xl opacity-40" aria-hidden />
-
-      <Container className="relative flex flex-col gap-3 pt-6 pb-24 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:pb-6 sm:pr-24 lg:pr-28">
+      <Container className="relative flex flex-col gap-3 pt-10 pb-24 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:pb-6 sm:pr-24 lg:pr-28">
         <p>
           © {year} {siteConfig.name}. {t("rights")}
         </p>
-        <p className="font-heading text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
+        <p>
           {siteConfig.domain}
         </p>
       </Container>

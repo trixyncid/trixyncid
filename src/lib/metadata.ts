@@ -39,12 +39,13 @@ export function buildAlternates(path: string) {
   };
 }
 
-function buildOgImages(image?: string, alt?: string) {
+function buildOgImages(locale: Locale, image?: string, alt?: string) {
   if (image) {
     // Project screenshots vary in size, so let crawlers read the real dimensions.
     return [{ url: image, alt: alt ?? siteConfig.name }];
   }
-  return [{ url: `${siteConfig.url}/opengraph-image`, width: 1200, height: 630, alt: siteConfig.name }];
+  // The share card in this page's language (app/[locale]/opengraph-image.tsx).
+  return [{ url: `${siteConfig.url}/${locale}/opengraph-image`, width: 1200, height: 630, alt: siteConfig.name }];
 }
 
 export function createPageMetadata({
@@ -57,7 +58,7 @@ export function createPageMetadata({
 }: PageMetadataOptions): Metadata {
   const normalizedPath = path === "/" ? "" : path;
   const pageUrl = `${siteConfig.url}/${locale}${normalizedPath}`;
-  const ogImages = buildOgImages(image, imageAlt);
+  const ogImages = buildOgImages(locale, image, imageAlt);
   const alternateLocales = routing.locales
     .filter((loc) => loc !== locale)
     .map((loc) => ogLocaleMap[loc as Locale]);

@@ -4,7 +4,7 @@ import { useRef } from "react";
 import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-type StrengthPillarCardProps = {
+type PillarCardProps = {
   title: string;
   description: string;
   icon: LucideIcon;
@@ -13,14 +13,14 @@ type StrengthPillarCardProps = {
   className?: string;
 };
 
-export function StrengthPillarCard({
+export function PillarCard({
   title,
   description,
   icon: Icon,
   accent,
   glow,
   className,
-}: StrengthPillarCardProps) {
+}: PillarCardProps) {
   const cardRef = useRef<HTMLElement>(null);
 
   // Writes CSS variables directly — no React re-render per mouse move.

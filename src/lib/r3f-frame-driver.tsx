@@ -15,6 +15,10 @@ type FrameDriverProps = {
 const WARMUP_MS = 1000;
 const SAMPLE_FRAMES = 45;
 const SLOW_FRAME_MS = 45;
+/** A gap this long is a main-thread stall (hydration, a rebuild, GC), not a slow GPU. */
+const STALL_FRAME_MS = 250;
+/** Consecutive slow sample windows (several seconds) before giving up on the scene. */
+const SLOW_WINDOWS = 3;
 
 /**
  * Drives a `frameloop="demand"` canvas at a capped frame rate. Decorative
@@ -34,16 +38,20 @@ export function FrameDriver({ active, getFps, onSlow }: FrameDriverProps) {
     const startedAt = performance.now();
     let samples = 0;
     let sampleTotal = 0;
+    let slowWindows = 0;
     let reported = false;
 
     const loop = (now: number) => {
       frame = requestAnimationFrame(loop);
 
-      if (onSlow && !reported && previous && now - startedAt > WARMUP_MS && !document.hidden) {
-        sampleTotal += now - previous;
+      const gap = now - previous;
+      if (onSlow && !reported && previous && gap < STALL_FRAME_MS && now - startedAt > WARMUP_MS && !document.hidden) {
+        sampleTotal += gap;
         samples += 1;
         if (samples >= SAMPLE_FRAMES) {
-          if (sampleTotal / samples > SLOW_FRAME_MS) {
+          // Only sustained slowness counts; one bad stretch resets once frames recover.
+          slowWindows = sampleTotal / samples > SLOW_FRAME_MS ? slowWindows + 1 : 0;
+          if (slowWindows >= SLOW_WINDOWS) {
             reported = true;
             onSlow();
           }

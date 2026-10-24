@@ -1,81 +1,51 @@
-"use client";
-import {
-  useScroll,
-  useTransform,
-  motion,
-} from "motion/react";
-import React, { useEffect, useRef, useState } from "react";
+import type React from "react";
 
 interface TimelineEntry {
   title: string;
   content: React.ReactNode;
 }
 
-export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [height, setHeight] = useState(0);
-
-  // Track height changes (font swap, resize, translations) so the progress line fits.
-  useEffect(() => {
-    const node = ref.current;
-    if (!node) return;
-    const observer = new ResizeObserver(([entry]) => setHeight(entry.contentRect.height));
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, []);
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start 10%", "end 50%"],
-  });
-
-  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
-  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
-
+/**
+ * Vertical process timeline. The progress line draws itself as you scroll,
+ * and each step's dot and title light up as the line reaches them — all CSS
+ * scroll-driven animations (`.scroll-rail*` in globals.css), no client JS.
+ * Without scroll-timeline support everything shows in its finished state.
+ */
+export function Timeline({ data }: { data: TimelineEntry[] }) {
   return (
-    <div
-      className="w-full bg-transparent font-sans md:px-10"
-      ref={containerRef}
-    >
-      <div ref={ref} className="relative mx-auto max-w-7xl pb-12">
+    <div className="w-full bg-transparent font-sans md:px-10">
+      <div className="scroll-rail relative mx-auto max-w-7xl pb-12">
         {data.map((item, index) => (
-          <div
-            key={index}
-            className="flex justify-start pt-10 md:gap-10 md:pt-24"
-          >
+          <div key={index} className="flex justify-start pt-10 md:gap-10 md:pt-24">
             <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm">
-              <div className="absolute left-3 flex h-10 w-10 items-center justify-center rounded-full bg-background md:left-3">
-                <div className="h-4 w-4 rounded-full border border-border bg-muted p-2" />
+              <div className="absolute left-3 z-10 flex h-10 w-10 items-center justify-center md:left-3">
+                <div className="scroll-rail-dot h-4 w-4 rounded-full border border-border bg-muted ring-4 ring-background" />
               </div>
-              <h3 className="hidden text-xl font-bold text-muted-foreground md:block md:pl-20 md:text-2xl">
+              <h3 className="scroll-rail-text hidden text-xl font-bold text-foreground md:block md:pl-20 md:text-2xl">
                 {item.title}
               </h3>
             </div>
 
-            <div className="relative w-full pl-20 pr-4 md:pl-4">
-              <h3 className="mb-4 block text-left text-xl font-bold text-muted-foreground md:hidden">
+            <div className="reveal relative w-full pl-20 pr-4 md:pl-4">
+              <h3 className="scroll-rail-text mb-4 block text-left text-xl font-bold text-foreground md:hidden">
                 {item.title}
               </h3>
-              {item.content}{" "}
+              {item.content}
             </div>
           </div>
         ))}
+
         <div
-          style={{
-            height: height + "px",
-          }}
-          className="absolute left-8 top-0 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-border to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
+          aria-hidden
+          className="pointer-events-none absolute inset-y-0 left-8 w-0.5 [container-type:size]"
         >
-          <motion.div
-            style={{
-              height: heightTransform,
-              opacity: opacityTransform,
-            }}
-            className="absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t from-brand via-brand-light to-transparent from-[0%] via-[10%]"
-          />
+          {/* Faint rail */}
+          <div className="absolute inset-0 bg-border [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]" />
+          {/* Scroll-drawn fill + glowing tip */}
+          <div className="scroll-rail-fill absolute inset-0 origin-top rounded-full bg-gradient-to-b from-brand-light/0 via-brand-light to-brand shadow-[0_0_12px_rgba(56,102,242,0.5)]" />
+          <div className="scroll-rail-tip absolute -left-[5px] -top-1.5 h-3 w-3 rounded-full bg-brand-light shadow-[0_0_16px_4px_rgba(56,102,242,0.6)]" />
         </div>
       </div>
     </div>
   );
-};
+}

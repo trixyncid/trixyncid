@@ -38,7 +38,7 @@ function FlagOption({
       title={localeNames[loc]}
       aria-current={active ? "true" : undefined}
       className={cn(
-        "flex items-center justify-center rounded-md transition-all",
+        "flex items-center justify-center rounded-md transition-[background-color,opacity,box-shadow]",
         size === "sm" ? "h-9 w-10" : "h-11 w-11",
         active
           ? "bg-brand/10 ring-1 ring-brand/40"

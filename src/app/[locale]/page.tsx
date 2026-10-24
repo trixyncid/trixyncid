@@ -2,12 +2,15 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { createPageMetadata } from "@/lib/metadata";
 import { type Locale } from "@/i18n/routing";
+import { homeFaqIds } from "@/content/faq";
+import { faqJsonLd } from "@/lib/seo";
+import { JsonLd } from "@/components/shared/JsonLd";
 import {
   HeroSection,
-  StrengthsSection,
+  ShowcaseSection,
   ApproachSection,
   FeaturedProjectsSection,
-  LocationSection,
+  HomeFaqSection,
 } from "@/features/home";
 
 type Props = {
@@ -24,24 +27,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-function SectionDivider() {
-  return <div className="section-divider mx-auto max-w-4xl opacity-60" aria-hidden />;
-}
-
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const tFaq = await getTranslations("faq.items");
 
   return (
     <div className="relative">
+      <JsonLd
+        data={faqJsonLd(
+          homeFaqIds.map((id) => ({ question: tFaq(`${id}.question`), answer: tFaq(`${id}.answer`) })),
+        )}
+      />
       <HeroSection />
-      <StrengthsSection />
-      <SectionDivider />
+      <ShowcaseSection />
       <ApproachSection />
-      <SectionDivider />
       <FeaturedProjectsSection />
-      <SectionDivider />
-      <LocationSection />
+      <HomeFaqSection />
     </div>
   );
 }

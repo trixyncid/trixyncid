@@ -4,11 +4,12 @@ import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { projects, type ProjectCategory } from "@/content/projects";
 import { ProjectShowcaseCard } from "@/components/shared/project-showcase-card";
-import { ScrollReveal, ScrollStagger, ScrollStaggerItem } from "@/components/shared/scroll-reveal";
+import { ScrollReveal, ScrollStaggerItem } from "@/components/shared/scroll-reveal";
+import { HoverEffectGrid } from "@/components/ui/card-hover-effect";
+import { FilterPills } from "@/components/ui/filter-pills";
 import { SectionShell } from "@/components/shared/SectionShell";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { type Locale } from "@/i18n/routing";
-import { cn } from "@/lib/utils";
 
 type FilterKey = "all" | ProjectCategory;
 
@@ -37,41 +38,27 @@ export function ProjectsGridSection() {
   return (
     <SectionShell containerSize="wide">
       <PageHeader
-        eyebrow={t("eyebrow")}
         title={t("title")}
         subtitle={t("subtitle")}
         align="center"
         className="mx-auto max-w-3xl"
       />
       <ScrollReveal delay={0.05}>
-        <div className="mb-10 flex flex-wrap justify-center gap-2">
-          {filters.map((filter) => (
-            <button
-              key={filter.key}
-              type="button"
-              aria-pressed={active === filter.key}
-              onClick={() => setActive(filter.key)}
-              className={cn(
-                "rounded-full px-4 py-2 text-sm font-medium transition-colors",
-                active === filter.key
-                  ? "bg-brand text-primary-foreground"
-                  : "border border-border/60 text-muted-foreground hover:border-brand-light hover:text-foreground",
-              )}
-            >
-              {t(filter.labelKey)}
-            </button>
-          ))}
-        </div>
+        <FilterPills
+          className="mb-10 justify-center"
+          options={filters.map((filter) => ({ key: filter.key, label: t(filter.labelKey) }))}
+          active={active}
+          onChange={setActive}
+        />
       </ScrollReveal>
 
-      <ScrollStagger key={active} className="grid gap-8 md:grid-cols-2">
+      <HoverEffectGrid key={active} className="gap-8 md:grid-cols-2">
         {filtered.map((project) => (
           <ScrollStaggerItem key={project.id}>
             <ProjectShowcaseCard
               title={t(`items.${project.id}.title`)}
               description={t(`items.${project.id}.description`)}
               client={t(`items.${project.id}.client`)}
-              category={project.category}
               categoryLabel={t(categoryLabelKeys[project.category])}
               image={project.image}
               href={`${prefix}/projects/${project.id}`}
@@ -79,7 +66,7 @@ export function ProjectsGridSection() {
             />
           </ScrollStaggerItem>
         ))}
-      </ScrollStagger>
+      </HoverEffectGrid>
     </SectionShell>
   );
 }
