@@ -164,7 +164,7 @@ export function MobileNav({
             <Link
               href={ctaHref}
               onClick={onClose}
-              className="inline-flex w-full items-center justify-center rounded-full bg-brand px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-brand-light"
+              className="inline-flex w-full items-center justify-center rounded-full bg-pop px-6 py-3.5 text-sm font-semibold text-pop-ink transition-colors hover:bg-pop-light"
             >
               {ctaLabel}
             </Link>

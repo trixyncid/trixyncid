@@ -83,8 +83,8 @@ export function ShowcaseSection() {
         <div className="scroll-rail relative lg:pl-10">
           <div aria-hidden className="pointer-events-none absolute inset-y-0 left-0 hidden w-0.5 [container-type:size] lg:block">
             <div className="absolute inset-0 bg-border [mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_85%,transparent_100%)]" />
-            <div className="scroll-rail-fill absolute inset-0 origin-top rounded-full bg-brand-light" />
-            <div className="scroll-rail-tip absolute -left-[5px] -top-1.5 h-3 w-3 rounded-full bg-brand-light" />
+            <div className="scroll-rail-fill absolute inset-0 origin-top rounded-full bg-pop" />
+            <div className="scroll-rail-tip absolute -left-[5px] -top-1.5 h-3 w-3 rounded-full bg-pop" />
           </div>
 
           {showcaseTabs.map((tab, index) => {
@@ -113,7 +113,7 @@ export function ShowcaseSection() {
                       aria-hidden
                       className={cn(
                         "absolute -left-[45px] top-1/2 hidden h-3 w-3 -translate-y-1/2 rounded-full ring-4 ring-background transition-colors duration-500 lg:block",
-                        isActive ? "bg-brand-light" : "bg-muted-foreground/40",
+                        isActive ? "bg-pop" : "bg-muted-foreground/40",
                       )}
                     />
                     {tServices(`${tab.id}.title`)}

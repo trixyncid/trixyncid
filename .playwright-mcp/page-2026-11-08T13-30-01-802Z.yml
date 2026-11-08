@@ -1,0 +1,205 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: /en
+          - img "Trixync" [ref=e9]
+        - navigation "Main navigation" [ref=e10]:
+          - link "About" [ref=e11] [cursor=pointer]:
+            - /url: /en/about
+          - link "Services" [ref=e12] [cursor=pointer]:
+            - /url: /en/services
+          - link "Projects" [ref=e13] [cursor=pointer]:
+            - /url: /en/projects
+          - link "FAQ" [ref=e14] [cursor=pointer]:
+            - /url: /en/faq
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - 'button "Language: English" [ref=e18] [cursor=pointer]':
+              - img "English" [ref=e19]
+            - switch "Dark mode" [ref=e28] [cursor=pointer]
+          - link "Discuss your project" [ref=e36] [cursor=pointer]:
+            - /url: /en/contact
+    - main [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e41]:
+          - heading "Your business, in one system." [level=1] [ref=e42]
+          - paragraph [ref=e44]: A software house in Medan building custom web apps, mobile apps, ERP and IoT systems for businesses that have outgrown spreadsheets and WhatsApp groups. Designed around how your team works, and supported after launch.
+          - generic [ref=e46]:
+            - link "Discuss your project" [ref=e47] [cursor=pointer]:
+              - /url: /en/contact
+            - link "See our work" [ref=e48] [cursor=pointer]:
+              - /url: /en/projects
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - heading "What we build" [level=2] [ref=e52]
+            - paragraph [ref=e53]: Software, AI, and IoT, backed by systems we've built and still support.
+          - generic [ref=e54]:
+            - generic [ref=e55]:
+              - generic [ref=e57]:
+                - heading "Custom business systems & ERP" [level=3] [ref=e58]
+                - paragraph [ref=e60]: "Web-based systems shaped around your workflow: ERP, inventory and POS, HR and scheduling, memberships, bookings, approvals, and reporting."
+                - generic [ref=e61]:
+                  - paragraph [ref=e62]: Result for UD Sejahtera Bersama
+                  - paragraph [ref=e63]: One source of truth for stock, cost, and staff — real-time stock health and accurate HPP replacing scattered spreadsheets.
+                - link "View case study" [ref=e64] [cursor=pointer]:
+                  - /url: /en/projects/sejahtera-bersama-erp
+              - generic [ref=e69]:
+                - heading "Mobile apps" [level=3] [ref=e70]
+                - paragraph [ref=e72]: Android and iOS apps connected to the same backend as your web system — listings, applications, check-ins, and notifications.
+                - generic [ref=e73]:
+                  - paragraph [ref=e74]: Result for KMS
+                  - paragraph [ref=e75]: One system of record for jobs and applications instead of spreadsheets, chat threads, and duplicate data entry.
+                - link "View case study" [ref=e76] [cursor=pointer]:
+                  - /url: /en/projects/kms-connect
+              - generic [ref=e81]:
+                - heading "Company websites & landing pages" [level=3] [ref=e82]
+                - paragraph [ref=e84]: Fast, multilingual websites — company profiles, product and service catalogs, property and launch pages — with clear inquiry and WhatsApp buttons.
+                - generic [ref=e85]:
+                  - paragraph [ref=e86]: Result for PT Property Group Imperium
+                  - paragraph [ref=e87]: A modern property profile prospects can browse on any device — with clear paths to inquiry instead of scattered offline follow-up.
+                - link "View case study" [ref=e88] [cursor=pointer]:
+                  - /url: /en/projects/pgi-tower
+              - generic [ref=e93]:
+                - heading "AI & automation" [level=3] [ref=e94]
+                - paragraph [ref=e96]: Document extraction (OCR), automated routing, notifications, and AI features built into the systems your team already uses.
+                - generic [ref=e97]:
+                  - paragraph [ref=e98]: What changes
+                  - paragraph [ref=e99]: Less repetitive data entry, faster turnaround, and people free for the work that needs judgement.
+                - link "See all services" [ref=e100] [cursor=pointer]:
+                  - /url: /en/services
+            - img "Sejahtera Bersama ERP" [ref=e108]
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - heading "How we solve problems" [level=2] [ref=e113]
+            - paragraph [ref=e114]: Four steps we follow on every project, whatever its size.
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - heading "Find the real bottleneck" [level=3] [ref=e122]
+              - paragraph [ref=e124]: Not what's assumed broken — what's actually slowing the business down or costing money.
+            - generic [ref=e125]:
+              - heading "Design for how you work today" [level=3] [ref=e129]
+              - paragraph [ref=e131]: Adoption shouldn't require your team to change how they operate overnight.
+            - generic [ref=e132]:
+              - heading "Build for the long run" [level=3] [ref=e136]
+              - paragraph [ref=e138]: Built for real users, real data, and busy days from the start — not a demo that breaks under load.
+            - generic [ref=e139]:
+              - heading "Stay involved after launch" [level=3] [ref=e143]
+              - paragraph [ref=e145]: Your business keeps changing, so the system does too. We stay on after handover.
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - heading "More systems in daily use" [level=2] [ref=e150]
+              - paragraph [ref=e151]: Software running real operations for businesses across Indonesia.
+            - link "All projects →" [ref=e152] [cursor=pointer]:
+              - /url: /en/projects
+          - generic [ref=e153]:
+            - link [ref=e158] [cursor=pointer]:
+              - /url: /en/projects/mitra-laju-interocean
+              - article [ref=e159]:
+                - generic [ref=e161]:
+                  - paragraph [ref=e162]: Enterprise · PT Mitra Laju Interocean · Logistics
+                  - heading "Mitra Laju Interocean Operations" [level=3] [ref=e163]
+                  - paragraph [ref=e164]: Freight forwarding operations dashboard — shipments, containers, costings, and sellings managed in one role-based system.
+                  - generic [ref=e165]: View case study
+            - link [ref=e173] [cursor=pointer]:
+              - /url: /en/projects/malavari-films
+              - article [ref=e174]:
+                - generic [ref=e176]:
+                  - paragraph [ref=e177]: Software · Malavari Films · Online education
+                  - heading "Malavari Films Academy" [level=3] [ref=e178]
+                  - paragraph [ref=e179]: Online filmmaking course platform — class catalog, secure video lessons, checkout with online payments, and a personal learning library.
+                  - generic [ref=e180]: View case study
+            - link [ref=e188] [cursor=pointer]:
+              - /url: /en/projects/goholiday-dc
+              - article [ref=e189]:
+                - generic [ref=e191]:
+                  - paragraph [ref=e192]: Software · GoHoliday · Travel marketplace
+                  - heading "GoHoliday DC" [level=3] [ref=e193]
+                  - paragraph [ref=e194]: Travel marketplace platform where travel businesses can sell tour packages, and resellers can promote tours and earn commission from successful sales.
+                  - generic [ref=e195]: View case study
+        - generic [ref=e201]:
+          - generic [ref=e202]:
+            - heading "Questions people ask first" [level=2] [ref=e203]
+            - link "All 15 answers →" [ref=e204] [cursor=pointer]:
+              - /url: /en/faq
+          - generic [ref=e205]:
+            - generic [ref=e207]:
+              - button "How do you price projects?" [expanded] [ref=e208] [cursor=pointer]
+              - region "How do you price projects?" [ref=e214]:
+                - paragraph [ref=e215]: We price by the problem being solved, not hours logged. Landing pages and company websites start from Rp5 million; custom business systems and ERP are quoted after a discovery session based on modules and complexity. You get a clear proposal with scope, milestones, and cost, and any change is agreed before work starts — no surprise invoices.
+            - generic [ref=e217]:
+              - button "How long does a typical project take?" [ref=e218] [cursor=pointer]
+              - paragraph: Timelines depend on scope and complexity. A focused workflow system might take 6–10 weeks; a multi-module platform with IoT integration can take 3–6 months. We'll give you a realistic estimate after discovery.
+            - generic [ref=e223]:
+              - button "What are your payment terms?" [ref=e224] [cursor=pointer]
+              - paragraph: 60% down payment to start the project, and the remaining 40% at final handover once you've reviewed and approved the finished product.
+            - generic [ref=e229]:
+              - button "Who owns the source code?" [ref=e230] [cursor=pointer]
+              - paragraph: You do. Once the project is paid in full, the source code and everything we built for you belongs to your business.
+            - generic [ref=e235]:
+              - button "Is there a warranty after launch?" [ref=e236] [cursor=pointer]
+              - paragraph: Yes. Bug fixes are free for the first 3 months after launch. After that, they're covered by our monthly maintenance plan.
+            - generic [ref=e241]:
+              - button "Do you work with remote clients?" [ref=e242] [cursor=pointer]
+              - paragraph: Yes. Most collaboration runs over video calls, WhatsApp, and shared project boards, so being outside Medan isn't a barrier.
+    - contentinfo [ref=e246]:
+      - generic [ref=e248]:
+        - generic [ref=e249]:
+          - heading "Tell us what your team still does by hand." [level=2] [ref=e250]
+          - paragraph [ref=e251]: The repetitive, the duplicated, the spreadsheet-and-WhatsApp workarounds — walk us through them. We'll pinpoint the real bottleneck and tell you straight whether a system is worth building.
+        - link "Discuss your project" [ref=e252] [cursor=pointer]:
+          - /url: /en/contact
+      - generic [ref=e254]:
+        - generic [ref=e255]:
+          - link "Trixync" [ref=e256] [cursor=pointer]:
+            - /url: /en
+            - img "Trixync" [ref=e258]
+            - generic [ref=e260]:
+              - img "Trixync" [ref=e262]
+              - generic [ref=e263]: Built in Sync
+          - paragraph [ref=e264]: A software house in Medan. We map how your business runs, then build the web, mobile, ERP, and IoT systems to match.
+          - paragraph [ref=e265]: Medan, North Sumatra, Indonesia
+        - generic [ref=e269]:
+          - generic [ref=e270]:
+            - heading "Navigate" [level=3] [ref=e271]
+            - list [ref=e272]:
+              - listitem [ref=e273]:
+                - link "Home" [ref=e274] [cursor=pointer]:
+                  - /url: /en
+              - listitem [ref=e275]:
+                - link "About" [ref=e276] [cursor=pointer]:
+                  - /url: /en/about
+              - listitem [ref=e277]:
+                - link "Services" [ref=e278] [cursor=pointer]:
+                  - /url: /en/services
+              - listitem [ref=e279]:
+                - link "Projects" [ref=e280] [cursor=pointer]:
+                  - /url: /en/projects
+              - listitem [ref=e281]:
+                - link "FAQ" [ref=e282] [cursor=pointer]:
+                  - /url: /en/faq
+              - listitem [ref=e283]:
+                - link "Contact" [ref=e284] [cursor=pointer]:
+                  - /url: /en/contact
+          - generic [ref=e285]:
+            - heading "Connect" [level=3] [ref=e286]
+            - list [ref=e287]:
+              - listitem [ref=e288]:
+                - link "hello@trixync.id" [ref=e289] [cursor=pointer]:
+                  - /url: mailto:hello@trixync.id
+              - listitem [ref=e293]:
+                - link "WhatsApp" [ref=e294] [cursor=pointer]:
+                  - /url: https://wa.me/6287893388812
+            - link "Instagram" [ref=e298] [cursor=pointer]:
+              - /url: https://instagram.com/trixync.id
+      - generic [ref=e301]:
+        - paragraph [ref=e302]: © 2026 Trixync. All rights reserved.
+        - paragraph [ref=e303]: trixync.id
+    - link "Chat with Trixync on WhatsApp" [ref=e304] [cursor=pointer]:
+      - /url: https://wa.me/6287893388812?text=Hi%20Trixync!%20I%20found%20your%20website%20and%20would%20like%20to%20discuss%20a%20project.%20Could%20we%20talk%3F
+  - button "Open Next.js Dev Tools" [ref=e313] [cursor=pointer]
+  - alert [ref=e317]

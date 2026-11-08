@@ -1,0 +1,158 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e3]:
+    - link "Skip to main content" [ref=f1e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=f1e5]:
+      - generic [ref=f1e6]:
+        - link [ref=f1e7] [cursor=pointer]:
+          - /url: /en
+          - img "Trixync" [ref=f1e9]
+        - navigation "Main navigation" [ref=f1e10]:
+          - link "About" [ref=f1e11] [cursor=pointer]:
+            - /url: /en/about
+          - link "Services" [ref=f1e12] [cursor=pointer]:
+            - /url: /en/services
+          - link "Projects" [ref=f1e13] [cursor=pointer]:
+            - /url: /en/projects
+          - link "FAQ" [ref=f1e14] [cursor=pointer]:
+            - /url: /en/faq
+        - generic [ref=f1e15]:
+          - generic [ref=f1e16]:
+            - 'button "Language: English" [ref=f1e18] [cursor=pointer]'
+            - switch "Dark mode" [checked] [ref=f1e24] [cursor=pointer]
+          - link "Discuss your project" [ref=f1e28] [cursor=pointer]:
+            - /url: /en/contact
+    - main [ref=f1e29]:
+      - generic [ref=f1e31]:
+        - generic [ref=f1e33]:
+          - heading "Let's talk about your project" [level=1] [ref=f1e34]
+          - paragraph [ref=f1e35]: Tell us what's manual, scattered, or slowing your team down. We usually reply within hours.
+        - generic [ref=f1e36]:
+          - generic [ref=f1e37]:
+            - generic [ref=f1e39]:
+              - heading "Direct channels" [level=2] [ref=f1e40]
+              - paragraph [ref=f1e41]: Prefer to skip the form? Message or email us directly.
+              - generic [ref=f1e42]:
+                - generic [ref=f1e49]:
+                  - paragraph [ref=f1e50]: Email
+                  - link "hello@trixync.id" [ref=f1e51] [cursor=pointer]:
+                    - /url: mailto:hello@trixync.id
+                - generic [ref=f1e57]:
+                  - paragraph [ref=f1e58]: WhatsApp
+                  - link "Chat on WhatsApp" [ref=f1e59] [cursor=pointer]:
+                    - /url: https://wa.me/6287893388812
+                - generic [ref=f1e66]:
+                  - paragraph [ref=f1e67]: Location
+                  - paragraph [ref=f1e68]: Medan, North Sumatra
+            - generic [ref=f1e75]:
+              - paragraph [ref=f1e76]: Replies within hours
+              - paragraph [ref=f1e77]: We read every message personally and reply with next steps — usually within hours, always within one business day.
+          - generic [ref=f1e80]:
+            - heading "Tell us about your project" [level=2] [ref=f1e81]
+            - paragraph [ref=f1e82]: Takes about a minute. We'll open WhatsApp with your details filled in — just tap send. Prefer email? Write to hello@trixync.id.
+            - generic [ref=f1e83]:
+              - generic [ref=f1e84]:
+                - generic [ref=f1e85]:
+                  - generic [ref=f1e86] [cursor=pointer]: Full name
+                  - textbox "Full name" [ref=f1e87]
+                - generic [ref=f1e88]:
+                  - generic [ref=f1e89] [cursor=pointer]: Email (optional)
+                  - textbox "Email (optional)" [ref=f1e90]
+              - generic [ref=f1e91]:
+                - generic [ref=f1e92] [cursor=pointer]: Company (optional)
+                - textbox "Company (optional)" [ref=f1e93]
+              - generic [ref=f1e94]:
+                - generic [ref=f1e95]:
+                  - generic [ref=f1e96] [cursor=pointer]: Project type
+                  - combobox "Project type" [ref=f1e98] [cursor=pointer]:
+                    - option "Business system / ERP" [selected]
+                    - option "Mobile app"
+                    - option "Company website"
+                    - option "AI or IoT integration"
+                    - option "Existing system / maintenance"
+                    - option "Not sure yet"
+                - generic [ref=f1e99]:
+                  - generic [ref=f1e100] [cursor=pointer]: Estimated budget
+                  - combobox "Estimated budget" [ref=f1e102] [cursor=pointer]:
+                    - option "Under IDR 10 million"
+                    - option "IDR 10 – 25 million"
+                    - option "IDR 25 – 50 million"
+                    - option "IDR 50 – 100 million"
+                    - option "Above IDR 100 million"
+                    - option "Not sure yet / prefer to discuss" [selected]
+                  - paragraph [ref=f1e103]: Approximate range is fine — helps us suggest the right scope.
+              - generic [ref=f1e104]:
+                - generic [ref=f1e105] [cursor=pointer]: Tell us about your challenge
+                - textbox "Tell us about your challenge" [ref=f1e106]
+              - button "Send via WhatsApp" [ref=f1e107] [cursor=pointer]
+              - status
+      - generic [ref=f1e112]:
+        - heading "After you send a message" [level=2] [ref=f1e114]
+        - list [ref=f1e115]:
+          - listitem [ref=f1e116]:
+            - text: "01"
+            - heading "We review your context" [level=3] [ref=f1e117]
+            - paragraph [ref=f1e118]: Project type, budget range, and the workflow challenge you described.
+          - listitem [ref=f1e119]:
+            - text: "02"
+            - heading "We reply with clarity" [level=3] [ref=f1e120]
+            - paragraph [ref=f1e121]: A direct reply, usually within hours — questions, fit, or a call suggestion.
+          - listitem [ref=f1e122]:
+            - text: "03"
+            - heading "Discovery if it's a fit" [level=3] [ref=f1e123]
+            - paragraph [ref=f1e124]: We map the bottleneck together before proposing scope, timeline, or architecture.
+    - contentinfo [ref=f1e125]:
+      - generic [ref=f1e127]:
+        - generic [ref=f1e128]:
+          - heading "Tell us what your team still does by hand." [level=2] [ref=f1e129]
+          - paragraph [ref=f1e130]: The repetitive, the duplicated, the spreadsheet-and-WhatsApp workarounds — walk us through them. We'll pinpoint the real bottleneck and tell you straight whether a system is worth building.
+        - link "Discuss your project" [ref=f1e131] [cursor=pointer]:
+          - /url: /en/contact
+      - generic [ref=f1e133]:
+        - generic [ref=f1e134]:
+          - link "Trixync" [ref=f1e135] [cursor=pointer]:
+            - /url: /en
+            - img "Trixync" [ref=f1e137]
+            - generic [ref=f1e139]:
+              - img "Trixync" [ref=f1e141]
+              - generic [ref=f1e142]: Built in Sync
+          - paragraph [ref=f1e143]: A software house in Medan. We map how your business runs, then build the web, mobile, ERP, and IoT systems to match.
+          - paragraph [ref=f1e144]: Medan, North Sumatra, Indonesia
+        - generic [ref=f1e148]:
+          - generic [ref=f1e149]:
+            - heading "Navigate" [level=3] [ref=f1e150]
+            - list [ref=f1e151]:
+              - listitem [ref=f1e152]:
+                - link "Home" [ref=f1e153] [cursor=pointer]:
+                  - /url: /en
+              - listitem [ref=f1e154]:
+                - link "About" [ref=f1e155] [cursor=pointer]:
+                  - /url: /en/about
+              - listitem [ref=f1e156]:
+                - link "Services" [ref=f1e157] [cursor=pointer]:
+                  - /url: /en/services
+              - listitem [ref=f1e158]:
+                - link "Projects" [ref=f1e159] [cursor=pointer]:
+                  - /url: /en/projects
+              - listitem [ref=f1e160]:
+                - link "FAQ" [ref=f1e161] [cursor=pointer]:
+                  - /url: /en/faq
+              - listitem [ref=f1e162]:
+                - link "Contact" [ref=f1e163] [cursor=pointer]:
+                  - /url: /en/contact
+          - generic [ref=f1e164]:
+            - heading "Connect" [level=3] [ref=f1e165]
+            - list [ref=f1e166]:
+              - listitem [ref=f1e167]:
+                - link "hello@trixync.id" [ref=f1e168] [cursor=pointer]:
+                  - /url: mailto:hello@trixync.id
+              - listitem [ref=f1e172]:
+                - link "WhatsApp" [ref=f1e173] [cursor=pointer]:
+                  - /url: https://wa.me/6287893388812
+            - link "Instagram" [ref=f1e177] [cursor=pointer]:
+              - /url: https://instagram.com/trixync.id
+      - generic [ref=f1e180]:
+        - paragraph [ref=f1e181]: © 2026 Trixync. All rights reserved.
+        - paragraph [ref=f1e182]: trixync.id
+  - button "Open Next.js Dev Tools" [ref=f1e188] [cursor=pointer]
+  - alert [ref=f1e192]

@@ -38,7 +38,7 @@ export async function SiteFooter() {
           </div>
           <Link
             href={`${prefix}/contact`}
-            className="inline-flex shrink-0 items-center justify-center rounded-full bg-brand px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-[background-color,scale] duration-150 hover:bg-brand-light active:scale-[0.97]"
+            className="inline-flex shrink-0 items-center justify-center rounded-full bg-pop px-8 py-3.5 text-sm font-semibold text-pop-ink transition-[background-color,scale] duration-150 hover:bg-pop-light active:scale-[0.97]"
           >
             {tNav("cta")}
           </Link>

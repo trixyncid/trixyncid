@@ -42,8 +42,8 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
           {/* Faint rail */}
           <div className="absolute inset-0 bg-border [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]" />
           {/* Scroll-drawn fill + glowing tip */}
-          <div className="scroll-rail-fill absolute inset-0 origin-top rounded-full bg-gradient-to-b from-brand-light/0 via-brand-light to-brand shadow-[0_0_12px_rgba(56,102,242,0.5)]" />
-          <div className="scroll-rail-tip absolute -left-[5px] -top-1.5 h-3 w-3 rounded-full bg-brand-light shadow-[0_0_16px_4px_rgba(56,102,242,0.6)]" />
+          <div className="scroll-rail-fill absolute inset-0 origin-top rounded-full bg-pop shadow-[0_0_12px_rgba(200,245,90,0.5)]" />
+          <div className="scroll-rail-tip absolute -left-[5px] -top-1.5 h-3 w-3 rounded-full bg-pop shadow-[0_0_16px_4px_rgba(200,245,90,0.6)]" />
         </div>
       </div>
     </div>

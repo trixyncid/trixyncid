@@ -99,7 +99,7 @@ export function ProjectDetailSection({ project }: ProjectDetailSectionProps) {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-primary-foreground transition-[background-color,scale] duration-150 hover:bg-brand-light active:scale-[0.97]"
+                  className="mt-8 inline-flex items-center gap-2 rounded-full bg-pop px-6 py-3 text-sm font-semibold text-pop-ink transition-[background-color,scale] duration-150 hover:bg-pop-light active:scale-[0.97]"
                 >
                   {t("caseStudy.visitSite")}
                   <ExternalLink className="h-4 w-4" />

@@ -99,7 +99,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <div className="relative z-10 flex min-h-full flex-col">
           <a
             href="#main-content"
-            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-brand focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-primary-foreground"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:bg-pop focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-pop-ink"
           >
             {tCommon("skipToMain")}
           </a>

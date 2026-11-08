@@ -149,8 +149,8 @@ export function SiteHeader() {
               href={`${prefix}/contact`}
               aria-current={isActive("/contact") ? "page" : undefined}
               className={cn(
-                "rounded-full bg-brand px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-brand-light",
-                isActive("/contact") && "ring-2 ring-brand-light/50 ring-offset-2 ring-offset-background",
+                "rounded-full bg-pop px-4 py-2 text-sm font-medium text-pop-ink transition-colors hover:bg-pop-light",
+                isActive("/contact") && "ring-2 ring-pop/50 ring-offset-2 ring-offset-background",
               )}
             >
               {t("cta")}

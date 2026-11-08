@@ -1,0 +1,6 @@
+[     261ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=576573a3:15557
+[    2157ms] [LOG] %cDocumentation: %chttps://mswjs.io/docs font-weight:bold font-weight:normal @ http://localhost:3000/node_modules/.vite/deps/msw_browser.js?v=bc5079e0:3447
+[    2157ms] [LOG] Found an issue? https://github.com/mswjs/msw/issues @ http://localhost:3000/node_modules/.vite/deps/msw_browser.js?v=bc5079e0:3448
+[    2157ms] [LOG] Worker script URL: http://localhost:3000/mockServiceWorker.js @ http://localhost:3000/node_modules/.vite/deps/msw_browser.js?v=bc5079e0:3449
+[    2157ms] [LOG] Worker scope: http://localhost:3000/ @ http://localhost:3000/node_modules/.vite/deps/msw_browser.js?v=bc5079e0:3450
+[    2157ms] [LOG] Client ID: %s (%s) 400e626a-2766-4240-a4fe-a7975fd9f7e5 top-level @ http://localhost:3000/node_modules/.vite/deps/msw_browser.js?v=bc5079e0:3451

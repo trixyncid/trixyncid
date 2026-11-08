@@ -32,10 +32,10 @@ export function FloatingWhatsApp() {
       aria-label={t("label")}
       className={cn(
         "group fixed z-40 flex items-center gap-0 overflow-hidden rounded-full",
-        "bg-brand text-primary-foreground shadow-[0_4px_20px_rgba(33,56,184,0.35)]",
+        "bg-pop text-pop-ink shadow-[0_4px_20px_rgba(200,245,90,0.35)]",
         "transition-[background-color,box-shadow,scale,padding,gap] duration-300 ease-out",
-        "hover:bg-brand-light hover:shadow-[0_6px_28px_rgba(56,102,242,0.45)]",
-        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+        "hover:bg-pop-light hover:shadow-[0_6px_28px_rgba(200,245,90,0.45)]",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pop focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         "motion-safe:hover:scale-[1.03] motion-safe:active:scale-[0.98]",
         "bottom-[max(1.25rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))]",
         "h-12 w-12 sm:bottom-6 sm:right-6 sm:h-14 sm:w-14",

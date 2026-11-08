@@ -43,7 +43,7 @@ export function HeroSection() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
               <Link
                 href={`${prefix}/contact`}
-                className="inline-flex items-center justify-center rounded-full bg-brand px-6 py-3 text-sm font-medium text-primary-foreground transition-[background-color,scale] duration-150 hover:bg-brand-light active:scale-[0.97]"
+                className="inline-flex items-center justify-center rounded-full bg-pop px-6 py-3 text-sm font-medium text-pop-ink transition-[background-color,scale] duration-150 hover:bg-pop-light active:scale-[0.97]"
               >
                 {t("ctaPrimary")}
               </Link>

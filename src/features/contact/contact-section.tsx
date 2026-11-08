@@ -227,7 +227,7 @@ export function ContactSection() {
                   <button
                     type="submit"
                     className={cn(
-                      "inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-brand-light",
+                      "inline-flex w-full items-center justify-center gap-2 rounded-full bg-pop py-3.5 text-sm font-semibold text-pop-ink transition-colors hover:bg-pop-light",
                     )}
                   >
                     <MessageCircle className="h-4 w-4" />

@@ -28,6 +28,7 @@ type Palette = {
   node: THREE.Color;
   nodeHot: THREE.Color;
   line: THREE.Color;
+  /** The live data (link sparks, arc pulses, satellites) is the pop accent — the structure stays blue. */
   spark: THREE.Color;
   blending: THREE.Blending;
   lineOpacity: number;
@@ -38,7 +39,7 @@ const darkPalette: Palette = {
   node: new THREE.Color("#5b7cf5"),
   nodeHot: new THREE.Color("#e8eeff"),
   line: new THREE.Color("#3866f2"),
-  spark: new THREE.Color("#cdd9ff"),
+  spark: new THREE.Color("#d4ff3f"),
   blending: THREE.AdditiveBlending,
   lineOpacity: 0.5,
   glowOpacity: 0.55,
@@ -48,7 +49,7 @@ const lightPalette: Palette = {
   node: new THREE.Color("#2138b8"),
   nodeHot: new THREE.Color("#3866f2"),
   line: new THREE.Color("#2138b8"),
-  spark: new THREE.Color("#3866f2"),
+  spark: new THREE.Color("#9bd81f"),
   blending: THREE.NormalBlending,
   lineOpacity: 0.35,
   glowOpacity: 0.18,
